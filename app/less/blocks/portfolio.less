@@ -1,0 +1,78 @@
+.portfolio {
+  padding: 0 15px;
+
+  &__title {
+    margin: 0 0 20px 0;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__text {
+    margin: 0 0 60px 0;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      width: 100%;
+      flex-direction: row;
+    }
+  }
+
+  &__link {
+    position: relative;
+  }
+
+  &__link::after {
+    content: "";
+    top: 22px;
+    left: 22px;
+    position: absolute;
+    display: block;
+
+    width: 511px;
+    height: 289px;
+    background-color: #330033;
+    background-image: url("../img/icons8-приблизить-90.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+  }
+  &__link:hover::after {
+    opacity: 0.5;
+  }
+
+  &__link:first-child::after {
+    top: 26px;
+    left: 80px;
+
+    width: 494px;
+    height: 310px;
+  }
+
+  &__info {
+    margin: 0 0 24px;
+    width: 458px;
+  }
+
+  &__name {
+    margin: 0 0 30px 0;
+
+    font-size: 30px;
+    font-weight: 700;
+  }
+}

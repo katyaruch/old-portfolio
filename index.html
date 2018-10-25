@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/style.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700|Roboto+Slab:400,700,600" rel="stylesheet">
+		<script src="js/jquery-3.3.1.js"></script>
+		<script src="js/script.js"></script>
+		<title>Портфолио HTML-верстальщика</title>
+	</head>
+	<body>
+		<section class="main">
+			<h1 class="main__title">HTML-верстальщик</h1>
+			<ul class="main__skills-list">
+				<li>Верстаю по актуальным критериям качества,</li>
+				<li>Использую препроцессоры PUG и LESS,</li>
+				<li>Именую классы по методологии БЭМ,</li>
+				<li>Умею верстать кроссбраузерно и адаптивно,</li>
+				<li>Соблюдаю Pixel Perfect, </li>
+				<li>Понимаю важность семантической вёрстки, </li>
+				<li>Проверяю код на валидность.</li>
+				<li>Знаю основы JS</li>
+			</ul><a class="button" href="#portfolio" id="button-portfolio">Посмотреть мои работы</a>
+			<ul class="social"><a class="social__link social__link_github" href="https://github.com/katyaruch">GitHub</a><a class="social__link social__link_vk" href="https://vk.com/k_ruch">Vk</a><a class="social__link social__link_e-mail" href="mailto:katya.ruch@gmail.com">E-mail</a></ul>
+		</section>
+		<section class="about">
+			<h2 class="about__title">Обо мне</h2>
+			<div class="about__container"><img class="about__img" src="img/20180421_164628.jpg">
+				<div class="about__info">
+					<p class="about__text">Меня зовут Руч Катя.<br>Я студентка магистратуры по направлению 09.04.02 «Информационные системы и технологии»<br>с профилем «ИТ в дизайне» в СПбГУТ. </p>
+					<p class="about__text">Ранее изучала UX/UI-дизайн, сейчас углубляюсь в frontend-разработку.</p>
+				</div>
+			</div>
+		</section>
+		<section class="portfolio container">
+			<h2 class="portfolio__title" id="portfolio">Портфолио</h2>
+			<p class="portfolio__text">Здесь собраны мои свёрстанные учебные макеты.</p>
+			<ul class="portfolio__list">
+				<li class="portfolio__item"><a class="portfolio__link" href="#"><img class="portfolio__img" src="img/MacBook cruises.png" width="653" height="378"></a>
+					<div>
+						<p class="portfolio__name">Морские круизы</p>
+						<ul class="portfolio__info">
+							<li>именование классов по БЭМ,</li>
+							<li>с иполльзованием less, pug,</li>
+							<li>собран с помощью gulp,</li>
+							<li>адаптивный</li>
+						</ul>
+					</div>
+				</li>
+				<li class="portfolio__item">
+					<div>
+						<p class="portfolio__name">Device</p>
+						<p class="portfolio__info">Макет интернет магазина электронных гаджетов, который я защитила на курсе в HTML-Академии.</p>
+						<ul class="portfolio__info">
+							<li>всплывающие окна на js,</li>
+							<li>вёрстка проходит тест на переполнение контентом,</li>
+							<li>все интерактивные элементы доступны при фокусе с клавиатуры</li>
+						</ul>
+					</div><a class="portfolio__link" href="#"><img class="portfolio__img" src="img/iMac device.png" width="555" height="458"></a>
+				</li>
+				<li class="portfolio__item">
+					<p class="portfolio__name">Be Latte</p>
+					<p class="portfolio__info">Макет сайта кофейни</p><a class="portfolio__link" href="#"><img class="portfolio__img" src="img/iMac latte.png"></a>
+				</li>
+				<li class="portfolio__item">
+					<p class="portfolio__name">Animal Shelter</p>
+					<p class="portfolio__info">Макет сайта приюта для животных</p><a class="portfolio__link" href="#"><img class="portfolio__img" src="img/iMac shelter.png"></a>
+				</li>
+				<li class="portfolio__item">
+					<p class="portfolio__name">Hero</p>
+					<p class="portfolio__info">Макет сайта-портфолио</p><a class="portfolio__link" href="#"><img class="portfolio__img" src="img/iMac hero.png"></a>
+				</li>
+				<li class="portfolio__item">
+					<p class="portfolio__name">Cardly</p>
+					<p class="portfolio__info">Макет адаптивного сайта</p><a class="portfolio__link" href="#"><img class="portfolio__img" src="img/iMac cardly.png"></a>
+				</li>
+			</ul>
+		</section>
+		<section class="footer">
+			<ul class="social"><a class="social__link social__link_github" href="https://github.com/katyaruch">GitHub</a><a class="social__link social__link_vk" href="https://vk.com/k_ruch">Vk</a><a class="social__link social__link_e-mail" href="mailto:katya.ruch@gmail.com">E-mail</a></ul>
+			<p class="footer__address">г. Санкт-Петербург</p>
+		</section>
+	</body>
+</html>
