@@ -1,0 +1,18 @@
+/*.main-header {
+}
+
+.main-navigation ul {
+	display: flex;
+
+	list-style: none;
+}
+
+.main-navigation ul li {
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+
+	font-family: Playfair Display,serif;
+    font-weight: 700
+    font-size: 48px;
+}*/

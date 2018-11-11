@@ -1,113 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="./css/main.min.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display:400,700,900">
-		<title>test</title>
-	</head>
-	<body class="body">
-		<header class="header">
-			<ul class="nav">
-				<li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-				<li class="nav__item"><a class="nav__link" href="#">About us</a></li>
-				<li class="nav__item"><img class="logo" src="img/Be latte - logo.png"></li>
-				<li class="nav__item"><a class="nav__link" href="#">Menu</a></li>
-				<li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
-				<li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
-			</ul>
-		</header>
-		<main class="main">
-			<div class="main__content">
-				<h1 class="main__title">Welcome to Be Latte</h1>
-				<p>Enjoy of a fresh new approach to coffee. Proin gravida nibh vel velit. Auctor aliquet sollicitudin lorem quis.</p>
-				<button class="button">See menu</button>
-			</div>
-		</main>
-		<section class="so_good">
-			<h2 class="so_good__title">Coffee never tasted <span>so good!</span></h2>
-			<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-		</section>
-		<section class="menu">
-			<div class="title">Menu</div>
-			<section class="menu__cart">
-				<h3 class="menu__title">Coffee</h3>
-				<ul class="menu__list">
-					<li class="menu__item">
-						<div class="menu__name">Latte </div>
-						<div class="menu__cost">$3.00</div>
-					</li>
-					<li class="menu__item">
-						<div class="menu__name">Mocha </div>
-						<div class="menu__cost">$3.25</div>
-					</li>
-					<li class="menu__item">
-						<div class="menu__name">Expresso </div>
-						<div class="menu__cost">$3.75</div>
-					</li>
-					<li class="menu__item">
-						<div class="menu__name">Capuccino </div>
-						<div class="menu__cost">$3.00</div>
-					</li>
-				</ul>
-			</section>
-			<div class="menu__cart">
-				<h3 class="menu__title"> Tea</h3>
-				<ul class="menu__list">
-					<li class="menu__item">
-						<div class="menu__name">Iced tea </div><span class="menu__cost">$2.75</span>
-					</li>
-					<li class="menu__item">
-						<div class="menu__name">Cold brew </div><span class="menu__cost">$3.25</span>
-					</li>
-					<li class="menu__item">
-						<div class="menu__name">Jasmine green </div><span class="menu__cost">$3.75</span>
-					</li>
-					<li class="menu__item">
-						<div class="menu__name">Peppermint Herbal </div><span class="menu__cost">$3.00</span>
-					</li>
-				</ul>
-			</div>
-			<div class="menu__cart">
-				<h3 class="menu__title">Desserts</h3>
-				<ul class="menu__list">
-					<li class="menu__item">
-						<div class="menu__name">Tiramisu </div><span class="menu__cost">$3.00</span>
-					</li>
-					<li class="menu__item">
-						<div class="menu__name">Cheese cake </div><span class="menu__cost">$3.25</span>
-					</li>
-					<li class="menu__item">
-						<div class="menu__name">Black forest </div><span class="menu__cost">$3.75</span>
-					</li>
-					<li class="menu__item">
-						<div class="menu__name">Brownie </div><span class="menu__cost">$3.00</span>
-					</li>
-				</ul>
-			</div>
-		</section>
-		<div class="center">
-			<button class="button button_black">See full menu</button>
-		</div>
-		<div class="title">Testimonials</div>
-		<div class="reviews">
-			<div class="reviews__item"><img class="reviews__item_photo" src="./img/brendan-lim.jpg">
-				<div class="reviews__item_name">Chris Parker</div>
-				<p>Nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris accumsan.</p>
-			</div>
-		</div>
-		<div class="title">Location</div>
-		<div class="location"> 
-			<div class="location__info"> 
-				<div class="location__title">Location</div>
-				<p>Visit us at St. Thomas street 21st, suite 110, Santa Monica, California.</p>
-				<div class="location__title">Hours</div><span>Mon-Sat: </span>
-				<p>7am - 8pm</p><span>Sunday: </span>
-				<p>7am - 5pm</p>
-				<div class="location__title">Happy hour</div>
-				<p>Mon-Fri: 4pm - 6 pm</p>
-			</div>
-		</div>
-	</body>
-</html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Be Latte</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,500,600,700,900" rel="stylesheet">
+  </head>
+  <body>
+    <header class="main-header container">
+      <nav class="main-navigation">
+        <ul class="navigation-list">
+          <li><a class="navigation-link navigation-link-current">Home</a></li>
+          <li><a class="navigation-link" href="#">About us</a></li>
+          <li class="logo"><a><img src="img/logo.png" width="154" height="127" alt="Be Latte"></a></li>
+          <li><a class="navigation-link" href="#">Menu</a></li>
+          <li><a class="navigation-link" href="#">Blog</a></li>
+          <li><a class="navigation-link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+    	<section class="welcome">
+        <h1 class="welcome-title">Welcome to Be Latte</h1>
+        <p class="welcome-text">Enjoy of a fresh new approach to coffee. Proin gravida nibh vel velit. Auctor aliquet sollicitudin lorem quis.</p>
+        <a class="button" href="menu.html">See menu</a>
+     	</section>
+      <section class="lead">
+        <h2 class="lead-title">Coffee never tasted <span class="underline"> so good!</span></h2>
+        <p class="lead-text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+      </section>
+      <section class="menu">
+        <h2 class="title">Menu</h2>
+        <ul class="menu-category">
+          <li class="menu-cart">
+          	<div class="menu-cart-img">
+            	<h3 class="menu-cart-title">Coffee</h3>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">Latte<span class="menu-item-price">$3.00</span></li>
+              <li class="menu-item">Mocha<span class="menu-item-price">$3.25</span></li>
+              <li class="menu-item">Expresso<span class="menu-item-price">$3.75</span></li>
+              <li class="menu-item">Capuccino<span class="menu-item-price">$3.00</span></li>
+            </ul>
+          </li>
+          <li class="menu-cart">
+          	<div class="menu-cart-img">
+            	<h3 class="menu-cart-title">Tea</h3>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">Iced tea<span class="menu-item-price">$2.75</span></li>
+              <li class="menu-item">Cold brew<span class="menu-item-price">$3.25</span></li>
+              <li class="menu-item">Jasmine green<span class="menu-item-price">$3.75</span></li>
+              <li class="menu-item">Peppermint Herbal<span class="menu-item-price">$3.00</span></li>
+            </ul>
+          </li>
+          <li class="menu-cart">
+          	<div class="menu-cart-img">
+            	<h3 class="menu-cart-title">Desserts</h3>
+            </div>
+            <ul class="menu-list">
+              <li class="menu-item">Tiramisu<span class="menu-item-price">$3.00</span></li>
+              <li class="menu-item">Cheese cake<span class="menu-item-price">$3.25</span></li>
+              <li class="menu-item">Black forest<span class="menu-item-price">$3.75</span></li>
+              <li class="menu-item">Brownie<span class="menu-item-price">$3.00</span></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="button button-light" href="menu.html">See full menu</a>
+      </section>
+      <section class="testimonials">
+        <h2 class="title">Testimonials</h2>
+        <input class="slider-input slider-input-1 visually-hidden" type="radio" id="btn-1" name="slider-slides" checked>
+        <input class="slider-input slider-input-2 visually-hidden" type="radio" id="btn-2" name="slider-slides">
+        <input class="slider-input slider-input-3 visually-hidden" type="radio" id="btn-3" name="slider-slides">
+        <div class="slider-controls">
+          <label class="slider-btn slider-btn-1" for="btn-1" aria-label="Слайд 1"></label>
+          <label class="slider-btn slider-btn-2" for="btn-2" aria-label="Слайд 2"></label>
+          <label class="slider-btn slider-btn-3" for="btn-3" aria-label="Слайд 3"></label>
+        </div>
+        <ul class="testimonials-list">
+          <li class="testimonial-item testimonial-item-1">
+          	<div class="testimonial-item-img">
+          		<img src="img/realisticshots.jpg" width="812" height="425" alt="Chris Parker testimonial">
+          	</div>
+          	<div class="testimonial-item-info">
+	            <img class="testimonial-item-photo" src="img/brendan-lim.jpg" width="86" height="86" alt="Chris Parker">
+	            <p class="testimonial-item-name">Chris Parker</p>
+	            <p class="testimonial-item-text">Nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris accumsan.</p>
+	          </div>
+          </li>
+          <li class="testimonial-item testimonial-item-2">
+          	<div class="testimonial-item-img">
+          		<img src="img/photo-dessert.jpg" width="812" height="425" alt="Alice Stone testimonial">
+          	</div>
+          	<div class="testimonial-item-info">
+	            <img class="testimonial-item-photo" src="img/alice.jpg" width="86" height="86" alt="Alice Stone">
+	            <p class="testimonial-item-name">Alice Stone</p>
+	            <p class="testimonial-item-text">Nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris accumsan.</p>
+	          </div>
+          </li>
+          <li class="testimonial-item testimonial-item-3">
+          	<div class="testimonial-item-img">
+          		<img src="img/photo-tea.jpg" width="812" height="425" alt="Anna Brown testimonial">
+          	</div>
+          	<div class="testimonial-item-info">
+	            <img class="testimonial-item-photo" src="img/anna.jpg" width="86" height="86" alt="Anna Brown">
+	            <p class="testimonial-item-name">Anna Brown</p>
+	            <p class="testimonial-item-text">Nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris accumsan.</p>
+	          </div>
+          </li>
+        </ul>
+      </section>
+      <section class="info">
+        <h2 class="title">Location</h2>
+        <div class="info-wrapper">
+        	<iframe class="info-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52909.728119360414!2d-118.51577513770661!3d34.02185553703134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4cec2910019%3A0xb4170ab5ff23f5ab!2z0KHQsNC90YLQsC3QnNC-0L3QuNC60LAsINCa0LDQu9C40YTQvtGA0L3QuNGPLCDQodCo0JA!5e0!3m2!1sru!2sru!4v1536710533492" allowfullscreen></iframe>
+	        <!-- <img class="info-map" src="img/map.jpg" width="1270" height="425" alt="St. Thomas street 21st, suite 110, Santa Monica, California"> -->
+	        <div class="info-list">
+	          <h3 class="info-title">Location</h3>
+	          <p class="info-location">Visit us at St. Thomas street 21st, suite 110, Santa Monica, California.</p>
+	          <h3 class="info-title">Hours</h3>
+	          <p class="info-work-days">
+	          	Mon-Sat:<span class="info-work-hours">7am - 8pm</span>
+	          </p>
+	          <p class="info-work-days">
+	            Sunday:<span class="info-work-hours">7am - 5pm</span>
+	          </p>
+	          <h3 class="info-title">Happy Hour</h3>
+	          <p class="info-work-days">Mon-Fri:<span class="info-work-hours">4pm - 6 pm</span></p>
+	        </div>
+       	</div>
+      </section>
+    </main>
+    <footer class="main-footer">
+        <ul  class="footer-social">
+          <li><a class="social-button social-button-fb" href="#" aria-label="Facebook"></a></li>
+          <li><a class="social-button social-button-twitter" href="#" aria-label="Twitter"></a></li>
+          <li><a class="social-button social-button-instagram" href="#" aria-label="Instagram"></a></li>
+        </ul>
+        <p class="footer-address">St. Thomas street 21st, Suite 110, Santa Monica, California</p>
+      </footer>
