@@ -1,5 +1,9 @@
 .container {
-  width: 1140px;
+  max-width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
+
+  @media @mobile {
+    max-width: 750px;
+  }
 }
