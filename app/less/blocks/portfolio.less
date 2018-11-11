@@ -44,6 +44,13 @@
 
         width: 494px;
         height: 310px;
+
+        @media @mobile {
+          top: 14px;
+          left: 43px;
+          width: 260px;
+          height: 162px;
+        }
       }
     }
 
@@ -57,6 +64,13 @@
 
     @media @laptop {
       margin: 0 auto 100px;
+    }
+  }
+
+  &__img {
+    @media @mobile {
+      width: 345px;
+      height: auto;
     }
   }
 
@@ -78,7 +92,15 @@
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0;
+
+    @media @mobile {
+      top: 14px;
+      left: 14px;
+      width: 317px;
+      height: 180px;
+    }
   }
+
   &__link:hover::after {
     opacity: 0.5;
   }
@@ -93,7 +115,7 @@
 
   &__info {
     margin: 0 24px 24px;
-    width: 458px;
+    max-width: 458px;
   }
 
   &__name {
