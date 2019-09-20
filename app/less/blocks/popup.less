@@ -1,0 +1,70 @@
+.popup {
+    position: fixed;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    text-align: center;
+    &__content {
+      box-sizing: border-box;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      width: 500px;
+      height: 300px;
+      margin: 160px auto;
+      padding: 20px;
+
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      background-color: #ffffff;
+
+      p {
+        margin: 0;
+      }
+
+      @media @mobile {
+        width: 90%;
+        height: 200px;
+      }
+    }
+
+    &__close {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      padding: 20px;
+      top: 0;
+      right: 0;
+
+      font-size: 0;
+      cursor: pointer;
+
+      &::before,
+      &::after {
+        content: "";
+
+        position: absolute;
+        top: 25px;
+        right: 20px;
+
+        width: 15px;
+        height: 2px;
+
+        background-color: #dadada;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }

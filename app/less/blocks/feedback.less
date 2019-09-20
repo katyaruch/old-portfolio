@@ -1,0 +1,54 @@
+.feedback {
+  // position: relative;
+  background: url('../img/feedback.svg') bottom right no-repeat;
+  background-size: 50%;
+  margin-bottom: 80px;
+
+  .title {
+    text-align: left;
+  }
+
+  .feedback__form {
+    p {
+      margin: 0;
+    }
+  }
+
+  .feedback__label {
+    display: block;
+    font-size: 14px;
+  }
+
+  .feedback__input {
+    box-sizing: border-box;
+    width: 380px;
+    height: 40px;
+    margin: 10px 0 20px;
+    padding: 0 10px;
+    border: 1px solid #b5b5b5;
+
+    &::placeholder {
+      font-weight: 200;
+      opacity: 0.5;
+    }
+
+    &:focus:invalid {
+      outline: none;
+      background-color: rgba(255, 0, 0, 0.1);
+    }
+
+    &:focus:valid {
+      outline: none;
+      background-color: rgba(0, 255, 0, 0.1);
+    }
+
+    @media @mobile {
+      width: 100%;
+    }
+  }
+
+  .feedback__input_text {
+    height: 80px;
+    padding: 10px;
+  }
+}

@@ -1,44 +1,40 @@
-section.portfolio.container
-  h2.portfolio__title(id="portfolio") Портфолио
-  p.portfolio__text Здесь собраны мои свёрстанные учебные макеты.
-  ul.portfolio__list
-    li.portfolio__item
-      a(href="/sea-cruises").portfolio__link
-        img.portfolio__img(src="img/MacBook-cruises.png" width="653" height="378" alt="Морские круизы")
-      div
-        p.portfolio__name Морские круизы
-        ul.portfolio__info
-          li именование классов по БЭМ,
-          li с иполльзованием less, pug,
-          li собран с помощью gulp,
-          li адаптивный
-    li.portfolio__item
-      a(href="/device").portfolio__link
-        img.portfolio__img(src="img/iMac-device.png" width="555" height="458" alt="Device")
-      div
-        p.portfolio__name Device
-        p.portfolio__info Макет интернет магазина электронных гаджетов, который я защитила на курсе в HTML-Академии.
-        ul.portfolio__info
-          li всплывающие окна на js,
-          li вёрстка проходит тест на переполнение контентом,
-          li все интерактивные элементы доступны при фокусе с клавиатуры
-    li.portfolio__item
-      a(href="/be-latte").portfolio__link
-        img.portfolio__img(src="img/iMac-latte.png" alt="Be Latte")
-      p.portfolio__name Be Latte
-      p.portfolio__info Макет сайта кофейни
-    li.portfolio__item
-      a(href="/animal-shelter").portfolio__link
-        img.portfolio__img(src="img/iMac-shelter.png" alt="Animal Shelter")
-      p.portfolio__name Animal Shelter
-      p.portfolio__info Макет сайта приюта для животных
-    li.portfolio__item
-      a(href="#").portfolio__link
-        img.portfolio__img(src="img/iMac-hero.png" alt="Hero")
-      p.portfolio__name Hero
-      p.portfolio__info Макет сайта-портфолио
-    li.portfolio__item
-      a(href="/cardly").portfolio__link
-        img.portfolio__img(src="img/iMac-cardly.png" alt="Cardly")
-      p.portfolio__name Cardly
-      p.portfolio__info Макет адаптивного сайта
+section.portfolio(id="portfolio")
+  h2.title Мои работы
+  //- p.portfolio__text Здесь собраны мои свёрстанные учебные макеты.
+  div.swiper-container
+    ul.portfolio__list.swiper-wrapper
+      li.portfolio__item.swiper-slide
+        a(href="/pages/sea-cruises").portfolio__link
+          img.portfolio__img(src="img/MacBook-cruises.png" width="450" height="260" alt="Морские круизы")
+        div
+          p.portfolio__name Морские круизы
+          p.portfolio__info Сайт по продаже морских круизов
+      li.portfolio__item.swiper-slide
+        a(href="/pages/device").portfolio__link
+          img.portfolio__img(src="img/iMac-device.png" width="380" height="315" alt="Device")
+        div
+          p.portfolio__name Device
+          p.portfolio__info Макет интернет магазина электронных гаджетов
+      li.portfolio__item.swiper-slide
+        a(href="/pages/be-latte").portfolio__link
+          img.portfolio__img(src="img/iMac-latte.png" width="380" height="315" alt="Be Latte")
+        p.portfolio__name Be Latte
+        p.portfolio__info Макет сайта кофейни
+      li.portfolio__item.swiper-slide
+        a(href="/pages/animal-shelter").portfolio__link
+          img.portfolio__img(src="img/iMac-shelter.png" width="380" height="315" alt="Animal Shelter")
+        p.portfolio__name Animal Shelter
+        p.portfolio__info Макет сайта приюта для животных
+      li.portfolio__item.swiper-slide
+        a.portfolio__link
+          img.portfolio__img(src="img/iMac-hero.png" width="380" height="315" alt="Hero")
+        p.portfolio__name Hero
+        p.portfolio__info Макет сайта-портфолио
+      li.portfolio__item.swiper-slide
+        a(href="/pages/cardly").portfolio__link
+          img.portfolio__img(src="img/iMac-cardly.png" width="380" height="315" alt="Cardly")
+        p.portfolio__name Cardly
+        p.portfolio__info Макет адаптивного сайта
+    //- div.swiper-pagination
+    //- div.swiper-button-next
+    //- div.swiper-button-prev

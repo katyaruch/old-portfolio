@@ -1,13 +1,4 @@
 .portfolio {
-  padding: 0 15px;
-
-  &__title {
-    margin: 0 0 20px 0;
-    font-size: 48px;
-    font-weight: 400;
-    text-align: center;
-  }
-
   &__text {
     margin: 0 0 60px 0;
     text-align: center;
@@ -15,55 +6,50 @@
 
   &__list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    // min-width: 100%;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    // align-items: flex-end;
     padding: 0;
+    margin: 0;
   }
 
   &__item {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 100px;
+    width: 450px;
+    margin: 0 10px 40px 10px;
+
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
 
     &:nth-child(1),
-    &:nth-child(2) {
-      flex-direction: row;
+    &:nth-child(7),
+    &:nth-child(13) {
 
-      @media @laptop {
-        flex-direction: column;
+      .portfolio__link::after {
+        top: 18px;
+        left: 55px;
+
+        width: 340px;
+        height: 212px;
       }
     }
 
-    &:nth-child(1) .portfolio__link {
-      margin-bottom: 20px;
+    @media @mobile {
+      &:nth-child(1),
+      &:nth-child(7),
+      &:nth-child(13) {
 
-      &::after {
-        top: 26px;
-        left: 80px;
-
-        width: 494px;
-        height: 310px;
-
-        @media @mobile {
+        .portfolio__link::after {
           top: 14px;
-          left: 43px;
+          left: 96px;
+
           width: 260px;
           height: 162px;
         }
       }
-    }
-
-    &:nth-child(2) div {
-      order: -1;
-
-      @media @laptop {
-        order: 0;
-      }
-    }
-
-    @media @laptop {
-      margin: 0 auto 100px;
     }
   }
 
@@ -76,28 +62,28 @@
 
   &__link {
     position: relative;
-  }
 
-  &__link::after {
-    display: block;
-    position: absolute;
-    content: "";
-    top: 22px;
-    left: 22px;
-
-    width: 511px;
-    height: 289px;
-    background-color: #330033;
-    background-image: url("../img/icons8-приблизить-90.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0;
-
-    @media @mobile {
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
       top: 14px;
-      left: 14px;
-      width: 317px;
-      height: 180px;
+      left: 50px;
+
+      width: 350px;
+      height: 200px;
+      background-color: #330033;
+      background-image: url("../img/icons8-приблизить-90.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0;
+
+      @media @mobile {
+        top: 14px;
+        left: 67px;
+        width: 317px;
+        height: 180px;
+      }
     }
   }
 
@@ -105,23 +91,15 @@
     opacity: 0.5;
   }
 
-  &__link:first-type::after {
-    top: 26px;
-    left: 80px;
-
-    width: 494px;
-    height: 310px;
+  &__name {
+    margin: 20px 0;
   }
 
   &__info {
-    margin: 0 24px 24px;
-    max-width: 458px;
-  }
+    margin: 0 0 20px;
+    padding: 0;
+    // max-width: 458px;
 
-  &__name {
-    margin: 0 0 30px 0;
-
-    font-size: 30px;
-    font-weight: 700;
+    list-style: none;
   }
 }

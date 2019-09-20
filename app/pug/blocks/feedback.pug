@@ -1,0 +1,16 @@
+section.feedback.container
+  h2.title Напишите мне на почту
+  form.feedback__form(id="feedback-form" method="post" accept-charset="UTF-8")
+    p
+      label.feedback__label(for="user-name") Имя
+      input.feedback__input(id="user-name" type="text" name="name" placeholder="Ваше имя" maxlength="40" autocomplete="on")
+    p
+      label.feedback__label(for="user-email") E-mail
+      input.feedback__input(id="user-email" type="email" name="email" placeholder="Ваш E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" required autocomplete="on")
+    //- p
+    //-   label.feedback__label(for="user-topic") Тема
+    //-   input.feedback__input(id="user-topic" type="text" name="topic" placeholder="Тема")
+    p
+      label.feedback__label(for="user-message") Сообщение
+      textarea.feedback__input.feedback__input_text(id="user-message" name="message" placeholder="Опишите вашу задачу"  minlength="20" maxlength="350" required)
+    button.button(type="submit") Отправить
