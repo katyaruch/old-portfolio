@@ -1,0 +1,539 @@
+body {
+  width: 100%;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.125em;
+  color: #1e1e1e;
+}
+
+.container {
+  max-width: 1536px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container_less {
+  max-width: 1344px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1920px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .container_less {
+    max-width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .container_less {
+    padding: 0 20px;
+  }
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+}
+
+.header__inner {
+  margin: 0 auto;
+  padding-top: 10vh;
+
+  color: #ffffff;
+}
+
+.header__top {
+  position: relative;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logo:hover {
+  opacity: 0.5;
+}
+
+.logo_dark {
+  color: #1c1c1c;
+}
+
+.burger-menu {
+  position: relative;
+  padding: 0 26px 0 0;
+  float: right;
+
+  border: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.burger-menu::after {
+  box-sizing: border-box;
+  position: absolute;
+  display: block;
+  content: '';
+  top: 3px;
+  right: 0;
+  width: 19px;
+  height: 4px;
+
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 8px #fff,0 16px #fff;
+  transition: all 0.5s;
+}
+
+.burger-menu:hover::after {
+  top: -1px;
+  box-shadow: 0 12px #fff,0 24px #fff;
+  transition: all 0.5s;
+}
+
+.burger__navigation {
+  position: absolute;
+  display: none;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+
+  text-align: right;
+}
+
+.burger__navigation_show {
+  display: block;
+}
+
+.navigation__item_burger {
+  line-height: 24px;
+  padding-left: 40px;
+}
+
+.header__headline {
+  width: 100%;
+  padding-top: 35vh;
+  text-align: right;
+  float: right;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.header__text {
+  width: 408px;
+  padding-top: 2.7vh;
+  margin: 0;
+  float: right;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.header__text_sub {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 425px) {
+  .header__inner {
+    padding-top: 5vh;
+  }
+
+  .header__title {
+    font-size: 30px;
+  }
+
+  .header__text {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+.navigation {
+  vertical-align: middle;
+  box-shadow: 2px 0px 5px 0px rgba(21, 23, 23, .35);
+}
+
+.navigation__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 82px;
+  margin: 0 auto;
+}
+
+.navigation__item {
+  padding-left: 40px;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #3b3b3b;
+  font-size: 14px;
+}
+
+.navigation__item:hover {
+  font-weight: 800;
+  color: #1e1e1e;
+}
+
+.about {
+  padding: 0 96px;
+}
+
+.title {
+  margin: 0;
+  padding: 52px 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title__sub {
+  margin: 17px 0 40px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.about__text {
+  position: relative;
+  margin: 86px 0 70px;
+  font-size: 14px;
+  font-weight: 400;
+
+}
+
+.about__text:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 88px;
+  height: 49px;
+  top: -70px;
+  right: calc(50% - 44px);
+  background-image: url(../img/icon_bike.png);
+}
+
+@media only screen and (max-width: 425px) {
+  .navigation__inner {
+    height: auto;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .navigation__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navigation__item {
+    padding: 5px 0;
+  }
+
+  .navigation__item_burger {
+    padding-left: 40px;
+  }
+
+  .about {
+    padding: 0 26px;
+  }
+}
+
+.statistics {
+  padding-bottom: 90px;
+  color: #ffffff;
+  background-image: url(../img/background-color.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.statistics__items {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+
+  text-align: center;
+}
+
+.statistics__item {
+  max-width: 230px;
+  margin: 10px 90px;
+  transition: all 0.5s;
+}
+
+.statistics__item:hover {
+  transform: scale(1.5);
+  transition: all 0.5s;
+}
+
+.statistics__number {
+  margin: 0;
+  font-size: 72px;
+}
+
+.statistics__sub {
+  margin: 15px 0 0;
+  text-transform: uppercase;
+}
+
+.products {
+  padding-bottom: 55px;
+}
+
+.products__list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.products__item {
+  margin-bottom: 20px;
+}
+
+.products__img {
+  transition: all 0.5s;
+}
+
+.products__img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+@media only screen and (max-width: 1920px) {
+  .products__img {
+    width: 90%;
+  }
+}
+
+.products__name {
+  margin: 5px 0 0;
+  font-size: 24px;
+}
+
+.products__cost {
+  margin: 0 0 16px;
+  font-size: 30px;
+}
+
+.products__link {
+  color: #3b3b3b;
+}
+
+.products__link:hover {
+  color: #1e1e1e;
+  text-decoration: none;
+}
+
+.team {
+  background-color: rgb(237, 237, 237);
+  padding-bottom: 12px;
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  text-align: center;
+}
+
+.team img {
+  transition: all 0.5s;
+}
+
+.team img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.team__name {
+  margin: 30px 0 20px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.team__post {
+  margin: 0 0 40px;
+  text-transform: uppercase;
+}
+
+.gallery__list {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery__img {
+  transition: all 0.5s;
+}
+
+.gallery__img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+
+@media only screen and (max-width: 1920px) {
+  .gallery__list a {
+    width: calc(1000px / 4);
+  }
+
+  .gallery__img {
+    width: inherit;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .statistics__items,
+  .products__list,
+  .team__list,
+  .gallery__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.gallery__text {
+  margin: 0;
+  padding: 52px 0 55px;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3b3b3b;
+}
+
+.gallery__instagram-link {
+  color: #1e1e1e;
+  font-weight: 800;
+}
+
+.gallery__instagram-link:hover {
+  text-decoration: none;
+}
+
+.footer {
+  padding: 55px 0 95px;
+  background-color: #1e1e1e;
+}
+
+.footer__logo {
+  text-align: center;
+  margin-bottom: 110px;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__title {
+  font-size: 14px;
+  margin: 28px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer__link {
+  font-size: 12px;
+  margin-bottom: 15px;
+  color: #ededed;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer__link:hover,
+.footer__social:hover {
+  opacity: 0.5;
+}
+
+.footer__col_social {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 200px;
+  margin-bottom: 15px;
+}
+
+.footer__social {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px 10px 0;
+
+  font-size: 0;
+  background-repeat: no-repeat;
+}
+
+.footer__social_fb {
+  background-image: url('../img/facebook.png');
+}
+.footer__social_linked {
+  background-image: url('../img/linked-in.png');
+}
+.footer__social_inst {
+  background-image: url('../img/instagram.png');
+}
+.footer__social_tw {
+  background-image: url('../img/twitter.png');
+}
+
+/*------------------mfp-----------------*/
+
+.image-source-link {
+  color: #98C3D1;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out; 
+  -moz-transition: all 0.3s ease-out; 
+  -o-transition: all 0.3s ease-out; 
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
