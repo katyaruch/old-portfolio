@@ -57,14 +57,15 @@ $(document).ready(function(){
 
   var mySwiper = new Swiper ('.swiper-container', {
     // spaceBetween: 40,
+    speed: 3000,
     loop: true,
     centeredSlides: true,
     mousewheel: true,
     slidesPerView: 'auto',
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
