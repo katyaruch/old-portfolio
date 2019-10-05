@@ -1,4 +1,17 @@
 $(document).ready(function() {
+  //////////// animate scroll
+
+  $('a[href*="#"]').click(function (evt) {
+    evt.preventDefault();
+
+    var id  = $(this).attr('href'),
+      top = $(id).offset().top - 80;
+    
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+
+  //////////// slick
+
   $('.review__list').slick({
     // rtl: true,
     // dots: true,
