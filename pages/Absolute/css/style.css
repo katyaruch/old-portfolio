@@ -52,12 +52,13 @@ p {
   display: inline-block;
   width: 270px;
   padding: 20px;
-  border: 0;
+  border: 1px solid #387553;
 
   font-weight: 600;
   color: #fff;
   background-color: #387553;
   text-decoration: none;
+  transition: all 0.5s;
 }
 
 .button_feedback {
@@ -77,7 +78,10 @@ p {
 }
 
 .button:hover {
-  background-color: #56AF7F;
+  color: #387553;
+  background-color: #fff;
+  border: 1px solid #C6C6C6;
+  transition: all 0.7s;
 }
 
 .main {
