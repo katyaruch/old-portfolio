@@ -77,11 +77,13 @@ p {
   font-weight: 500;
 }
 
-.button:hover {
+.button:hover,
+.button:active {
   color: #387553;
   background-color: #fff;
   border: 1px solid #C6C6C6;
   transition: all 0.7s;
+  outline: none;
 }
 
 .main {
