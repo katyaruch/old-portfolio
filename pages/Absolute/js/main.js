@@ -14,6 +14,14 @@ $(document).ready(function() {
 
   $('.review__list').slick({
     infinite: true,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          // arrows: false
+        }
+      }
+    ]
   });
 
   $('.slider_responsive').slick({

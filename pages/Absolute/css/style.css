@@ -16,6 +16,12 @@ p {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 300px;
+  }
+}
+
 .header {
   padding: 23px 0 18px;
 }
@@ -50,11 +56,6 @@ p {
 }
 
 @media only screen and (max-width: 480px) {
-
-  .container {
-    width: 320px;
-  }
-
   .header .container {
     flex-direction: column;
   }
@@ -590,6 +591,10 @@ p {
     padding-top: 318px;
     background-position: 0 top;
   }
+
+  .credit-terms__item:nth-of-type(2) {
+    margin-right: 0;
+  }
 }
 
 .documents {
@@ -642,16 +647,16 @@ p {
 }
 
 @media only screen and (max-width: 480px) {
+  .documents__for {
+    width: 100%;
+    font-size: 18px;
+  }
+
   .documents__list {
     width: auto;
     flex-wrap: wrap;
     padding-left: 40px;
-    padding-right: 40px;
-  }
-
-
-  .documents ul {
-    width: 100%;
+    padding-right: 0;
   }
 
   .documents__list li {
@@ -661,6 +666,7 @@ p {
   }
 
   .documents__select {
+    width: auto;
     padding-left: 0;
     padding-top: 10px;
   }
@@ -695,6 +701,7 @@ p {
 @media only screen and (max-width: 480px) {
   .add-advantages__list {
     width: 100%;
+    font-size: 18px;
     line-height: 1.3;
   }
 
@@ -763,6 +770,14 @@ p {
   .review__text {
     height: 150px;
     padding: 20px;
+  }
+
+  .review__list .slick-prev {
+    left: -50px;
+  }
+
+  .review__list .slick-next {
+    right: -50px;
   }
 }
 
@@ -982,6 +997,11 @@ li.slick-active button {
   .footer .container {
     flex-direction: column;
     text-align: center;
+  }
+
+  .footer__logo {
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .footer__col:first-child {
