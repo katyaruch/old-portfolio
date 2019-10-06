@@ -107,7 +107,7 @@ p {
 
 .main {
   padding: 77px 0 93px;
-  background-image: url(../img/header-bg.png);
+  background-image: url(../img/header-bg.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -992,6 +992,9 @@ li.slick-active button {
   text-align: center;
 }
 
+.map {
+  border: 0;
+}
 
 @media only screen and (max-width: 480px) {
   .footer .container {

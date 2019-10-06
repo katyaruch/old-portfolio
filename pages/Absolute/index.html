@@ -6,15 +6,15 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Open+Sans:400,600&display=swap" rel="stylesheet">
-    <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=a3cef72c-e417-4158-b9cb-8abb460d08ee" type="text/javascript"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
     <title>АБСОЛЮТ</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <a class="logo">
-          <img src="img/logo.svg" width="171" height="45">
+          <img src="img/logo.svg" width="171" height="45" alt="АБСОЛЮТ">
         </a>
         <div class="header__contacts">
           <p class="header__text">Получите бесплатную консультацию</p>
@@ -59,7 +59,7 @@
     <section class="conditions">
       <div class="container">
         <div class="flexbox">
-          <img src="img/logo.svg" width="267" height="69">
+          <img src="img/logo.svg" width="267" height="69" alt="АБСОЛЮТ">
           <h2 class="title title_left">Воспользуйтесь всеми преимуществами нашего кредитования</h2>
         </div>
         <div class="flexbox">
@@ -160,18 +160,18 @@
         <section id="calc" class="calc">
           <div class="calc__container">
           <h3 class="calc__title">Кредитный калькулятор</h3>
-            <label class="calc__field">
+            <div class="calc__field">
               Сколько вам нужно
               <div class="calc__wrapper-range">
                 <input  class="calc__range" type="range" min="500000" max="100000000" step="200" value="40000000" labels="500 000 рублей, 100 000 000 рублей">
               </div>
-            </label>
-            <label class="calc__field">
+            </div>
+            <div class="calc__field">
               Срок кредита
               <div class="calc__wrapper-range">
                 <input  class="calc__range" type="range" min="1" max="240" step="1" value="48"  labels="1 месяц, 20 лет">
               </div>
-            </label>
+            </div>
           </div>
           <div class="calc__wrapper-info">
             <div class="calc__info">
@@ -319,6 +319,7 @@
           <div class="slider__item">
             <img src="img/OpenBank.png" alt="Банк Открытие">
           </div>
+        </div>
       </div>
     </section>
     <section class="sertifikats">
@@ -349,9 +350,8 @@
     <section class="contacts">
       <div class="container">
         <h2 class="title">Контакты</h2>
-        <!-- <div id="map"></div> -->
         <div class="contacts__wrapper">
-          <iframe src="https://yandex.ru/map-widget/v1/-/CGsbjSLA" width="470" height="327" frameborder="0" allowfullscreen="true"></iframe>
+          <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Adc55811168ee78cf852642c6ed94a3cbb2a9241513ff10c1484681e3cc370e0e&amp;source=constructor" width="470" height="327"></iframe>
           <div class="contacts__right">
             <div class="contacts__title">Связаться с нами</div>
             <address class="contacts__item">г. Москва, Бизнес парк "Румянцево", корпус Г, офис 901Г</address>
@@ -373,7 +373,7 @@
           <p>"АБСОЛЮТФИНКАПИТАЛ"</p>
         </div>
         <div class="footer__logo">
-          <img src="img/logo.svg" width="279" height="72">
+          <img src="img/logo.svg" width="279" height="72" alt="АБСОЛЮТ">
         </div>
         <div class="footer__col">
           <a href="#">Пользовательское соглашение</a>
@@ -386,8 +386,8 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/rangeslider.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
