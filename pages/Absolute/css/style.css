@@ -1,5 +1,6 @@
 body {
   min-width: 320px;
+  margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -36,6 +37,7 @@ p {
 }
 
 .header__tel {
+  display: inline-block;
   padding: 0 15px;
   font-size: 16px;
   font-weight: 600;
@@ -46,6 +48,22 @@ p {
 .header__text {
   margin-bottom: 19px;
 }
+
+@media only screen and (max-width: 480px) {
+
+  .container {
+    width: 320px;
+  }
+
+  .header .container {
+    flex-direction: column;
+  }
+
+  .header__contacts {
+    padding: 20px;
+  }
+}
+
 
 .button {
   box-sizing: border-box;
@@ -119,7 +137,7 @@ p {
 
 .main__title {
   margin: 0;
-  padding: 25px 0 30px;
+  padding: 25px 20px 30px;
   font-size: 30px;
   color: #fff;
   background-color: #56AF7F;
@@ -128,6 +146,25 @@ p {
 .main__list {
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .title_left {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .main__list {
+    flex-wrap: wrap;
+  }
+
+  .button_conditions {
+    margin: 0 0 20px;
+  }
 }
 
 .credit-details {
@@ -173,8 +210,6 @@ p {
   background-image: url(../img/icon_srok.svg);
 }
 
-
-
 .credit-details__title {
   margin: 0 0 19px;
 
@@ -195,6 +230,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.flexbox img {
+  margin: 20px 0;
 }
 
 .table {
@@ -225,6 +264,22 @@ p {
   background-color: #F3F3F3;
 }
 
+@media only screen and (max-width: 480px) {
+  .flexbox {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .table th {
+    width: 150px;
+    padding: 20px;
+  }
+
+  .table td {
+    padding: 20px;
+  }
+}
+
 .about {
   padding: 48px 0 60px;
   background-color: #F3F3F3;
@@ -237,15 +292,33 @@ p {
 }
 
 .about .title {
+  width: 570px;
   padding-left: 600px;
   margin: 0 0 30px;
-  width: 570px;
 }
 
 .about__text {
-  padding-left: 600px;
   width: 570px;
+  padding-left: 600px;
   line-height: 1.4;
+}
+
+@media only screen and (max-width: 480px) {
+  .about .container {
+    background-size: contain;
+    background-position: 0px 60px;
+  }
+
+  .about .title {
+    width: 100%;
+    padding-left: 0;
+    margin: 0 0 30px;
+  }
+  .about__text {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 300px;
+  }
 }
 
 .advantages .title {
@@ -344,6 +417,51 @@ p {
   bottom: 0;
 }
 
+
+.calc__wrapper-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.calc__info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.calc__rate {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  order: -1;
+}
+
+@media only screen and (max-width: 480px) {
+  .calc {
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  .calc__container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .calc__field {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 26px;
+    font-size: 14px;
+  }
+
+  .calc__info {
+    margin-bottom: 20px;
+  }
+}
+
 /*///////////////////style rangeslider/////////////////*/
 
 .rangeslider {
@@ -402,26 +520,6 @@ p {
 }
 
 /*///////////////////style rangeslider end/////////////////*/
-
-.calc__wrapper-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.calc__info {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-
-.calc__rate {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 48px;
-  font-weight: 600;
-  order: -1;
-}
 
 .credit-terms {
   background-color: #F3F3F3;
@@ -484,6 +582,16 @@ p {
   font-size: 18px;
 }
 
+
+@media only screen and (max-width: 480px) {
+  .credit-terms__item:first-of-type {
+    width: 370px;
+    padding-left: 0;
+    padding-top: 318px;
+    background-position: 0 top;
+  }
+}
+
 .documents {
   margin: 0;
   padding: 0;
@@ -533,6 +641,31 @@ p {
   font-weight: 400;
 }
 
+@media only screen and (max-width: 480px) {
+  .documents__list {
+    width: auto;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+
+  .documents ul {
+    width: 100%;
+  }
+
+  .documents__list li {
+    width: auto;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .documents__select {
+    padding-left: 0;
+    padding-top: 10px;
+  }
+}
+
 .add-advantages {
   padding: 60px 0;
   background-color: #F3F3F3;
@@ -559,11 +692,22 @@ p {
   background-color: #387553;
 }
 
+@media only screen and (max-width: 480px) {
+  .add-advantages__list {
+    width: 100%;
+    line-height: 1.3;
+  }
+
+  .add-advantages__list li {
+    margin-bottom: 20px;
+  }
+}
+
 .reviews {
   padding-bottom: 60px;
 }
 
-.review__list{
+.review__list {
   position: relative;
   width: 770px;
   margin: 0 auto;
@@ -605,6 +749,23 @@ p {
   border: 1px solid #C6C6C6;
 }
 
+@media only screen and (max-width: 480px) {
+  .review__list {
+    width: 100%;
+  }
+
+  .review__title {
+    padding: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .review__text {
+    height: 150px;
+    padding: 20px;
+  }
+}
+
 .banks {
   padding: 60px 0;
   background-color: #F3F3F3;
@@ -614,7 +775,13 @@ p {
   margin-top: 0;
 }
 
+.slick-slider {
+  margin-bottom: 30px;
+}
+
 .slider__item {
+  display: inline-block;
+  box-sizing: border-box;
   width: 270px;
   height: 270px;
   margin: 0 25px;
@@ -624,18 +791,14 @@ p {
   text-align: center;
 }
 
-.slider__item img {
-  display:inline-block;
-  vertical-align: middle;
-  line-height: 270px;
-}
-
-.slick-slider {
-  margin-bottom: 30px;
-}
-
 .slick-slide {
   width: 270px;
+}
+
+.slider__item img {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 270px;
 }
 
 .slick-prev,
@@ -671,11 +834,6 @@ p {
   outline: none;
   opacity: 0.7;
 }
-
-/*.slick-prev:before,
-.slick-next:before {
-  content: '';
-}*/
 
 .slick-dots {
   position: absolute;
@@ -759,6 +917,18 @@ li.slick-active button {
   text-decoration: none;
 }
 
+
+@media only screen and (max-width: 480px) {
+  .contacts__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .contacts__right {
+    order: -1;
+    padding: 0 0 20px 0;
+  }
+}
+
 .footer {
   padding: 36px 0 16px;
   background-color: #55AF7E;
@@ -805,6 +975,18 @@ li.slick-active button {
 
 .footer__copyright {
   text-align: center;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__col:first-child {
+    padding: 0;
+  }
 }
 /*#map {
   width: 470px;
