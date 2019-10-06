@@ -55,11 +55,9 @@ $(document).ready(function() {
       }
     ]
   });
-  
 
   $('.btn-next').on('click',function(){ $('#slick').slick('slickNext'); });
   $('.btn-prev').on('click',function(){ $('#slick').slick('slickPrev'); });
-
   
   //////////// rangeslider
 
@@ -104,34 +102,5 @@ $(document).ready(function() {
 
     // Callback function
     onSlideEnd: function(position, value) {}
-});
-
-
-  // var myMap;
-  // ymaps.ready(init);
-
-  // function init () {
-  //   // Создание экземпляра карты и его привязка к контейнеру с
-  //   // заданным id ("map").
-  //   myMap = new ymaps.Map('map', {
-  //       center: [55.636975, 37.434843], // Москва
-  //       zoom: 15
-  //   }, {
-  //       searchControlProvider: 'yandex#search'
-  //   }),
-
-  //   myGeoObject = new ymaps.GeoObject({
-  //       // Описание геометрии.
-  //       geometry: {
-  //           type: "Point",
-  //           coordinates: [55.636975, 37.434843]
-  //       },
-  //   }, {
-  //     preset: 'islands#redDotIcon'
-  //   });
-
-  //   myMap.geoObjects
-  //       .add(myGeoObject)
-  // }
-
+  });
 });
