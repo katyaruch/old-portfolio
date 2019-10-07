@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">  -->
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
@@ -62,46 +63,126 @@
           <img src="img/logo.svg" width="267" height="69" alt="АБСОЛЮТ">
           <h2 class="title title_left">Воспользуйтесь всеми преимуществами нашего кредитования</h2>
         </div>
-        <div class="flexbox">
-          <button class="button button_conditions">Условия кредитования</button>
-          <button class="button button_conditions">Требования к заемщикам</button>
-          <button class="button button_conditions">Документы</button>
-          <button class="button button_conditions">Получение и оформление кредита</button>
-        </div>
-        <table class="table">
-          <tr>
-            <th>Валюта кредита</th>
-            <td>Рубли, РФ</td>
-          </tr>
-          <tr>
-            <th>Мин. сумма кредита</th>
-            <td>500 тысяч рублей (включительно)</td>
-          </tr>
-          <tr>
-            <th>Макс. сумма кредита</th>
-            <td>100 миллионов рублей (но не более 60% от залоговой стоимости объекта недвижимости)</td>
-          </tr>
-          <tr>
-            <th>Срок кредита</th>
-            <td>До 20 лет</td>
-          </tr>
-          <tr>
-            <th>Комиссия банка за выдачу кредита</th>
-            <td>Отсутствует</td>
-          </tr>
-          <tr>
-            <th>Обеспечение по кредиту</th>
-            <td>Залог объекта недвижимости:
-              <br><br>
-              жилая недвижимость: квартира, дом, таунхаус, пентхаус;
-              <br><br>
-              коммерческая недвижимость.</td>
-          </tr>
-          <tr>
-            <th>Регион</th>
-            <td>Москва, Новая Москва, Московская область</td>
-          </tr>
-        </table>
+        <div class="tabs">
+          <div class="tabs__control">
+            <label for="tab1" class="button button_tab">Условия кредитования</label>
+            <label for="tab2" class="button button_tab">Требования к заемщикам</label>
+            <label for="tab3" class="button button_tab">Документы</label>
+            <label for="tab4" class="button button_tab">Получение и оформление кредита</label>
+          </div>
+          <input type="radio" id="tab1" name="tab-group">
+          <label for="tab1" class="button button_tab tab_mob">Условия кредитования</label>
+          <section id="content-tab1" class="tab-content">
+            <table class="table">
+              <tr>
+                <th>Валюта кредита</th>
+                <td>Рубли, РФ</td>
+              </tr>
+              <tr>
+                <th>Мин. сумма кредита</th>
+                <td>500 тысяч рублей (включительно)</td>
+              </tr>
+              <tr>
+                <th>Макс. сумма кредита</th>
+                <td>100 миллионов рублей (но не более 60% от залоговой стоимости объекта недвижимости)</td>
+              </tr>
+              <tr>
+                <th>Срок кредита</th>
+                <td>До 20 лет</td>
+              </tr>
+              <tr>
+                <th>Комиссия банка за выдачу кредита</th>
+                <td>Отсутствует</td>
+              </tr>
+              <tr>
+                <th>Обеспечение по кредиту</th>
+                <td>Залог объекта недвижимости:
+                  <br><br>
+                  жилая недвижимость: квартира, дом, таунхаус, пентхаус;
+                  <br><br>
+                  коммерческая недвижимость.</td>
+              </tr>
+              <tr>
+                <th>Регион</th>
+                <td>Москва, Новая Москва, Московская область</td>
+              </tr>
+            </table>
+          </section> 
+
+          <input type="radio" id="tab2" name="tab-group" checked>
+          <label for="tab2" class="button button_tab tab_mob">Требования к заемщикам</label>
+          <section id="content-tab2" class="tab-content">
+            <table class="table">
+              <tr>
+                <th>Возраст от:</th>
+                <td>18 лет</td>
+              </tr>
+              <tr>
+                <th>Возраст до:</th>
+                <td>75 лет*</td>
+              </tr>
+              <tr>
+                <th>Трудоустройство</th>
+                <td>Не обязательно, но желательно. Поскольку оно влияет на величину ставки по кредиту</td>
+              </tr>
+              <tr>
+                <th>Привлечение созаемщиков</th>
+                <td>В данный круг лиц входит как титульный созаемщик, так и его/ее платежеспособный супруг/супруга – их совокупный доход также учитывается при расчете суммы кредита.</td>
+              </tr>
+            </table>
+            <p> * Учитывается возраст заемщика и всех созаемщиков. При предоставлении кредита без подтверждения источника получения доходов максимальный возраст ограничивается 65 годами</p>
+          </section>
+
+          <input type="radio" id="tab3" name="tab-group">
+          <label for="tab3" class="button button_tab tab_mob">Документы</label>
+          <section id="content-tab3" class="tab-content">
+            <ul class="documents">
+              <li class="documents__for">Для заёмщика
+                <ul class="documents__list">
+                  <li>Паспорт РФ</li>
+                  <li>Второй документ на выбор:
+                    <ul class="documents__select">
+                      <li>- Водительское удостоверение;</li>
+                      <li>- Заграничный паспорт;</li>
+                      <li>- ИНН;</li>
+                      <li>- Пенсионное (СНИЛС).</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="documents__for">Для одобрения объекта залога
+                <ul class="documents__list">
+                  <li>Паспорт РФ</li>
+                  <li>Второй документ на выбор:
+                    <ul class="documents__select">
+                      <li>- Свидетельство права собственности на объект залога;</li>
+                      <li>- Договор основание (купли-продажи, дарения, приватизации, наследства и т.д.).</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section> 
+
+          <input type="radio" id="tab4" name="tab-group">
+          <label for="tab4" class="button button_tab tab_mob">Получение и оформление кредита</label>
+          <section id="content-tab4" class="tab-content">
+            <h3>Срок рассмотрения заявки</h3>
+            <p>От 2 до 10 рабочих дней с момента получения нами пакета всех необходимых документов.</p>
+
+            <h3>Порядок предоставления кредита</h3>
+            <p>Единовременно.</p>
+
+            <h3>Порядок погашения кредита</h3>
+            <p>Ежемесячными аннуитетными (равными) платежами.</p>
+
+            <h3>Частичное или полное досрочное погашение кредита</h3>
+            <p>Возможно по заявлению с указанием суммы, даты (должен быть рабочий день) и счета, с которого поступят средства. Минимальная сумма платежа не регламентирована, комиссия за досрочного возвращение кредита отсутствует.</p>
+
+            <h3>Неустойка за несвоевременное погашение кредита</h3>
+            <p>Начисляется в размере ключевой ставки ЦБ РФ, актуальной на дату оформления кредита, соответственно сумме ежемесячного платежа за период с оговоренной даты оплаты по дату фактического погашения задолженности.</p>
+          </section> 
+        </div> 
         <button class="button">Оставить заявку</button>
       </div>
     </section>
@@ -279,8 +360,6 @@
             <p class="review__text">
               Благодаря вашей компании у меня появилось собственное жилье! Спасибо!
             </p>
-            <div class="button-prev"></div>
-            <div class="button-next"></div>
           </div>
           <div class="review__item">
             <div class="review__title">
@@ -388,6 +467,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/rangeslider.min.js"></script>
+    <!-- <script src="js/magnific-popup.js"></script> -->
     <script src="js/main.js"></script>
   </body>
 </html>
