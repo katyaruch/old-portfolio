@@ -222,14 +222,6 @@ $(document).ready(function() {
   //     .add(myGeoObject)
   // }
 
-  
-// $(window).load(function() {
   $('#map').attr('src','https://yandex.ru/map-widget/v1/?um=constructor%3Adc55811168ee78cf852642c6ed94a3cbb2a9241513ff10c1484681e3cc370e0e&amp;source=constructor');
-  // var frame = document.createElement('iframe');
-  // frame.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3Adc55811168ee78cf852642c6ed94a3cbb2a9241513ff10c1484681e3cc370e0e&amp;source=constructor'; 
-  // frame.width = 470; 
-  // frame.height = 327;
-  // $('.contacts__wrapper').append(frame);
-// });
 
 });
