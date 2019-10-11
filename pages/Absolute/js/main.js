@@ -194,4 +194,42 @@ $(document).ready(function() {
       }
     }
   });
+
+  // var myMap;
+  // ymaps.ready(init);
+
+  // function init () {
+  //   // Создание экземпляра карты и его привязка к контейнеру с
+  //   // заданным id ("map").
+  //   myMap = new ymaps.Map('map', {
+  //     center: [55.636975, 37.434843], // Москва
+  //     zoom: 15
+  //   }, {
+  //     searchControlProvider: 'yandex#search'
+  //   }),
+
+  //   myGeoObject = new ymaps.GeoObject({
+  //     // Описание геометрии.
+  //     geometry: {
+  //         type: "Point",
+  //         coordinates: [55.636975, 37.434843]
+  //     },
+  //   }, {
+  //     preset: 'islands#redDotIcon'
+  //   });
+
+  //   myMap.geoObjects
+  //     .add(myGeoObject)
+  // }
+
+  
+// $(window).load(function() {
+  $('#map').attr('src','https://yandex.ru/map-widget/v1/?um=constructor%3Adc55811168ee78cf852642c6ed94a3cbb2a9241513ff10c1484681e3cc370e0e&amp;source=constructor');
+  // var frame = document.createElement('iframe');
+  // frame.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3Adc55811168ee78cf852642c6ed94a3cbb2a9241513ff10c1484681e3cc370e0e&amp;source=constructor'; 
+  // frame.width = 470; 
+  // frame.height = 327;
+  // $('.contacts__wrapper').append(frame);
+// });
+
 });
