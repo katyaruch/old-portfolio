@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css"> 
-    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/magnific-popup.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
     <title>АБСОЛЮТ</title>
@@ -22,10 +22,22 @@
           <a class="header__tel" href="tel:+74959987679">+7 (495) 998-76-79</a>
           <a class="header__tel" href="tel:+74959987976">+7 (495) 998-79-76</a>
         </div>
-        <button class="button button_feedback">Обратная связь</button>
+        <a href="#form-feedback" class="button button_feedback">Обратная связь</a>
       </div>
     </header>
-    <section class="main">
+    <div id="form-feedback" class="popup mfp-hide">
+      <form action="php/mail.php" method="post" class="feedback">
+        <h3>Заполните форму и мы вам перезвоним!</h3>
+        <label class="feedback__label" for="user-name">
+        <input class="feedback__input" id="user-name" type="text" name="name" placeholder="Имя" maxlength="40" autocomplete="on"></label>
+        <label class="feedback__label" for="user-email">
+        <input class="feedback__input" id="user-email" type="email" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" autocomplete="on"></label>
+        <label class="feedback__label" for="user-tel">
+        <input class="feedback__input" id="user-tel" type="tel" name="tel" placeholder="Телефон" pattern="(\+?\d[- .]*){7,13}" required autocomplete="on"></label>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+    </div>
+    <section class="main parallax" data-type="background" data-speed="10">
       <div class="container">
         <h1 class="main__title title">Оформление кредита под залог недвижимости за 1 день</h1>
         <div class="main__list">
@@ -57,7 +69,7 @@
         <a href="#calc" class="button button_calc">Рассчитать платеж</a>
       </div>
     </section>
-    <section class="conditions">
+    <section class="conditions" data-type="background" data-speed="10">
       <div class="container">
         <div class="flexbox">
           <img src="img/logo.svg" width="267" height="69" alt="АБСОЛЮТ">
@@ -65,12 +77,12 @@
         </div>
         <div class="tabs">
           <div class="tabs__control">
-            <label for="tab1" class="button button_tab">Условия кредитования</label>
+            <label for="tab1" class="button button_tab button_checked">Условия кредитования</label>
             <label for="tab2" class="button button_tab">Требования к заемщикам</label>
             <label for="tab3" class="button button_tab">Документы</label>
             <label for="tab4" class="button button_tab">Получение и оформление кредита</label>
           </div>
-          <input type="radio" id="tab1" name="tab-group">
+          <input type="radio" id="tab1" name="tab-group" checked>
           <label for="tab1" class="button button_tab tab_mob">Условия кредитования</label>
           <div id="content-tab1" class="tab-content">
             <table class="table">
@@ -109,7 +121,7 @@
             </table>
           </div> 
 
-          <input type="radio" id="tab2" name="tab-group" checked>
+          <input type="radio" id="tab2" name="tab-group">
           <label for="tab2" class="button button_tab tab_mob">Требования к заемщикам</label>
           <div id="content-tab2" class="tab-content">
             <table class="table">
@@ -167,23 +179,31 @@
           <input type="radio" id="tab4" name="tab-group">
           <label for="tab4" class="button button_tab tab_mob">Получение и оформление кредита</label>
           <div id="content-tab4" class="tab-content">
-            <h3>Срок рассмотрения заявки</h3>
-            <p>От 2 до 10 рабочих дней с момента получения нами пакета всех необходимых документов.</p>
-
-            <h3>Порядок предоставления кредита</h3>
-            <p>Единовременно.</p>
-
-            <h3>Порядок погашения кредита</h3>
-            <p>Ежемесячными аннуитетными (равными) платежами.</p>
-
-            <h3>Частичное или полное досрочное погашение кредита</h3>
-            <p>Возможно по заявлению с указанием суммы, даты (должен быть рабочий день) и счета, с которого поступят средства. Минимальная сумма платежа не регламентирована, комиссия за досрочного возвращение кредита отсутствует.</p>
-
-            <h3>Неустойка за несвоевременное погашение кредита</h3>
-            <p>Начисляется в размере ключевой ставки ЦБ РФ, актуальной на дату оформления кредита, соответственно сумме ежемесячного платежа за период с оговоренной даты оплаты по дату фактического погашения задолженности.</p>
+            <table class="table">
+              <tr>
+                <th>Срок рассмотрения заявки</th>
+                <td>От 2 до 10 рабочих дней с момента получения нами пакета всех необходимых документов.</td>
+              </tr>
+              <tr>
+                <th>Порядок предоставления кредита</th>
+                <td>Единовременно.</td>
+              </tr>
+              <tr>
+                <th>Порядок погашения кредита</th>
+                <td>Ежемесячными аннуитетными (равными) платежами.</td>
+              </tr>
+              <tr>
+                <th>Частичное или полное досрочное погашение кредита</th>
+                <td>Возможно по заявлению с указанием суммы, даты (должен быть рабочий день) и счета, с которого поступят средства. Минимальная сумма платежа не регламентирована, комиссия за досрочного возвращение кредита отсутствует.</td>
+              </tr>
+              <tr>
+                <th>Неустойка за несвоевременное погашение кредита</th>
+                <td>Начисляется в размере ключевой ставки ЦБ РФ, актуальной на дату оформления кредита, соответственно сумме ежемесячного платежа за период с оговоренной даты оплаты по дату фактического погашения задолженности.</td>
+              </tr>
+            </table>
           </div> 
         </div> 
-        <button class="button">Оставить заявку</button>
+        <a href="#form-feedback" class="button button_request">Оставить заявку</a>
       </div>
     </section>
     <section class="about">
@@ -240,30 +260,38 @@
         </div>
         <section id="calc" class="calc">
           <div class="calc__container">
-          <h3 class="calc__title">Кредитный калькулятор</h3>
-            <div class="calc__field">
-              Сколько вам нужно
-              <div class="calc__wrapper-range">
-                <input  class="calc__range" type="range" min="500000" max="100000000" step="200" value="40000000" labels="500 000 рублей, 100 000 000 рублей">
+            <h3 class="calc__title">Кредитный калькулятор</h3>
+              <div class="calc__field">
+                Сколько вам нужно
+                <div class="calc__wrapper-range">
+                  <input  id="calc-sum" class="calc__range" type="range" min="500000" max="100000000" step="500000" value="40000000">
+                  <div class="rangeslider__labels">
+                    <span>500 000 рублей</span>
+                    <span>100 000 000 рублей</span>
+                  </div>
+                </div>
+              </div>
+              <div class="calc__field">
+                Срок кредита
+                <div class="calc__wrapper-range">
+                  <input  id="calc-srok"  class="calc__range" type="range" min="1" max="240" step="1" value="48">
+                  <div class="rangeslider__labels">
+                    <span>1 месяц</span>
+                    <span>20 лет</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="calc__field">
-              Срок кредита
-              <div class="calc__wrapper-range">
-                <input  class="calc__range" type="range" min="1" max="240" step="1" value="48"  labels="1 месяц, 20 лет">
+            <div class="calc__wrapper-info">
+              <div class="calc__info">
+                Ставка
+                <span id="calc-percent" class="calc__rate">9 %</span>
               </div>
-            </div>
-          </div>
-          <div class="calc__wrapper-info">
-            <div class="calc__info">
-              Ставка
-              <span class="calc__rate">9 %</span>
-            </div>
-            <div class="calc__info">
-              Ежемесячный платеж
-              <span class="calc__rate">10,356</span>
-            </div>
-            <button class="button">Оформить</button>
+              <div class="calc__info">
+                Ежемесячный платеж
+                <span id="calc-payment" class="calc__rate">908 333 ₽</span>
+              </div>
+              <a href="#form-feedback" class="button button_request">Оформить</a>
           </div>
         </section>
       </div>
@@ -404,7 +432,7 @@
     <section class="sertifikats">
       <div class="container">
         <h2 class="title">Наши сертификаты</h2>
-          <div class="slider_responsive popup">
+          <div class="slider_responsive gallery-popup">
             <a href="img/sertifikat1.png" class="slider__item">
               <img src="img/sertifikat1.png" width="165" height="235" alt="Сертификат">
             </a>

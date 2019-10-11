@@ -1,4 +1,33 @@
 $(document).ready(function() {
+  //////////// popup feedback
+
+  $('.button_feedback').magnificPopup({
+    type: 'inline',
+    focus: '#user-name'
+  });
+
+  $('.button_request').magnificPopup({
+    type: 'inline',
+    focus: '#user-name'
+  });
+
+  $('.feedback').submit(function(evt) {
+    evt.preventDefault();
+
+    $.ajax({
+      type: $(this).attr('method'),
+      url: $(this).attr('action'),
+      data: new FormData(this),
+      contentType: false,
+      cache: false,
+      processData: false,
+      success: function(result){
+        alert(result);
+      }
+    });   
+  });
+
+
   //////////// animate scroll
 
   $('a[href*="#"]').click(function (evt) {
@@ -8,6 +37,14 @@ $(document).ready(function() {
       top = $(id).offset().top - 80;
     
     $('body,html').animate({scrollTop: top}, 1500);
+  });
+
+
+  //////////// button_checked
+
+  $('.button_tab').click(function(evt) {
+    $('.button_tab').removeClass('button_checked');
+    $(this).addClass('button_checked');
   });
 
   //////////// slick
@@ -59,13 +96,9 @@ $(document).ready(function() {
   $('.btn-next').on('click',function(){ $('#slick').slick('slickNext'); });
   $('.btn-prev').on('click',function(){ $('#slick').slick('slickPrev'); });
   
-  //////////// rangeslider
+  //////////// rangesliders
 
-  $('.calc__range').rangeslider({
-  // Feature detection the default is `true`.
-    // Set this to `false` if you want to use
-    // the polyfill also in Browsers which support
-    // the native <input type="range"> element.
+  $('#calc-sum').rangeslider({
     polyfill: false,
 
     // Default CSS classes
@@ -80,39 +113,78 @@ $(document).ready(function() {
       $rangeEl = this.$range;
       // add value label to handle
       var $handle = $rangeEl.find('.rangeslider__handle');
-      var handleValue = '<div class="rangeslider__handle__value">' + this.value + '</div>';
+      var handleValue = '<div class="rangeslider__handle__value">' + this.value + ' ₽</div>';
       $rangeEl.append(handleValue);
-      
-      // get range index labels 
-      var rangeLabels = this.$element.attr('labels');
-      rangeLabels = rangeLabels.split(', ');
-      
-      // add labels
-      $rangeEl.append('<div class="rangeslider__labels"></div>');
-      $(rangeLabels).each(function(index, value) {
-        $rangeEl.find('.rangeslider__labels').append('<span class="rangeslider__labels__label">' + value + '</span>');
-      })
     },
 
     // Callback function
     onSlide: function(position, value) {
       var $handle = this.$range.find('.rangeslider__handle__value');
-      $handle.text(this.value);
-    },
-
-    // Callback function
-    onSlideEnd: function(position, value) {}
+      $handle.text(this.value + ' ₽');
+    }
   });
 
+  $('#calc-srok').rangeslider({
+    polyfill: false,
+    rangeClass: 'rangeslider',
+    disabledClass: 'rangeslider--disabled',
+    horizontalClass: 'rangeslider--horizontal',
+    fillClass: 'rangeslider__fill',
+    handleClass: 'rangeslider__handle',
 
-  $('.popup').magnificPopup({
+    onInit: function() {
+      $rangeEl = this.$range;
+      var $handle = $rangeEl.find('.rangeslider__handle');
+      var handleValue = '<div class="rangeslider__handle__value">' + this.value / 12 + ' года </div>';
+      $rangeEl.append(handleValue);
+    },
+
+    onSlide: function(position, value) {
+      var $handle = this.$range.find('.rangeslider__handle__value');
+      if(this.value < 12) {
+        if(this.value < 5) {
+          if(this.value == 1) {
+            $handle.text(this.value + ' месяц');
+          } else {
+              $handle.text(this.value + ' месяца');
+          }
+        } else {
+          $handle.text(this.value + ' месяцев');
+        }
+      } else {
+        var srok = (this.value / 12).toFixed();
+        if(srok < 5) {
+          if(srok == 1) {
+            $handle.text(srok + ' год');
+          } else {
+              $handle.text(srok + ' года');
+          }
+        } else {
+          $handle.text((srok) + ' лет');
+        }
+      }
+    }
+    
+  });
+
+  $('.calc__range').on('change', function (evt) {
+    var $sum = parseInt($('#calc-sum').val());
+    var $srok = parseInt($('#calc-srok').val());
+    var $k = parseInt($('#calc-percent').text().slice(0,-2));
+    var $payment = (($sum / $srok) * (1 + ($k / 100))).toFixed() + ' ₽';
+    $('#calc-payment').text($payment.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 '));
+  });
+
+  //////////// magnific gallery
+
+  $('.gallery-popup').magnificPopup({
     delegate: 'a',
     type: 'image',
     closeOnContentClick: false,
     closeBtnInside: false,
     mainClass: 'mfp-with-zoom mfp-img-mobile',
     gallery: {
-      enabled: true
+      enabled: true,
     },
     zoom: {
       enabled: true,
