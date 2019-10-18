@@ -87,12 +87,19 @@ $(document).ready(function(){
   });
 
   ///////// timer 2019,10-1,20/////////
-  $(function(){
+
+  $(async function() {
     var dataSold = new Date(2019,10-1,20);
     $('.timer').countdown({
       until: dataSold,
       format: 'dHM'
     });
   })
+
+  ///////// map /////////
+
+  $(async function() {
+    $('.location__map').attr('src','https://yandex.ru/map-widget/v1/?um=constructor%3A5203e34583b1d823e992e99ce3fdd4900720fbdce5a70d5cb9d3de4969fa89a3&amp;source=constructor');
+  });
 
 });
