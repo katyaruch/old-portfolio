@@ -236,6 +236,7 @@ img {
 
   background-color: transparent;
   border: 2px solid #000000;
+  cursor: pointer;
 }
 
 .search:focus ~ .search-button,
@@ -275,6 +276,7 @@ img {
   position: relative;
   margin-left: 38px;
   padding: 10px 0 10px 26px;
+  cursor: pointer;
 }
 
 .user-link::before {
@@ -1477,6 +1479,20 @@ img {
 
 .modal {
   position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+/*  margin-left: -480px;
+  margin-top: -278px;*/
+}
+
+.modal-inner {
+  position: relative;
+  width: 760px;
+  margin: 5% auto;
+  padding: 95px 100px 78px;
 
   background-color: #ffffff;
   -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
@@ -1491,17 +1507,7 @@ img {
   animation: shake 0.6s;
 }
 
-.modal-write-us {
-  top: 50%;
-  left: 50%;
-
-  width: 760px;
-  margin-left: -480px;
-  margin-top: -278px;
-  padding: 95px 100px 78px;
-}
-
-.write {
+.modal-form {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1515,29 +1521,29 @@ img {
           justify-content: space-between;
 }
 
-.write-field {
+.modal-field {
   width: 360px;
 
   margin: 0;
   margin-bottom: 32px;
 }
 
-.write-textarea {
+.modal-textarea {
   width: 760px;
 }
 
-.write-field label {
+.modal-field label {
   display: block;
 
   margin-bottom: 7px;
 }
 
-.write textarea {
+.modal textarea {
   height: 156px;
 }
 
-.write input,
-.write textarea {
+.modal input,
+.modal textarea {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1552,24 +1558,24 @@ img {
   resize: none;
 }
 
-.write input:hover,
-.write textarea:hover {
+.modal input:hover,
+.modal textarea:hover {
   background-color: rgba(229, 229, 229, 0.8);
 }
 
-.write input:focus,
-.write textarea:focus {
+.modal input:focus,
+.modal textarea:focus {
   color: rgba(51, 51, 51, 1);
   background-color: transparent;
   border: 3px solid rgba(240, 197, 46, 0.5);
 }
 
-.write input:invalid,
-.write textarea:invalid {
+.modal input:invalid,
+.modal textarea:invalid {
   background-color: rgba(237, 181, 181, 0.5);
 }
 
-.write .button {
+.modal .button {
   width: 200px;
 }
 
@@ -1627,11 +1633,8 @@ img {
 }
 
 .modal-map {
-  top: 50%;
-  left: 50%;
-
-  margin-left: -480px;
-  margin-top: -280px;
+  width: 760px;
+  padding: 95px 100px 78px;
 }
 
 .modal-map iframe {
@@ -1989,12 +1992,9 @@ img {
 }
 
 .filter-input + label:hover::before,
-.filter-input + label:hover::after,
-.filter-input:focus + label::before,
-.filter-input:focus + label::after {
+.filter-input + label:hover::after {
   opacity: 0.4;
 }
-
 
 .catalog {
   width: 760px;

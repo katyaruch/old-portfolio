@@ -92,12 +92,13 @@ $(document).ready(function(){
     var dataSold = new Date(2019,10-1,20);
     $('.timer').countdown({
       until: dataSold,
-      format: 'dHM'
+      format: 'dHM',
+      tickInterval: 60
     });
   })
 
 
-  ///////// map /////////
+  ///////// share and map scripts /////////
 
   $(async function() { 
     $('.sharethis-script').attr('src','https://platform-api.sharethis.com/js/sharethis.js#property=5da7a0b4af9b970012ee9b08&product=inline-share-buttons');
