@@ -10,10 +10,9 @@
 <body>
   <header class="header">
     <div class="container header__inner">
-      <a href="#" class="logo"><img src="img/logo.png" width="111" height="30" alt="MMBusines"></a>
-    <!-- <button class="header__burger">Навигация</button> -->
+      <button class="header__burger">Навигация</button>
+      <a href="#" class="logo"><img src="img/logo.jpeg" width="165" height="44" alt="MMBusines"></a>
       <nav class="header__navigation">
-        <!-- <a class="header__burger-close">Закрыть</a> -->
         <a href="#" class="header__link">О компании</a>
         <a href="#" class="header__link">Подбор IT персонала</a>
         <a href="#" class="header__link">Стоимость услуг</a>
@@ -24,7 +23,7 @@
         <a class="header__contact header__contact_tel" href="tel:+74955325103">+7 (495) 532-51-03</a>
         <a class="header__contact header__contact_email" href="mailto:info@mmbusiness.ru">info@mmbusiness.ru</a>
       </address>
-      <div>
+      <div class="header__switch">
         <a class="header__switch-lang header__switch-lang_ru" href="#">RU</a>
         <a class="header__switch-lang header__switch-lang_en" href="#">EN</a>
       </div>
@@ -46,7 +45,10 @@
         <div class="main__line">
           <div class="main__col">
             <p class="main__text main__text_gray main__text_s11">​Подбираем персонал</p>
-            <p class="main__text main__text_gray main__text_s8">​по всей</p><p class="main__text main__text_gray main__text_s18">России</p>
+            <div>
+              <p class="main__text main__text_gray main__text_s8">​по всей</p>
+              <p class="main__text main__text_gray main__text_s18">России</p>
+            </div>
             <p class="main__text main__text_black main__text_s16right">​ Поиск IT</p>
           </div>
           <h1 class="main__text main__text_blue main__text_s20">Подбор персонала <p class="main__text_s29"> для бизнеса</p></h1>
@@ -58,7 +60,7 @@
         </div>
         <p class="main__text main__text_gray main__text_s20">selection</p>
       </div>
-      <video id="video" class="video" src="#" width="362" height="225" controls="controls" poster="img/video.png"></video>
+      <video id="video" class="video" src="#" width="540" height="335" controls="controls" poster="img/video.png"></video>
     </div>
   </section>
   <section class="about" style="background: 50% 50%/cover no-repeat url('img/bg-about.png');">
@@ -71,7 +73,7 @@
           <input class="consultation__input" type="text" name="name" placeholder="Имя*">
           <input class="consultation__input" type="tel" name="tel" placeholder="Телефон*">
           <input class="consultation__input" type="email" name="email" placeholder="Почта*">
-          <input class="consultation__input" type="text" name="message" placeholder="Сообщение">
+          <textarea class="consultation__input" type="text" name="message" placeholder="Сообщение"></textarea>
         </form>
         <a class="button">Получить консультацию</a>
         <p class="consultation__text">Нажимая на кнопку “Отправить”, Вы даете согласие на обработку персональных данных </p>
@@ -83,28 +85,40 @@
       <h2 class="title"><span class="title_blue">Выгоды</span> от сотрудничества​</h2>
       <ul class="profit__list">
         <li class="profit__item">
-          <span class="profit__item-img" style="background: 50% 45% no-repeat url('img/icon-target.png');"></span>
-        Закрываем сложные вакансии​</li>
+          <span class="profit__item-img">
+            <img src="img/icon-target.png"></img>
+          </span>
+          Закрываем сложные вакансии​</li>
         <li class="profit__item">
-          <span class="profit__item-img" style="background: 50% 50% no-repeat url('img/icon-computer-worker.png');"></span>
+          <span class="profit__item-img">
+            <img src="img/icon-computer-worker.png"></img>
+          </span>
           Предоставляем персонального менеджера<br>(формат «одного окна»)​
         </li>
         <li class="profit__item">
-        <span class="profit__item-img" style="background: 50% 50% no-repeat url('img/icon-manager.png');"></span>
-        Показываем первых кандидатов в течение 3-х рабочих дней​
-      </li>
+          <span class="profit__item-img">
+            <img src="img/icon-manager.png"></img>
+          </span>
+          Показываем первых кандидатов в течение 3-х рабочих дней​
+        </li>
         <li class="profit__item">
-        <span class="profit__item-img" style="background: 50% 50% no-repeat url('img/icon-laptop.png');"></span>
-        Работаем по всей России​
-      </li>
+          <span class="profit__item-img">
+            <img src="img/icon-laptop.png"></img>
+          </span>
+          Работаем по всей России​
+        </li>
         <li class="profit__item">
-        <span class="profit__item-img" style="background: 50% 50% no-repeat url('img/icon-shield.png');"></span>
-        Даем бесплатную гарантию на прохождение испытательного срока​
-      </li>
+          <span class="profit__item-img">
+            <img src="img/icon-shield.png"></img>
+          </span>
+          Даем бесплатную гарантию на прохождение испытательного срока​
+        </li>
         <li class="profit__item">
-        <span class="profit__item-img" style="background: 70% 50% no-repeat url('img/icon-contract.png');"></span>
-        Оформляем отчет о проделанной работе
-      </li>
+          <span class="profit__item-img">
+            <img src="img/icon-contract.png"></img>
+          </span>
+          Оформляем отчет о проделанной работе
+        </li>
       </ul>
     </div>
   </section>
@@ -165,13 +179,29 @@
   <section class="reviews" style="background: 50% 50%/cover no-repeat url('img/bg-reviews.png');">
     <div class="container">
       <h2 class="title">Отзывы</h2>
-      <img src="img/reviews.png" alt="Отзывы">
+      <div class="reviews__list">
+        <img class="reviews__img" src="img/review1.png" alt="Отзыв">
+        <img class="reviews__img" src="img/review2.png" alt="Отзыв">
+        <img class="reviews__img" src="img/review3.png" alt="Отзыв">
+        <img class="reviews__img" src="img/review4.png" alt="Отзыв">
+      </div>
     </div>
   </section>
   <section class="clients" style="background: 50% 50%/cover no-repeat url('img/bg-clients.png');">
     <div class="container">
       <h2 class="title">Клиенты​</h2>
-      <img src="img/clients.png" alt="Клиенты">
+      <div>
+        <img class="clients__img" src="img/clients/client1.jpg" alt="Клиент">
+        <img class="clients__img" src="img/clients/client2.jpg" alt="Клиент">
+        <img class="clients__img" src="img/clients/client3.jpg" alt="Клиент">
+        <img class="clients__img" src="img/clients/client4.jpg" alt="Клиент">
+        <img class="clients__img" src="img/clients/client5.jpg" alt="Клиент">
+        <img class="clients__img" src="img/clients/client6.jpg" alt="Клиент">
+        <img class="clients__img" src="img/clients/client7.jpg" alt="Клиент">
+        <img class="clients__img" src="img/clients/client8.jpg" alt="Клиент">
+        <img class="clients__img" src="img/clients/client9.jpg" alt="Клиент">
+        <img class="clients__img" src="img/clients/client10.png" alt="Клиент">
+      </div>
     </div>
   </section>
   <div class="container">
@@ -181,7 +211,7 @@
         <input class="consultation__input" type="text" name="name" placeholder="Имя*">
         <input class="consultation__input" type="tel" name="tel" placeholder="Телефон*">
         <input class="consultation__input" type="email" name="email" placeholder="Почта*">
-        <input class="consultation__input" type="text" name="message" placeholder="Сообщение">
+        <textarea class="consultation__input" type="text" name="message" placeholder="Сообщение"></textarea>
       </form>
       <a class="button">Получить консультацию</a>
       <p class="consultation__text">Нажимая на кнопку “Отправить”, Вы даете согласие на обработку персональных данных </p>
@@ -204,20 +234,21 @@
         <a class="footer__link" href="#">Подбор персонала по госзакупкам</a>
       </div>
       <div class="footer__col">
-        <p class="footer__text">Подпишитель на наши новости</p>
-        <form>
+        <p class="footer__text footer__text_sub">Подпишитель на наши новости</p>
+        <form class="footer__form">
           <input class="footer__subscribe" type="email" name="email-subscribe" placeholder="Ваш e-mail">
           <a class="button button_subscribe">Подписаться</a>
         </form>
         <p class="footer__copyright">© 2019 mmbusiness. Все права защищены.</p>
-        <div class="social">
+        <div class="footer__social">
           <a href="#" class="social__button" style="background: 0 0 /cover no-repeat url('img/icons-social.png');">FaceBook</a>
-          <a href="#" class="social__button" style="background: -15px 0 /cover no-repeat url('img/icons-social.png');">VK</a>
-          <a href="#" class="social__button" style="background: -30px 0 /cover no-repeat url('img/icons-social.png');">Instagram</a>
+          <a href="#" class="social__button" style="background: -22px 0 /cover no-repeat url('img/icons-social.png');">VK</a>
+          <a href="#" class="social__button" style="background: -44px 0 /cover no-repeat url('img/icons-social.png');">Instagram</a>
         </div>
       </div>
     </div>
   </footer>
-  <script src="/js/libs.js"> </script> 
+  <script src="/js/libs.js"></script> 
+  <script src="/js/main.js"></script> 
 </body>
 </html>
