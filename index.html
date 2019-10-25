@@ -1,119 +1,254 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/libs.css">
-		<link rel="stylesheet" type="text/css" href="css/style.min.css">
-		<link rel="stylesheet" type="text/css" href="fonts/latofonts.css">
-		<script src="js/yandex-metrika.js"></script>
-		<title>Портфолио HTML-верстальщика</title>
-	</head>
-	<body>
-		<header class="header">
-			<div class="container"><a class="logo" href="/katyaruch.github.io">Katya Ruch</a>
-				<button class="gamburger-menu">Навигация</button>
-				<nav class="navigation gamburger-menu__list" tabindex="-1"><a class="gamburger-menu__close">Закрыть</a><a class="navigation__link gamburger-menu__link">Обо мне</a><a class="navigation__link gamburger-menu__link" href="#verstka">Качество</a><a class="navigation__link gamburger-menu__link" href="#portfolio">Мои работы</a></nav>
-			</div>
-		</header>
-		<section class="main container">
-			<h1 class="main__title">Portfolio</h1>
-			<ul class="skills-list">
-				<li class="skills-list__item">html</li>
-				<li class="skills-list__item">css</li>
-				<li class="skills-list__item">pug</li>
-				<li class="skills-list__item">less</li>
-				<li class="skills-list__item">BEM</li>
-			</ul><a class="button button-portfolio" href="#portfolio" id="button-portfolio">Ознакомиться</a>
-		</section>
-		<section class="portfolio" id="portfolio">
-			<h2 class="title">Мои работы</h2>
-			<div class="swiper-container">
-				<ul class="portfolio__list swiper-wrapper">
-					<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/Wheels"><img class="portfolio__img" src="img/iMac-wheels.png" width="380" height="315" alt="Wheels"></a>
-						<div>
-							<p class="portfolio__name">Wheels</p>
-							<p class="portfolio__info">Сайт про велосипеды</p>
-						</div>
-					</li>
-					<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/sea-cruises"><img class="portfolio__img" src="img/MacBook-cruises.png" width="450" height="260" alt="Морские круизы"></a>
-						<div>
-							<p class="portfolio__name">Морские круизы</p>
-							<p class="portfolio__info">Сайт по продаже морских круизов</p>
-						</div>
-					</li>
-					<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/device"><img class="portfolio__img" src="img/iMac-device.png" width="380" height="315" alt="Device"></a>
-						<div>
-							<p class="portfolio__name">Device</p>
-							<p class="portfolio__info">Макет интернет магазина электронных гаджетов</p>
-						</div>
-					</li>
-					<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/be-latte"><img class="portfolio__img" src="img/iMac-latte.png" width="380" height="315" alt="Be Latte"></a>
-						<p class="portfolio__name">Be Latte</p>
-						<p class="portfolio__info">Макет сайта кофейни</p>
-					</li>
-					<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/animal-shelter"><img class="portfolio__img" src="img/iMac-shelter.png" width="380" height="315" alt="Animal Shelter"></a>
-						<p class="portfolio__name">Animal Shelter</p>
-						<p class="portfolio__info">Макет сайта приюта для животных</p>
-					</li>
-					<li class="portfolio__item swiper-slide"><a class="portfolio__link"><img class="portfolio__img" src="img/iMac-hero.png" width="380" height="315" alt="Hero"></a>
-						<p class="portfolio__name">Hero</p>
-						<p class="portfolio__info">Макет сайта-портфолио</p>
-					</li>
-					<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/cardly"><img class="portfolio__img" src="img/iMac-cardly.png" width="380" height="315" alt="Cardly"></a>
-						<p class="portfolio__name">Cardly</p>
-						<p class="portfolio__info">Макет адаптивного сайта</p>
-					</li>
-				</ul>
-			</div>
-		</section>
-		<section class="verstka container" id="verstka">
-			<h2 class="title">Критерии качества вёрстки</h2>
-			<dl class="verstka__norms">
-				<dt class="verstka__norm">Единообразное написание кода</dt>
-				<dd class="verstka__descr">Единый стиль написания и форматирования кода облегчает его понимание и дальнейшую поддержку, а также упрощает взаимодействие нескольких человек при разработке</dd>
-				<dt class="verstka__norm">Валидность</dt>
-				<dd class="verstka__descr">HTML-код в полной мере соответствует всем правилам и стандартам Консорциума Всемирной Паутины - World Wide Web Consortium (W3C). Документ проходит проверку на валидность validator.w3.org</dd>
-				<dt class="verstka__norm">Кроссбраузерность</dt>
-				<dd class="verstka__descr">Вёрстка идентично отображается в последних версиях браузеров Chrome, Opera, Firefox, Safari, а также в Internet Explorer 10+ </dd>
-				<dt class="verstka__norm">Оптимизация</dt>
-				<dd class="verstka__descr">Оптимизация архитектуры проекта с использованием препроцессоров LESS, PUG, автоматизация сборки проекта с помощью GULP.</dd>
-				<dt class="verstka__norm">Адаптивность</dt>
-				<dd class="verstka__descr">Правильное отображение сайта с любого устройства, независимо от размера экрана</dd>
-			</dl>
-		</section>
-		<section class="feedback container">
-			<h2 class="title">Напишите мне на почту</h2>
-			<form class="feedback__form" id="feedback-form" method="post" accept-charset="UTF-8">
-				<p>
-					<label class="feedback__label" for="user-name">Имя</label>
-					<input class="feedback__input" id="user-name" type="text" name="name" placeholder="Ваше имя" maxlength="40" autocomplete="on">
-				</p>
-				<p>
-					<label class="feedback__label" for="user-email">E-mail</label>
-					<input class="feedback__input" id="user-email" type="email" name="email" placeholder="Ваш E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" required autocomplete="on">
-				</p>
-				<p>
-					<label class="feedback__label" for="user-message">Сообщение</label>
-					<textarea class="feedback__input feedback__input_text" id="user-message" name="message" placeholder="Опишите вашу задачу" minlength="20" maxlength="350" required></textarea>
-				</p>
-				<button class="button" type="submit">Отправить</button>
-			</form>
-		</section>
-		<div class="popup" id="popup_thanks">
-			<div class="popup__content"> 
-				<p>Спасибо, ваше сообщение отправлено :)</p>
-				<p class="popup__close">Закрыть</p>
-			</div>
-		</div>
-		<div class="popup" id="popup_fail">
-			<div class="popup__content"> 
-				<p>Что-то пошло не так, напишите мне на адрес <b> katya.ruch@gmail.com </b></p>
-				<p class="popup__close">Закрыть</p>
-			</div>
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="js/libs.js"></script>
-		<script src="js/script.js"></script>
-	</body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <link rel="stylesheet" href="css/libs.min.css"> 
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>MMBusines</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <button class="header__burger">Навигация</button>
+      <a href="#" class="logo"><img src="img/logo.jpeg" width="165" height="44" alt="MMBusines"></a>
+      <nav class="header__navigation">
+        <a href="#" class="header__link">О компании</a>
+        <a href="#" class="header__link">Подбор IT персонала</a>
+        <a href="#" class="header__link">Стоимость услуг</a>
+        <a href="#" class="header__link">Клиенты </a>
+        <a href="#" class="header__link">Контакты</a>
+      </nav>
+      <address class="header__contacts">
+        <a class="header__contact header__contact_tel" href="tel:+74955325103">+7 (495) 532-51-03</a>
+        <a class="header__contact header__contact_email" href="mailto:info@mmbusiness.ru">info@mmbusiness.ru</a>
+      </address>
+      <div class="header__switch">
+        <a class="header__switch-lang header__switch-lang_ru" href="#">RU</a>
+        <a class="header__switch-lang header__switch-lang_en" href="#">EN</a>
+      </div>
+    </div>
+  </header>
+  <hr class="header__line">
+  <section class="main" style="background: 50% 50%/cover no-repeat url('img/bg-main.png');">
+    <div class="container container_flex">
+      <!-- <div class="main__text" style="background: 0 0 no-repeat url('img/main-text.png');"> -->
+      <div class="main__cloud">
+        <p class="main__text main__text_blue2">Executive</p>
+        <div>
+          <div class="main__text main__text_black">
+            <p class="main__text_s14">​Закрываем</p><p class="main__text_s8">​срочные</p>
+          </div>
+          <p class="main__text main__text_black main__text_s25">​вакансии​</p>
+          <p class="main__text main__text_blue2">search​</p>
+        </div>
+        <div class="main__line">
+          <div class="main__col">
+            <p class="main__text main__text_gray main__text_s11">​Подбираем персонал</p>
+            <div>
+              <p class="main__text main__text_gray main__text_s8">​по всей</p>
+              <p class="main__text main__text_gray main__text_s18">России</p>
+            </div>
+            <p class="main__text main__text_black main__text_s16right">​ Поиск IT</p>
+          </div>
+          <h1 class="main__text main__text_blue main__text_s20">Подбор персонала <p class="main__text_s29"> для бизнеса</p></h1>
+          <p class="main__text main__text_black main__text_s16left">Подбор линейного персонала </p>
+        </div>
+        <div>
+          <p class="main__text main__text_black main__text_s16">​специалистов​</p>
+          <p class="main__text main__text_gray main__text_s20">Management</p>
+        </div>
+        <p class="main__text main__text_gray main__text_s20">selection</p>
+      </div>
+      <video id="video" class="video" src="#" preload="metadata" width="540" height="335" controls="controls" poster="img/video.png"></video>
+    </div>
+  </section>
+  <section class="about" style="background: 50% 50%/cover no-repeat url('img/bg-about.png');">
+    <div class="container">
+      <h2 class="title title_blue">О компании</h2>
+      <h3 class="about__text">mmbusiness – федеральная рекрутинговая компания.<br>Мы профессионально подбираем персонал для российских и международных компаний. </h3>
+      <section class="consultation">
+        <h4 class="consultation__title">Получите индивидуальную консультацию<br><span class="title_blue">в течение 20 минут</span></h4>
+        <form class="consultation__form">
+          <input class="consultation__input" type="text" name="name" placeholder="Имя*">
+          <input class="consultation__input" type="tel" name="tel" placeholder="Телефон*">
+          <input class="consultation__input" type="email" name="email" placeholder="Почта*">
+          <textarea class="consultation__input" type="text" name="message" placeholder="Сообщение"></textarea>
+        </form>
+        <a class="button">Получить консультацию</a>
+        <p class="consultation__text">Нажимая на кнопку “Отправить”, Вы даете согласие на обработку персональных данных </p>
+      </section>
+    </div>
+  </section>
+  <section class="profit" style="background: 50% 50%/cover no-repeat url('img/bg-profit.png');">
+    <div class="container">
+      <h2 class="title"><span class="title_blue">Выгоды</span> от сотрудничества​</h2>
+      <ul class="profit__list">
+        <li class="profit__item">
+          <span class="profit__item-img">
+            <img src="img/icon-target.png"></img>
+          </span>
+          Закрываем сложные вакансии​</li>
+        <li class="profit__item">
+          <span class="profit__item-img">
+            <img src="img/icon-computer-worker.png"></img>
+          </span>
+          Предоставляем персонального менеджера<br>(формат «одного окна»)​
+        </li>
+        <li class="profit__item">
+          <span class="profit__item-img">
+            <img src="img/icon-manager.png"></img>
+          </span>
+          Показываем первых кандидатов в течение 3-х рабочих дней​
+        </li>
+        <li class="profit__item">
+          <span class="profit__item-img">
+            <img src="img/icon-laptop.png"></img>
+          </span>
+          Работаем по всей России​
+        </li>
+        <li class="profit__item">
+          <span class="profit__item-img">
+            <img src="img/icon-shield.png"></img>
+          </span>
+          Даем бесплатную гарантию на прохождение испытательного срока​
+        </li>
+        <li class="profit__item">
+          <span class="profit__item-img">
+            <img src="img/icon-contract.png"></img>
+          </span>
+          Оформляем отчет о проделанной работе
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="stages" style="background: 50% 50%/cover no-repeat url('img/bg-stages.png');">
+    <div class="container">
+      <h2 class="title"><span class="title_blue">Этапы</span> подбора</h2>
+      <ol class="stages__list">
+        <li class="stages__item">Согласование заявки<span class="stages__item_small">(профиля кандидата)</span></li>
+        <li class="stages__item">Заключение договора</li>
+        <li class="stages__item">Подбор сотрудника, выход на работу</li>
+        <li class="stages__item">Закрывающий документооборот, оплата</li>
+        <li class="stages__item">Действие гарантии бесплатной замены сотрудника</li>
+      </ol>
+    </div>
+  </section>
+  <section class="reasons" style="background: 50% 50%/cover no-repeat url('img/bg-reasons.png');">
+    <div class="container">
+      <h2 class="title"><span class="title_blue">Почему</span> мы?​</h2>
+      <ol class="reasons__list">
+        <li class="reasons__item">
+          <span class="reasons__title">Профессиональный и качественный отбор персонала</span>
+          <ul class="reasons__item-list">
+            <li>Опыт работы каждого нашего менеджера по подбору персонала не менее 10 лет</li>
+            <li>Высокая бизнес-этика</li>
+            <li>Формат “одного окна”</li>
+          </ul>
+        </li>
+        <li class="reasons__item">
+          <span class="reasons__title">Мы используем современные методы и источники подбора</span>
+          <ul class="reasons__item-list">
+            <li>Более 250 групп в социальных сетях</li>
+            <li>Telegram</li><br>
+            <li>Linkedin</li><br>
+            <li>Рабочие сайты</li>
+            <li>Собственная база кондидатов</li>
+            <li>Boolean search</li>
+            <li>Таргетированная реклама</li>
+          </ul>
+        </li>
+        <li class="reasons__item">
+          <span class="reasons__title">Автоматизированный процесс подбора персонала</span>
+          <ul class="reasons__item-list">
+            <li>Находим лучших кандидатов</li>
+            <li>Выстраиваем воронку подбора</li>
+            <li>Готовим для Вас отчет о проделанной работе</li>
+          </ul>
+        </li>
+        <li class="reasons__item">
+          <span class="reasons__title">Индивидуальный подход к каждому клиенту</span>
+          <ul class="reasons__item-list">
+            <li>Расчет стоимости услуг, исходя из сложности вакансии</li>
+            <li>Подбираем персонал как в офис, так и на удаленной основе</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <section class="reviews" style="background: 50% 50%/cover no-repeat url('img/bg-reviews.png');">
+    <div class="container">
+      <h2 class="title">Отзывы</h2>
+      <div class="reviews__list">
+        <img class="reviews__img" src="img/review1.png" alt="Отзыв">
+        <img class="reviews__img" src="img/review2.png" alt="Отзыв">
+        <img class="reviews__img" src="img/review3.png" alt="Отзыв">
+        <img class="reviews__img" src="img/review4.png" alt="Отзыв">
+      </div>
+    </div>
+  </section>
+  <section class="clients" style="background: 50% 50%/cover no-repeat url('img/bg-clients.png');">
+    <div class="container">
+      <h2 class="title">Клиенты​</h2>
+      <div>
+        <img class="clients__img" src="img/clients/client1.jpg" alt="Клиент">
+        <img class="clients__img" src="img/clients/client2.jpg" alt="Клиент">
+        <img class="clients__img" src="img/clients/client3.jpg" alt="Клиент">
+        <img class="clients__img" src="img/clients/client4.jpg" alt="Клиент">
+        <img class="clients__img" src="img/clients/client5.jpg" alt="Клиент">
+        <img class="clients__img" src="img/clients/client6.jpg" alt="Клиент">
+        <img class="clients__img" src="img/clients/client7.jpg" alt="Клиент">
+        <img class="clients__img" src="img/clients/client8.jpg" alt="Клиент">
+        <img class="clients__img" src="img/clients/client9.jpg" alt="Клиент">
+        <img class="clients__img" src="img/clients/client10.png" alt="Клиент">
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <section class="consultation">
+      <h4 class="consultation__title">Получите индивидуальную консультацию<br><span class="title_blue">в течение 20 минут</span></h4>
+      <form class="consultation__form">
+        <input class="consultation__input" type="text" name="name" placeholder="Имя*">
+        <input class="consultation__input" type="tel" name="tel" placeholder="Телефон*">
+        <input class="consultation__input" type="email" name="email" placeholder="Почта*">
+        <textarea class="consultation__input" type="text" name="message" placeholder="Сообщение"></textarea>
+      </form>
+      <a class="button">Получить консультацию</a>
+      <p class="consultation__text">Нажимая на кнопку “Отправить”, Вы даете согласие на обработку персональных данных </p>
+    </section>
+  </div>
+  <footer class="footer">
+    <div class="container container_flex">
+      <div class="footer__col">
+        <p class="footer__text">Для связи</p>
+        <address>
+          <a class="footer__contact" href="tel:+74955325103">Наш телефон: +7 (495) 532-51-03,</a>
+          <a class="footer__contact" href="mailto:info@mmbusiness.ru">Наш e-mail: info@mmbusiness.ru</a>
+        </address>
+        <a href="#" class="button button_politic">Политика защиты и обработки персональных данныx</a>
+      </div>
+      <div class="footer__col">
+        <a class="footer__link" href="#">О компании</a>
+        <a class="footer__link" href="#">Консалтинг</a>
+        <a class="footer__link" href="#">Блог</a>
+        <a class="footer__link" href="#">Подбор персонала по госзакупкам</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__text footer__text_sub">Подпишитель на наши новости</p>
+        <form class="footer__form">
+          <input class="footer__subscribe" type="email" name="email-subscribe" placeholder="Ваш e-mail">
+          <a class="button button_subscribe">Подписаться</a>
+        </form>
+        <p class="footer__copyright">© 2019 mmbusiness. Все права защищены.</p>
+        <div class="footer__social">
+          <a href="#" class="social__button" style="background: 0 0 /cover no-repeat url('img/icons-social.png');">FaceBook</a>
+          <a href="#" class="social__button" style="background: -22px 0 /cover no-repeat url('img/icons-social.png');">VK</a>
+          <a href="#" class="social__button" style="background: -44px 0 /cover no-repeat url('img/icons-social.png');">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/libs.js"></script> 
+  <script src="js/main.js"></script> 
+</body>
 </html>
