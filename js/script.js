@@ -8,31 +8,31 @@ $(document).ready(function(){
 
   $(menuToggle).on("click", function (evt) {
     evt.preventDefault();   //отменяем стандартную обработку нажатия по ссылке
-    // menu.classList.toggle("gamburger-menu__list_show"); //добавляем класс появления меню
+    menu.classList.toggle("gamburger-menu__list_show"); //добавляем класс появления меню
     $(menuToggle).fadeOut(300);
-    $(menu).fadeIn(300,function(){$(this).focus();});
+    // $(menu).fadeIn(300,function(){$(this).focus();});
   });
 
   $(window).on("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
-      // $(menu).classList.remove("gamburger-menu__list_show");//при нажатии клавиши ESC меню закрывается
-      $(menu).fadeOut(300);
+      $(menu).classList.remove("gamburger-menu__list_show");//при нажатии клавиши ESC меню закрывается
+      // $(menu).fadeOut(300);
       
     }
   });
 
   $(closeMenu).on("click", function (evt) {
     evt.preventDefault();
-    // menu.classList.remove("gamburger-menu__list_show");
-    $(menu).fadeOut(300);
+    menu.classList.remove("gamburger-menu__list_show");
+    // $(menu).fadeOut(300);
     $(menuToggle).fadeIn(300);
   })
 
-  $(menu).on('blur',function(){
-    $(this).fadeOut(300);
-    $(menuToggle).fadeIn(300);
-  });
+  // $(menu).on('blur',function(){
+  //   $(this).fadeOut(300);
+  //   $(menuToggle).fadeIn(300);
+  // });
 
   //////////// animate scroll
 
@@ -57,7 +57,8 @@ $(document).ready(function(){
 
   var mySwiper = new Swiper ('.swiper-container', {
     // spaceBetween: 40,
-    speed: 3000,
+    // direction: 'vertical',
+    speed: 2000,
     loop: true,
     centeredSlides: true,
     mousewheel: true,
