@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <link rel="stylesheet" href="css/libs.min.css"> 
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>MMBusines</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <button class="header__burger">Навигация</button>
+      <a href="index.html" class="logo"><img src="img/logo.jpeg" width="165" height="44" alt="MMBusines"></a>
+      <nav class="header__navigation">
+        <a href="about.html" class="header__link">О компании</a>
+        <a href="recruitmentIT.html" class="header__link">Подбор IT персонала</a>
+        <a href="costService.html" class="header__link">Стоимость услуг</a>
+        <a href="clients.html" class="header__link">Клиенты </a>
+        <a href="contacts.html" class="header__link">Контакты</a>
+      </nav>
+      <address class="header__contacts">
+        <a class="header__contact header__contact_tel" href="tel:+74955325103">+7 (495) 532-51-03</a>
+        <a class="header__contact header__contact_email" href="mailto:info@mmbusiness.ru">info@mmbusiness.ru</a>
+      </address>
+      <div class="header__switch">
+        <a class="header__switch-lang header__switch-lang_ru" href="#">RU</a>
+        <a class="header__switch-lang header__switch-lang_en" href="#">EN</a>
+      </div>
+    </div>
+  </header>
+  <hr class="header__line">
+
+  <section class="contacts section" style="background: 50% 0 url('img/bg-contacts.png');">
+    <div class="container">
+      <h2 class="title">КОНТАКТЫ</h2>
+      <div class="contacts__inner">
+        <address class="contacts__list">
+          <span class="title_blue">Телефон: <a href="tel:+74955325103">+7 (495) 532-51-03</a></span>
+          <span class="title_blue">Адрес: <a>Москва, 123317, Пресненская набережная д.6</a></span>
+          <a>Санкт-Петербург м. Петроградская, ул. Льва Толстого 1-3</a>
+          <span class="title_blue">E-mail для соискателей: <a>cv@mmbusiness.ru</a></span>
+          <span class="title_blue">E-mail для партнеров и клиентов: <a href="mailto:info@mmbusiness.ru">info@mmbusiness.ru</a></span>
+          <span class="title_blue">Реквизиты: <a href="#" class="contacts__bank">скачать</a></span>
+        </address>
+        <div class="contacts__text">
+          <div>Головной офис нашего кадрового агентства находится в Москве, в презентабельном офисе Москва-Сити, башня Империя.</div><br>
+          <div>Кроме столичных позиций агентство активно работает и закрывает вакансии в регионах.</div>
+        </div>
+      </div>
+  </section>
+  <section class="map section" style="background-image: url('img/bg-contacts2.png');">
+    <h2 class="title">Представительства компании<br><span class="title_blue">Вы можете найти во всех городах миллионниках:</h2>
+      <div class="map__wrapper">
+        <img class="map__img" src="img/contacts-map.png" width="1160" height="511">
+      </div>
+  </section>
+  
+  <section class="consultation">
+    <div class="container">
+      <h4 class="consultation__title">Получите индивидуальную консультацию<br><span class="title_blue">в течение 20 минут</span></h4>
+      <form class="consultation__form">
+        <input class="consultation__input" type="text" name="name" placeholder="Имя*" required>
+        <input class="consultation__input" pattern="7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" type="tel" name="tel" placeholder="Телефон*" required>
+        <input class="consultation__input" type="email" name="email" placeholder="Почта*">
+        <textarea class="consultation__input" name="message" placeholder="Сообщение"></textarea>
+      </form>
+      <a id="button-consultation1" class="button">Получить консультацию</a>
+      <p class="consultation__text">Нажимая на кнопку “Отправить”, Вы даете согласие на обработку персональных данных </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container container_flex">
+      <div class="footer__col">
+        <p class="footer__text">Для связи</p>
+        <address>
+          <a class="footer__contact" href="tel:+74955325103">Наш телефон: +7 (495) 532-51-03,</a>
+          <a class="footer__contact" href="mailto:info@mmbusiness.ru">Наш e-mail: info@mmbusiness.ru</a>
+        </address>
+        <a href="#" class="button button_politic">Политика защиты и обработки персональных данныx</a>
+      </div>
+      <div class="footer__col">
+        <a class="footer__link" href="about.html">О компании</a>
+        <a class="footer__link" href="consulting.html">Консалтинг</a>
+        <a class="footer__link" href="blog.html">Блог</a>
+        <a class="footer__link" href="recruitmentPublic.html">Подбор персонала по госзакупкам</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__text footer__text_sub">Подпишитель на наши новости</p>
+        <form class="footer__form">
+          <input class="footer__subscribe" type="email" name="email-subscribe" placeholder="Ваш e-mail">
+          <a class="button button_subscribe">Подписаться</a>
+        </form>
+        <p class="footer__copyright">© 2019 mmbusiness. Все права защищены.</p>
+        <div class="footer__social">
+          <a href="#" class="social__button" style="background: 0 0 /cover no-repeat url('img/icons-social.png');">FaceBook</a>
+          <a href="#" class="social__button" style="background: -22px 0 /cover no-repeat url('img/icons-social.png');">VK</a>
+          <a href="#" class="social__button" style="background: -44px 0 /cover no-repeat url('img/icons-social.png');">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <section class="popup popup_thank">
+    <div class="popup__inner">
+      <h3 class="popup__title">СПАСИБО</h3>
+      <p class="popup__text">Ваша заявка на консультацию отправлена.</p>
+      <p class="popup__text_small"> Наш менеджер свяжется с вами в ближайшее время.</p>
+      <p class="popup__close">Закрыть</p>
+    </div>
+  </section>
+  <script src="js/libs.js"></script> 
+  <script src="js/main.js"></script> 
+</body>
+</html>

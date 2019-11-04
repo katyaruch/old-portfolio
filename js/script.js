@@ -58,7 +58,7 @@ $(document).ready(function(){
   var mySwiper = new Swiper ('.swiper-container', {
     // spaceBetween: 40,
     // direction: 'vertical',
-    speed: 2000,
+    speed: 1500,
     loop: true,
     centeredSlides: true,
     mousewheel: true,
