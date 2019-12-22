@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1250">
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- bootstrap-datepicker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+  <!-- Font Awesome 5 Free -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+<!--   <link rel="stylesheet" href="css/fontawesome/css/fontawesome.css">
+  <link rel="stylesheet" href="css/fontawesome/css/solid.css"> -->
+
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Сравни билеты</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">
+        <img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x, img/logo@3x.png 3x" alt="Сравни билеты">
+      </a>
+      <p class="header-text">Поиск дешевых билетов на автобус</p>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-item"><a href="#">Расписание автобусов</a></li>
+          <li class="header-nav-item"><a href="#">Автовокзалы</a></li>
+          <li class="header-nav-item"><a href="#">Вопросы-ответы</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="main">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Билеты на автобус</a></li>
+          <li class="breadcrumb-item"><a href="#">из Самары</a></li>
+          <li class="breadcrumb-item"><a href="#">в Тольятти</a></li>
+          <li class="breadcrumb-item active" aria-current="page">28 августа</li>
+        </ol>
+      </nav>
+      <h1 class="visually-hidden">Билеты на автобус</h1>
+      <form class="main-form">
+        <div class="main-form-fields col-lg-9">
+          <label class="main-form-label" for="from">Откуда
+            <input class="main-form-field" id="from" name="from" type="text" placeholder="Самара">
+            <span class="main-form-reverse">Поменять местами</span>
+          </label>
+
+          <label class="main-form-label" for="to">Куда
+            <input class="main-form-field" id="to" name="to" type="text" placeholder="Тольятти">
+          </label>
+
+          <label class="main-form-label main-form-label--date" for="date">Дата поездки
+            <input class="main-form-field" id="date" name="date" data-toggle="datetimepicker" type="text" placeholder="Все дни">
+          </label>
+        </div>
+
+        <button class="button button--search col-lg-3" type="submit">Найти билеты</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="other-dates">
+    <div class="container d-flex">
+      <h2 class="other-dates-title">Цены могут быть ниже на другие даты</h2>
+      <ul class="other-dates-list">
+        <li class="other-dates-item other-dates-item--cheap">
+          <a href="#">
+            <span class="other-dates-item-price">290 р.</span>
+            <span class="other-dates-item-date">пн, 26 авг</span>
+          </a>
+        </li>
+        <li class="other-dates-item">
+          <a href="#">
+            <span class="other-dates-item-price">290 р.</span>
+            <span class="other-dates-item-date">пн, 26 авг</span>
+          </a>
+        </li>
+        <li class="other-dates-item other-dates-item--fast">
+          <a href="#">
+            <span class="other-dates-item-price">290 р.</span>
+            <span class="other-dates-item-date">пн, 26 авг</span>
+          </a>
+        </li>
+        <li class="other-dates-item other-dates-item--cheap">
+          <a href="#">
+            <span class="other-dates-item-price">290 р.</span>
+            <span class="other-dates-item-date">пн, 26 авг</span>
+          </a>
+        </li>
+        <li class="other-dates-item other-dates-item--cheap">
+          <a href="#">
+            <span class="other-dates-item-price">290 р.</span>
+            <span class="other-dates-item-date">пн, 26 авг</span>
+          </a>
+        </li>
+        <li class="other-dates-item">
+          <a href="#">
+            <span class="other-dates-item-price">290 р.</span>
+            <span class="other-dates-item-date">пн, 26 авг</span>
+          </a>
+        </li>
+        <li class="other-dates-item other-dates-item--cheap">
+          <a href="#">
+            <span class="other-dates-item-price">290 р.</span>
+            <span class="other-dates-item-date">пн, 26 авг</span>
+          </a>
+        </li>
+        <li class="other-dates-item other-dates-item--cheap">
+          <a href="#">
+            <span class="other-dates-item-price">290 р.</span>
+            <span class="other-dates-item-date">пн, 26 авг</span>
+          </a>
+        </li>
+        <li class="other-dates-item other-dates-item--cheap">
+          <a href="#">
+            <span class="other-dates-item-price">290 р.</span>
+            <span class="other-dates-item-date">пн, 26 авг</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="page-timetable">
+    <div class="container">
+      <h1 class="page-timetable-title title">Билеты и расписание автобусов Самара – Тольятти</h1>
+      <p class="page-timetable-text col-lg-10">На странице вы можете купить билет на автобус 
+        <span>Самара</span> – <span>Тольятти</span> 
+        по цене от <span>300</span> руб. и ознакомиться с актуальным расписанием автобусов. Средняя цена билета на автобус 
+        <span>Самара</span> – <span>Тольятти</span> составляет 
+        <span>310</span> руб.
+      </p>
+      
+      <div class="special-group-wrapper">
+        <div class="special-group special-group--fast">
+          <div class="special-group-icon">
+            <img src="img/icons-8-flash-on-50-fff.png"
+                 srcset="img/icons-8-flash-on-50@2x-fff.png 2x,
+                         img/icons-8-flash-on-50@3x-fff.png 3x"
+                 alt="Самый быстрый">
+          </div>
+          <span class="special-group-text">Самый быстрый</span>
+          <span class="special-group-price">260 р.</span>
+        </div>
+        <div class="special-group special-group--cheap">
+          <div class="special-group-icon">
+            <img src="img/icons-8-discount-60-fff.png"
+                 srcset="img/icons-8-discount-60@2x-fff.png 2x,
+                         img/icons-8-discount-60@3x-fff.png 3x"
+                 alt="Самый дешевый">
+          </div>
+          <span class="special-group-text">Самый дешевый</span>
+          <span class="special-group-price">200 р.</span>
+        </div>
+
+        <a class="link link-reverse" href="#">Расписание обратных рейсов Тольятти – Самара</a>
+      </div>
+
+    </div>
+  </section>
+  <section>
+    <div class="table table--striped">
+      <div class="row">
+        <div class="table-tr container">
+          <div class="table-th sort-departure">Отправление</div>
+          <div class="table-th">В пути</div>
+          <div class="table-th">Прибытие</div>
+          <div class="table-th">График</div>
+          <div class="table-th">Цена</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="table-tr container">
+          <div class="table-td">
+            <div>
+              <span class="time time--departure">6:30</span>
+              <span class="time-local-mark"><i class="far fa-clock"></i>Местное</span>
+            </div>
+            <div><a href="#" class="link stations stations--departure">Автовокзал Центральный</a></div>
+            <div><a href="#" class="link city city--departure">Самара</a></div>
+          </div>
+          <div class="table-td">
+            <span class="duration">1 ч 30 мин</span>
+          </div>
+          <div class="table-td">
+            <div>
+              <span class="time time--arrival">8:00</span>
+              <span class="time-local-mark"><i class="far fa-clock"></i>Местное</span>
+            </div>
+            <div><a href="#" class="link stations stations--arrival">Автовокзал Центральный</a></div>
+            <div><a href="#" class="link city city--arrival">Самара</a></div>
+          </div>
+          <div class="table-td">
+            <span class="schedule">ежедневно</span>
+          </div>
+          <div class="table-td">
+            <div class="price-wrapper">
+              <span class="price">256 р.</span>
+              <div class="dropdown site-dropdown">
+                <a class="dropdown-toggle site" data-toggle="dropdown">
+                  <img src="img/site-logo/busfor.png"
+                       srcset="img/site-logo/busfor@2x.png 2x,
+                               img/site-logo/busfor@3x.png 3x"
+                       alt="logo">
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item">
+                    <img src="img/site-logo/busfor.png"
+                         srcset="img/site-logo/busfor@2x.png 2x,
+                                 img/site-logo/busfor@3x.png 3x"
+                         alt="logo">
+                  </a>
+                  <a class="dropdown-item">
+                    <img src="img/site-logo/easyway.png"
+                         srcset="img/site-logo/easyway@2x.png 2x,
+                                 img/site-logo/easyway@3x.png 3x"
+                         alt="logo">
+                  </a>
+                  <a class="dropdown-item">
+                    <img src="img/site-logo/tutu.png"
+                         srcset="img/site-logo/tutu@2x.png 2x,
+                                 img/site-logo/tutu@3x.png 3x"
+                         alt="logo">
+                  </a>
+                </div>
+              </div>
+              <span class="mark mark--fast">Быстрый</span>
+            </div>
+            <div>
+              <a href="#" class="button button--buy">Купить билет</a>
+              <span class="rate">4.5</span>
+              <div class="dropdown details-dropdown">
+                <a class="dropdown-toggle details" data-toggle="dropdown">Детали рейса</a>
+                <div class="dropdown-menu">
+                  <span class="dropdown-item">Детали</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="table-tr container">
+          <div class="table-td">
+            <div>
+              <span class="time time--departure">8:30</span>
+              <span class="time-local-mark"><i class="far fa-clock"></i>Местное</span>
+            </div>
+            <div><a href="#" class="link stations stations--departure">Автовокзал Центральный</a></div>
+            <div><a href="#" class="link city city--departure">Самара</a></div>
+          </div>
+          <div class="table-td">
+            <span class="duration">1 ч 50 мин</span>
+          </div>
+          <div class="table-td">
+            <div>
+              <span class="time time--arrival">10:20</span>
+              <span class="time-local-mark"><i class="far fa-clock"></i>Местное</span>
+            </div>
+            <div><a href="#" class="link stations stations--arrival">Автовокзал Центральный</a></div>
+            <div><a href="#" class="link city city--arrival">Самара</a></div>
+          </div>
+          <div class="table-td">
+            <span class="schedule">пн, вт, вс</span>
+          </div>
+          <div class="table-td">
+            <div class="price-wrapper">
+              <span class="price">200 р.</span>
+              <div class="dropdown site-dropdown">
+                <a class="dropdown-toggle site" data-toggle="dropdown">
+                  <img src="img/site-logo/busfor.png"
+                       srcset="img/site-logo/busfor@2x.png 2x,
+                               img/site-logo/busfor@3x.png 3x"
+                       alt="logo">
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item">
+                    <img src="img/site-logo/busfor.png"
+                         srcset="img/site-logo/busfor@2x.png 2x,
+                                 img/site-logo/busfor@3x.png 3x"
+                         alt="logo">
+                  </a>
+                  <a class="dropdown-item">
+                    <img src="img/site-logo/easyway.png"
+                         srcset="img/site-logo/easyway@2x.png 2x,
+                                 img/site-logo/easyway@3x.png 3x"
+                         alt="logo">
+                  </a>
+                  <a class="dropdown-item">
+                    <img src="img/site-logo/tutu.png"
+                         srcset="img/site-logo/tutu@2x.png 2x,
+                                 img/site-logo/tutu@3x.png 3x"
+                         alt="logo">
+                  </a>
+                </div>
+              </div>
+              <span class="mark mark--cheap">Дешевый</span>
+            </div>
+            <div>
+              <a href="#" class="button button--buy">Купить билет</a>
+              <span class="rate">4.5</span>
+              <div class="dropdown details-dropdown">
+                <a class="dropdown-toggle details" data-toggle="dropdown">Детали рейса</a>
+                <div class="dropdown-menu">
+                  <span class="dropdown-item">Детали</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="table-tr container">
+          <div class="table-td">
+            <div>
+              <span class="time time--departure">6:30</span>
+              <span class="time-local-mark"><i class="far fa-clock"></i>Местное</span>
+            </div>
+            <div><a href="#" class="link stations stations--departure">Автовокзал Центральный</a></div>
+            <div><a href="#" class="link city city--departure">Самара</a></div>
+          </div>
+          <div class="table-td">
+            <span class="duration">1 ч 30 мин</span>
+          </div>
+          <div class="table-td">
+            <div>
+              <span class="time time--arrival">8:00</span>
+              <span class="time-local-mark"><i class="far fa-clock"></i>Местное</span>
+            </div>
+            <div><a href="#" class="link stations stations--arrival">Автовокзал Центральный</a></div>
+            <div><a href="#" class="link city city--arrival">Самара</a></div>
+          </div>
+          <div class="table-td">
+            <span class="schedule">ежедневно</span>
+          </div>
+          <div class="table-td">
+            <div class="price-wrapper">
+              <span class="price">256 р.</span>
+              <div class="dropdown site-dropdown">
+                <a class="dropdown-toggle site" data-toggle="dropdown">
+                  <img src="img/site-logo/tutu.png"
+                       srcset="img/site-logo/tutu@2x.png 2x,
+                               img/site-logo/tutu@3x.png 3x"
+                       alt="logo">
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item">
+                    <img src="img/site-logo/busfor.png"
+                         srcset="img/site-logo/busfor@2x.png 2x,
+                                 img/site-logo/busfor@3x.png 3x"
+                         alt="logo">
+                  </a>
+                  <a class="dropdown-item">
+                    <img src="img/site-logo/easyway.png"
+                         srcset="img/site-logo/easyway@2x.png 2x,
+                                 img/site-logo/easyway@3x.png 3x"
+                         alt="logo">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a href="#" class="button button--buy">Купить билет</a>
+              <span class="rate">4.5</span>
+              <div class="dropdown details-dropdown">
+                <a class="dropdown-toggle details" data-toggle="dropdown">Детали рейса</a>
+                <div class="dropdown-menu">
+                  <span class="dropdown-item">Детали</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="table-tr container">
+          <div class="table-td">
+            <div>
+              <span class="time time--departure">6:30</span>
+              <span class="time-local-mark"><i class="far fa-clock"></i>Местное</span>
+            </div>
+            <div><a href="#" class="link stations stations--departure">Автовокзал Центральный</a></div>
+            <div><a href="#" class="link city city--departure">Самара</a></div>
+          </div>
+          <div class="table-td">
+            <span class="duration">1 ч 30 мин</span>
+          </div>
+          <div class="table-td">
+            <div>
+              <span class="time time--arrival">8:00</span>
+              <span class="time-local-mark"><i class="far fa-clock"></i>Местное</span>
+            </div>
+            <div><a href="#" class="link stations stations--arrival">Автовокзал Центральный</a></div>
+            <div><a href="#" class="link city city--arrival">Самара</a></div>
+          </div>
+          <div class="table-td">
+            <span class="schedule">ежедневно</span>
+          </div>
+          <div class="table-td">
+            <div class="price-wrapper">
+              <span class="price">256 р.</span>
+              <div class="dropdown site-dropdown">
+                <a class="dropdown-toggle site" data-toggle="dropdown">
+                  <img src="img/site-logo/tutu.png"
+                       srcset="img/site-logo/tutu@2x.png 2x,
+                               img/site-logo/tutu@3x.png 3x"
+                       alt="logo">
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item">
+                    <img src="img/site-logo/busfor.png"
+                         srcset="img/site-logo/busfor@2x.png 2x,
+                                 img/site-logo/busfor@3x.png 3x"
+                         alt="logo">
+                  </a>
+                  <a class="dropdown-item">
+                    <img src="img/site-logo/easyway.png"
+                         srcset="img/site-logo/easyway@2x.png 2x,
+                                 img/site-logo/easyway@3x.png 3x"
+                         alt="logo">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a href="#" class="button button--buy">Купить билет</a>
+              <span class="rate">4.5</span>
+              <div class="dropdown details-dropdown">
+                <a class="dropdown-toggle details" data-toggle="dropdown">Детали рейса</a>
+                <div class="dropdown-menu">
+                  <span class="dropdown-item">Детали</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="table-tr container">
+          <div class="table-td">
+            <div>
+              <span class="time time--departure">6:30</span>
+              <span class="time-local-mark"><i class="far fa-clock"></i>Местное</span>
+            </div>
+            <div><a href="#" class="link stations stations--departure">Автовокзал Центральный</a></div>
+            <div><a href="#" class="link city city--departure">Самара</a></div>
+          </div>
+          <div class="table-td">
+            <span class="duration">1 ч 30 мин</span>
+          </div>
+          <div class="table-td">
+            <div>
+              <span class="time time--arrival">8:00</span>
+              <span class="time-local-mark"><i class="far fa-clock"></i>Местное</span>
+            </div>
+            <div><a href="#" class="link stations stations--arrival">Автовокзал Центральный</a></div>
+            <div><a href="#" class="link city city--arrival">Самара</a></div>
+          </div>
+          <div class="table-td">
+            <span class="schedule">ежедневно</span>
+          </div>
+          <div class="table-td">
+            <div class="price-wrapper">
+              <span class="price">256 р.</span>
+              <div class="dropdown site-dropdown">
+                <a class="dropdown-toggle site" data-toggle="dropdown">
+                  <img src="img/site-logo/busfor.png"
+                       srcset="img/site-logo/busfor@2x.png 2x,
+                               img/site-logo/busfor@3x.png 3x"
+                       alt="logo">
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item">
+                    <img src="img/site-logo/busfor.png"
+                         srcset="img/site-logo/busfor@2x.png 2x,
+                                 img/site-logo/busfor@3x.png 3x"
+                         alt="logo">
+                  </a>
+                  <a class="dropdown-item">
+                    <img src="img/site-logo/easyway.png"
+                         srcset="img/site-logo/easyway@2x.png 2x,
+                                 img/site-logo/easyway@3x.png 3x"
+                         alt="logo">
+                  </a>
+                  <a class="dropdown-item">
+                    <img src="img/site-logo/tutu.png"
+                         srcset="img/site-logo/tutu@2x.png 2x,
+                                 img/site-logo/tutu@3x.png 3x"
+                         alt="logo">
+                  </a>
+                </div>
+              </div>
+              <span class="mark mark--fast">Быстрый</span>
+            </div>
+            <div>
+              <a href="#" class="button button--buy">Купить билет</a>
+              <span class="rate">4.5</span>
+              <div class="dropdown details-dropdown">
+                <a class="dropdown-toggle details" data-toggle="dropdown">Детали рейса</a>
+                <div class="dropdown-menu">
+                  <span class="dropdown-item">Детали</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="info">
+    <div class="container">
+      <div class="cards d-flex justify-content-between">
+        <div class="card card--fast col-lg-6">
+          <div class="card-header d-flex justify-content-between">
+            <span class="card-title">Самый быстрый рейс</span>
+            <a href="#" class="button button--white">Показать</a>
+          </div>
+          <div class="card-body">
+            Билет на самый быстрый рейс из Самары в Тольятти стоит 2 089 р. Этот рейс от перевозчика «ЗАО Движение», отправление в 6:30 по местному времени. Время в пути – 2 ч 30 мин.
+          </div>
+        </div>
+        <div class="card card--cheap col-lg-6">
+          <div class="card-header d-flex justify-content-between">
+            <span class="card-title">Самый быстрый рейс</span>
+            <a href="#" class="button button--white">Показать</a>
+          </div>
+          <div class="card-body">
+            Билет на самый быстрый рейс из Самары в Тольятти стоит 2 089 р. Этот рейс от перевозчика «ЗАО Движение», отправление в 6:30 по местному времени. Время в пути – 2 ч 30 мин.
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar col-lg-3">
+        <p class="sidebar-title">Справка о маршруте</p>
+        <span class="text">Ниже собраны все автобусные рейсы из Самары в Тольятти на 2019 год: всего 25 рейсов, из которых 10 проходящих. Среднее время в пути 2 ч 30 мин. Цены на билеты начинаются от 200 р.</span>
+      </div>
+      <div class="info-left col-lg-9">
+        <h3 class="info-title">Информация о маршруте автобуса Самара – Тольятти</h3>
+        <p class="text">Ниже собраны все автобусные рейсы из Самары в Тольятти на 2019 год: всего 25 рейсов, из которых 10 проходящих. Среднее время в пути 2 ч 30 мин. Цены на билеты начинаются от 200 р. Узнайте точное расписание автобусов из Самары в Тольятти, выбрав конкретную дату, затем подберите удобный для себя рейс и купите билет онлайн.</p>
+
+        <div class="info-list">
+          <div class="info-item info-item--distance">
+            <span class="info-subtitle">Расстояние</span>
+            <span>114 км</span>
+          </div>
+          <div class="info-item info-item--avg-time">
+            <span class="info-subtitle">Среднее время в пути</span>
+            <span>2 часа 30 минут</span>
+          </div>
+          <div class="info-item info-item--avg-price">
+            <span class="info-subtitle">Средняя стоимость билета</span>
+            <span>290 рублей</span>
+          </div>
+        </div>
+
+        <p class="text">Ниже собраны все автобусные рейсы из Самары в Тольятти на 2019 год: всего 25 рейсов, из которых 10 проходящих. Среднее время в пути 2 ч 30 мин. Цены на билеты начинаются от 200 р. Узнайте точное расписание автобусов из Самары в Тольятти, выбрав конкретную дату, затем подберите удобный для себя рейс и купите билет онлайн.</p>
+
+        <h3 class="info-title">Еще рейсы из Самары</h3>
+        <ul class="race-list row">
+          <li class="race-item col-4">
+            <a href="#" class="link">Самара – Отрадный</a>
+            <span class="price">от 250 р.</span>
+          </li>
+          <li class="race-item col-4">
+            <a href="#" class="link">Самара – Ульяновск</a>
+            <span class="price">от 250 р.</span>
+          </li>
+          <li class="race-item col-4">
+            <a href="#" class="link">Самара – Ульяновск</a>
+            <span class="price">от 250 р.</span>
+          </li>
+          <li class="race-item col-4">
+            <a href="#" class="link">Самара – Ульяновск</a>
+            <span class="price">от 250 р.</span>
+          </li>
+          <li class="race-item col-4">
+            <a href="#" class="link">Самара – Ульяновск</a>
+            <span class="price">от 250 р.</span>
+          </li>
+          <li class="race-item col-4">
+            <a href="#" class="link">Самара – Ульяновск</a>
+            <span class="price">от 250 р.</span>
+          </li>
+        </ul>
+
+        <h3 class="info-title">Рейсы из Тольятти</h3>
+        <ul class="race-list row">
+          <li class="race-item col-4">
+            <a href="#" class="link">Самара – Отрадный</a>
+            <span class="price">от 250 р.</span>
+          </li>
+          <li class="race-item col-4">
+            <a href="#" class="link">Самара – Ульяновск</a>
+            <span class="price">от 250 р.</span>
+          </li>
+          <li class="race-item col-4">
+            <a href="#" class="link">Самара – Ульяновск</a>
+            <span class="price">от 250 р.</span>
+          </li>
+          <li class="race-item col-4">
+            <a href="#" class="link">Самара – Ульяновск</a>
+            <span class="price">от 250 р.</span>
+          </li>
+          <li class="race-item col-4">
+            <a href="#" class="link">Самара – Ульяновск</a>
+            <span class="price">от 250 р.</span>
+          </li>
+          <li class="race-item col-4">
+            <a href="#" class="link">Самара – Ульяновск</a>
+            <span class="price">от 250 р.</span>
+          </li>
+        </ul>
+        
+        <h3 class="info-title">Автобус Самара – Тольятти</h3>
+        <p class="text">Ниже собраны все автобусные рейсы из Самары в Тольятти на 2019 год: всего 25 рейсов, из которых 10 проходящих. Среднее время в пути 2 ч 30 мин. Цены на билеты начинаются от 200 р. Узнайте точное расписание автобусов из Самары в Тольятти, выбрав конкретную дату, затем подберите удобный для себя рейс и купите билет онлайн.<br>
+        Ниже собраны все автобусные рейсы из Самары в Тольятти на 2019 год: всего 25 рейсов, из которых 10 проходящих. Среднее время в пути 2 ч 30 мин. Цены на билеты начинаются от 200 р. Узнайте точное расписание автобусов из Самары в Тольятти, выбрав конкретную дату, затем подберите удобный для себя рейс и купите билет онлайн. Ниже собраны все автобусные рейсы из Самары в Тольятти на 2019 год: всего 25 рейсов, из которых 10 проходящих. Среднее время в пути 2 ч 30 мин. Цены на билеты начинаются от 200 р. Узнайте точное расписание автобусов из Самары в Тольятти, выбрав конкретную дату, затем подберите удобный для себя рейс и купите билет онлайн.<br>
+        Ниже собраны все автобусные рейсы из Самары в Тольятти на 2019 год: всего 25 рейсов, из которых 10 проходящих. Среднее время в пути 2 ч 30 мин. Цены на билеты начинаются от 200 р. Узнайте точное расписание автобусов из Самары в Тольятти, выбрав конкретную дату, затем подберите удобный для себя рейс и купите билет онлайн.</p>
+
+        <img class="map" src="img/map.png" alt="Карта">
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-col">
+        <a href="/" class="logo">
+          <img src="img/logo-white.svg" alt="Logo">
+        </a>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-facebook-square"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div>
+          <a class="footer-link-app" href="#"><img src="img/appstore.svg" alt="AppStore"></a>
+          <a class="footer-link-app" href="#"><img src="img/google-play.png" srcset="img/google-play@2x.png 2x, img/google-play@3x.png 3x"  alt="GooglePlay"></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-title">Популярные города</h3>
+        <div class="footer-list">
+          <a href="#">Москва</a>
+          <a href="#">Санкт-Петербург</a>
+          <a href="#">Нижний Новгород</a>
+        </div>
+        <div class="footer-list">
+          <a href="#">Воронеж</a>
+          <a href="#">Ростов-на-Дону</a>
+          <a href="#">Екатеринбург</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-title">Популярные маршруты</h3>
+        <div class="footer-list">
+          <a href="#">Москва – Нижний Новгород</a>
+          <a href="#">Москва – Санкт-Петербург</a>
+          <a href="#">Севастополь – Симферополь</a>
+        </div>
+        <div class="footer-list">
+          <a href="#">Санкт-Петербург – Москва</a>
+          <a href="#">Краснодар – Анапа</a>
+          <a href="#">Екатеринбург – Челябинск</a>
+        </div>
+      </div>
+
+      <div>
+        <p class="footer-copyright col-lg-9">© 2019 Все права защищены. Запрещается копировать, использовать, распространять, модифицировать любое содержимое этого сайта.</p>
+        <a class="footer-politic link" href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap 4 -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- bootstrap-datepicker + locale -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.ru.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

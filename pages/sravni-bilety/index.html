@@ -2,16 +2,23 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=1250">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- bootstrap-datepicker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+  <!-- Font Awesome 5 Free -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
 <!--   <link rel="stylesheet" href="css/fontawesome/css/fontawesome.css">
   <link rel="stylesheet" href="css/fontawesome/css/solid.css"> -->
+
   <link rel="stylesheet" href="css/styles.css">
   <title>Сравни билеты</title>
 </head>
-<body>
+<body class="index">
   <header class="header">
     <div class="container">
       <a href="/" class="logo">
@@ -20,7 +27,7 @@
       <p class="header-text">Поиск дешевых билетов на автобус</p>
       <nav class="header-nav">
         <ul class="header-nav-list">
-          <li class="header-nav-item"><a href="#">Расписание автобусов</a></li>
+          <li class="header-nav-item"><a href="/timetable.html">Расписание автобусов</a></li>
           <li class="header-nav-item"><a href="#">Автовокзалы</a></li>
           <li class="header-nav-item"><a href="#">Вопросы-ответы</a></li>
         </ul>
@@ -35,25 +42,26 @@
         <div class="main-form-fields col-lg-9">
           <label class="main-form-label" for="from">Откуда
             <input class="main-form-field" id="from" type="text" placeholder="Самара">
+            <span class="main-form-reverse">Поменять местами</span>
           </label>
 
           <label class="main-form-label" for="to">Куда
             <input class="main-form-field" id="to" type="text" placeholder="Тольятти">
           </label>
 
-          <label class="main-form-label" for="date">Дата поездки
-            <input class="main-form-field" id="date" type="date" placeholder="Все дни">
+          <label class="main-form-label main-form-label--date" for="date">Дата поездки
+            <input class="main-form-field" id="date" data-toggle="datetimepicker" type="text" placeholder="Все дни">
           </label>
         </div>
 
-        <input class="button col-lg-3" type="submit" value="Найти">
+        <button class="button button--search col-lg-3" type="submit">Найти билеты</button>
       </form>
     </div>
   </section>
   <section class="about">
     <div class="container">
-      <div class="about-questions">
-        <p class="about-questions-title">Отвечаем на популярные вопросы</p>
+      <div class="sidebar about-questions">
+        <p class="sidebar-title">Отвечаем на популярные вопросы</p>
         <a class="link" href="#">Зачем пользоваться вашим сервисом?</a>
         <a class="link" href="#">Берёте ли вы комиссию?</a>
         <a class="link" href="#">А меня не обманут и точно пустят в автобус?</a>
@@ -68,15 +76,17 @@
   </section>
   <section class="pop-directions">
     <div class="container">
-      <h2 class="title pop-directions-title">Популярные направления из 
-        <select class="pop-directions-select">
-          <option class="pop-directions-select-item">Москвы</option>
-          <option class="pop-directions-select-item">Санкт-Петербурга</option>
-          <option class="pop-directions-select-item">Нижнего Новгорода</option>
-        </select>
+      <h2 class="title pop-directions-title">Популярные направления из
+        <span class="dropdown pop-directions-dropdown">
+          <button class="button dropdown-toggle" type="button" id="pop-directions-select" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Москвы</button>
+          <span class="dropdown-menu" aria-labelledby="pop-directions-select">
+            <button class="dropdown-item" type="button">Санкт-Петербурга</button>
+            <button class="dropdown-item" type="button">Нижнего Новгорода</button>
+          </span>
+        </span>
       </h2>
       <div class="pop-directions-list">
-        <div class="pop-directions-item col-lg-6">
+        <a href="#" class="pop-directions-item col-lg-6">
           <img src="img/novgorod.jpg"
                srcset="img/novgorod@2x.jpg 2x,
                        img/novgorod@3x.jpg 3x" alt="Img">
@@ -85,9 +95,9 @@
             <p class="pop-directions-item-to">Нижний Новгород</p>
             <p class="pop-directions-item-price">от 1020 р.</p>
           </div>
-        </div>
+        </a>
 
-        <div class="pop-directions-item col-lg-6">
+        <a href="#" class="pop-directions-item col-lg-6">
           <img src="img/spb.jpg"
                srcset="img/spb@2x.jpg 2x,
                        img/spb@3x.jpg 3x" alt="Img">
@@ -96,9 +106,9 @@
             <p class="pop-directions-item-to">Санкт-Петербург</p>
             <p class="pop-directions-item-price">от 1020 р.</p>
           </div>
-        </div>
+        </a>
         
-        <div class="pop-directions-item col-lg-4">
+        <a href="#" class="pop-directions-item col-lg-4">
           <img src="img/vrn.jpg"
                srcset="img/vrn@2x.jpg 2x,
                        img/vrn@3x.jpg 3x" alt="Img">
@@ -107,9 +117,9 @@
             <p class="pop-directions-item-to">Воронеж</p>
             <p class="pop-directions-item-price">от 1020 р.</p>
           </div>
-        </div>
+        </a>
         
-        <div class="pop-directions-item col-lg-4">
+        <a href="#" class="pop-directions-item col-lg-4">
           <img src="img/ryazan.jpg"
                srcset="img/ryazan@2x.jpg 2x,
                        img/ryazan@3x.jpg 3x" alt="Img">
@@ -118,9 +128,9 @@
             <p class="pop-directions-item-to">Рязань</p>
             <p class="pop-directions-item-price">от 1020 р.</p>
           </div>
-        </div>
+        </a>
         
-        <div class="pop-directions-item col-lg-4">
+        <a href="#" class="pop-directions-item col-lg-4">
           <img src="img/bitmap.jpg"
                srcset="img/bitmap@2x.jpg 2x,
                        img/bitmap@3x.jpg 3x" alt="Img">
@@ -129,7 +139,7 @@
             <p class="pop-directions-item-to">Тула</p>
             <p class="pop-directions-item-price">от 1020 р.</p>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
@@ -184,7 +194,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-col">
-        <a href="/" class="logo-white">
+        <a href="/" class="logo">
           <img src="img/logo-white.svg" alt="Logo">
         </a>
         <div class="social-links">
@@ -230,5 +240,18 @@
       </div>
     </div>
   </footer>
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap 4 -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- bootstrap-datepicker + locale -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.ru.min.js"></script>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
