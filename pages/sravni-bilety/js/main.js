@@ -32,5 +32,10 @@ $(document).ready(function(){
   $( "#to" ).autocomplete({
     source: cities
   });
+  $( "#bus-stations" ).autocomplete({
+    source: cities
+  });
+
+
 
 });
