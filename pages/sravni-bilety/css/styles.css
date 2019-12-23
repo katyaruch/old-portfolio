@@ -753,6 +753,7 @@ input:focus {
   background-color: #f9f9f9; }
 
 .other-dates-title {
+  min-width: 148px;
   -ms-flex-preferred-size: 178px;
       flex-basis: 178px;
   min-height: 46px;
@@ -767,21 +768,35 @@ input:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 100%;
   margin: 0;
   padding: 0 21px 0 0;
-  list-style: none; }
+  list-style: none;
+  overflow: hidden; }
 
-.other-dates-list::after {
+.other-dates-item a:focus {
+  outline: none; }
+
+.slick-prev,
+.slick-next {
   position: absolute;
+  height: 53px;
+  padding: 0;
+  font-size: 0;
+  background-color: transparent;
+  border: 0; }
+
+.slick-prev {
+  visibility: hidden;
+  left: 0; }
+
+.slick-next {
+  right: 0; }
+
+.slick-next::after {
   content: "\f054";
-  right: 0;
   top: 12px;
   display: inline-block;
-  margin: 0;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 18px;
@@ -789,9 +804,10 @@ input:focus {
   color: #979797; }
 
 .other-dates-item {
-  width: 90px;
+  min-width: 90px;
   height: 53px;
   padding: 9px 9px 8px;
+  margin-right: 20px;
   text-align: center;
   border-radius: 4px;
   border: solid 2px #e4e4e4;

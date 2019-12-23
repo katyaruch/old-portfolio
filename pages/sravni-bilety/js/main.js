@@ -37,5 +37,11 @@ $(document).ready(function(){
   });
 
 
+  $('.other-dates-list').slick({
+    slidesToShow: 9,
+    slidesToScroll: 1,
+    autoplaySpeed: 2000,
+    dots: false
+  });
 
 });
