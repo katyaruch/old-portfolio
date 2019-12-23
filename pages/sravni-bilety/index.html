@@ -38,34 +38,41 @@
     <div class="container">
       <h1 class="main-title">Билеты на автобусы России</h1>
       <p class="main-text">Сравниваем все цены от автовокзалов и агентств. Выбирайте лучшие</p>
-      <form class="main-form">
-        <div class="main-form-fields col-lg-9">
-          <label class="main-form-label" for="from">Откуда
-            <input class="main-form-field" id="from" type="text" placeholder="Самара">
-            <span class="main-form-reverse">Поменять местами</span>
-          </label>
-
-          <label class="main-form-label" for="to">Куда
-            <input class="main-form-field" id="to" type="text" placeholder="Тольятти">
-          </label>
-
-          <label class="main-form-label main-form-label--date" for="date">Дата поездки
-            <input class="main-form-field" id="date" data-toggle="datetimepicker" type="text" placeholder="Все дни">
-          </label>
+      <form class="main-form row">
+        <div class="col-lg-9">
+          <div class="main-form-fields">
+            <div class="main-form-field main-form-field--from">
+              <input class="main-form-input" id="from" type="text" placeholder="Самара" required>
+              <label class="main-form-label" for="from">Откуда</label>
+              <button data-type="reverse-points" class="main-form-reverse">Поменять местами</button>
+            </div>
+            <div class="main-form-field main-form-field--to">
+              <input class="main-form-input" id="to" type="text" placeholder="Тольятти" required>
+              <label class="main-form-label" for="to">Куда</label>
+            </div>
+            <div class="main-form-field main-form-field--date">
+              <input class="main-form-input" id="date" data-toggle="datetimepicker" type="text" placeholder="Все дни">
+              <label class="main-form-label" for="date">Дата поездки</label>
+              <span class="main-form-calendar"></span>
+            </div>
+          </div>
         </div>
-
-        <button class="button button--search col-lg-3" type="submit">Найти билеты</button>
+        <div class="col-lg-3">          
+          <button class="button button--search" type="submit">Найти билеты</button>
+        </div>
       </form>
     </div>
   </section>
   <section class="about">
     <div class="container">
-      <div class="sidebar about-questions">
-        <p class="sidebar-title">Отвечаем на популярные вопросы</p>
-        <a class="link" href="#">Зачем пользоваться вашим сервисом?</a>
-        <a class="link" href="#">Берёте ли вы комиссию?</a>
-        <a class="link" href="#">А меня не обманут и точно пустят в автобус?</a>
-        <a class="link" href="#">Как вернуть билет?</a>
+      <div class="sidebar-wrapper">
+        <div class="sidebar about-questions">
+          <p class="sidebar-title">Отвечаем на популярные вопросы</p>
+          <a class="link" href="#">Зачем пользоваться вашим сервисом?</a>
+          <a class="link" href="#">Берёте ли вы комиссию?</a>
+          <a class="link" href="#">А меня не обманут и точно пустят в автобус?</a>
+          <a class="link" href="#">Как вернуть билет?</a>
+        </div>
       </div>
       <h2 class="title about-title col-lg-6">Помогаем найти самые дешевые билеты на автобус. Бесплатно.</h2>
       <p class="about-text col-lg-6">Смотрите актуальное расписание автобусов и выбирайте подходящий рейс, а мы вас направим на официальные сайты с лучшей ценой</p>
@@ -104,7 +111,7 @@
           <div class="pop-directions-item-inner">
             <p class="pop-directions-item-from">Москва –</p>
             <p class="pop-directions-item-to">Санкт-Петербург</p>
-            <p class="pop-directions-item-price">от 1020 р.</p>
+            <p class="pop-directions-item-price">от 870 р.</p>
           </div>
         </a>
         
@@ -115,7 +122,7 @@
           <div class="pop-directions-item-inner">
             <p class="pop-directions-item-from">Москва –</p>
             <p class="pop-directions-item-to">Воронеж</p>
-            <p class="pop-directions-item-price">от 1020 р.</p>
+            <p class="pop-directions-item-price">от 600 р.</p>
           </div>
         </a>
         
@@ -126,7 +133,7 @@
           <div class="pop-directions-item-inner">
             <p class="pop-directions-item-from">Москва –</p>
             <p class="pop-directions-item-to">Рязань</p>
-            <p class="pop-directions-item-price">от 1020 р.</p>
+            <p class="pop-directions-item-price">от 300 р.</p>
           </div>
         </a>
         
@@ -137,7 +144,7 @@
           <div class="pop-directions-item-inner">
             <p class="pop-directions-item-from">Москва –</p>
             <p class="pop-directions-item-to">Тула</p>
-            <p class="pop-directions-item-price">от 1020 р.</p>
+            <p class="pop-directions-item-price">от 430 р.</p>
           </div>
         </a>
       </div>
@@ -242,8 +249,9 @@
   </footer>
 
   <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
   <!-- Bootstrap 4 -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
