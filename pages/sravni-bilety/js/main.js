@@ -8,16 +8,22 @@ $(document).ready(function(){
     endDate: "+2m",
     startView: "days",
     orientation: "bottom left",
-    todayBtn: "linked"
+    todayBtn: "linked",
+    clearBtn: true
   });
 
-  var tomorrowBtn = '<th colspan="7" class="tomorrow" style="display: table-cell;">Завтра</th>';
-  $('.datepicker tfoot tr').append(tomorrowBtn);
 
-  $('.tomorrow').on('click', function () {
-     var date = $('#date').datepicker('getDate');
-     date.setDate(date.getDate() +1)
-     $('#date').datepicker('setDate', date);
+  var tomorrowBtn = '<th colspan="7" class="tomorrow" style="display: table-cell;">Завтра</th>';
+
+  $('#date').click(function(){
+    if(!$('th').is('.tomorrow'))
+      $('.datepicker tfoot tr:first-child').append(tomorrowBtn);
+
+    $('.tomorrow').click(function() {     
+      $('#date').datepicker('setDate', "+1d");
+    })
+
+    $(".clear").text("На все дни");
   });
 
 
