@@ -12,7 +12,6 @@ $(document).ready(function(){
     clearBtn: true
   });
 
-
   var tomorrowBtn = '<th colspan="7" class="tomorrow" style="display: table-cell;">Завтра</th>';
 
   $('#date').click(function(){
@@ -25,7 +24,6 @@ $(document).ready(function(){
 
     $(".clear").text("На все дни");
   });
-
 
   // https://jqueryui.com/autocomplete/
   var cities = [
@@ -55,6 +53,18 @@ $(document).ready(function(){
     slidesToScroll: 1,
     autoplaySpeed: 2000,
     dots: false
+  });
+
+
+  $('[data-type="reverse-points"]').click(function (e) {
+    e.preventDefault();
+    var $form = $(this).closest('form');
+    var from = $form.find('[name="from"]').val();
+    var to = $form.find('[name="to"]').val();
+    if(from && to && window.fromStations.indexOf(to) !== -1){
+        $form.find('[name="from"]').val(to);
+        $form.find('[name="to"]').val(from);
+    }
   });
 
 });

@@ -83,7 +83,7 @@ input:focus {
   padding: 15px 0 17px; }
 
 .header .logo {
-  margin-right: 10px; }
+  margin-right: 12px; }
 
 .header-text {
   display: inline-block;
@@ -649,6 +649,18 @@ input:focus {
   font-size: 16px;
   font-weight: bold;
   color: #282828; }
+
+.sidebar--ref {
+  padding-right: 30px; }
+
+.sidebar--ref .sidebar-title {
+  margin-bottom: 21px; }
+
+.sidebar--ref .link {
+  line-height: 18px; }
+
+.sidebar--ref .link:after {
+  margin-bottom: 20px; }
 
 .sidebar .text {
   line-height: 1.6; }
@@ -1327,6 +1339,9 @@ input:focus {
 .info-left {
   padding-left: 0;
   padding-right: 20px; }
+
+.info .sidebar-wrapper {
+  min-width: 300px; }
 
 .info-title {
   height: 24px;
