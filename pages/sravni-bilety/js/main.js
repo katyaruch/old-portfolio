@@ -9,21 +9,27 @@ $(document).ready(function(){
     startView: "days",
     orientation: "bottom left",
     todayBtn: "linked",
-    clearBtn: true
+    // clearBtn: true
   });
 
   var tomorrowBtn = '<th colspan="7" class="tomorrow" style="display: table-cell;">Завтра</th>';
+  var allDayBtn = '<th colspan="7" class="allDay" style="display: table-cell;">На все дни</th>';
 
   $('#date').click(function(){
-    if(!$('th').is('.tomorrow'))
+    if(!$('th').is('.tomorrow')) {
       $('.datepicker tfoot tr:first-child').append(tomorrowBtn);
+      $('.datepicker tfoot tr:first-child').append(allDayBtn);
+    }
 
     $('.tomorrow').click(function() {     
       $('#date').datepicker('setDate', "+1d");
     })
 
-    $(".clear").text("На все дни");
+    $('.allDay').click(function() {
+     $('#date').datepicker('update','');
+    })
   });
+
 
   // https://jqueryui.com/autocomplete/
   var cities = [
