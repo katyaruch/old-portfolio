@@ -42,7 +42,7 @@
       <h1 class="main-title">Билеты на автобусы России</h1>
       <p class="main-text">Сравниваем все цены от автовокзалов и агентств. Выбирайте лучшие</p>
       <form class="main-form row" action="timetable.html">
-        <div class="col-lg-9">
+        <div class="col-9">
           <div class="main-form-fields">
             <div class="main-form-field main-form-field--from">
               <input class="main-form-input" id="from" type="text" required>
@@ -54,13 +54,13 @@
               <label class="main-form-label" for="to">Куда</label>
             </div>
             <div class="main-form-field main-form-field--date">
-              <input class="main-form-input" id="date" data-toggle="datetimepicker" type="text" placeholder="Все дни">
+              <input class="main-form-input" id="date" data-toggle="datetimepicker" type="text" placeholder="Все дни" readonly>
               <label class="main-form-label" for="date">Дата поездки</label>
               <span class="main-form-calendar"></span>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">          
+        <div class="col-3">          
           <button class="button button--search" type="submit">Найти билеты</button>
         </div>
       </form>
@@ -77,8 +77,8 @@
           <a class="link" href="#">Как вернуть билет?</a>
         </div>
       </div>
-      <h2 class="title about-title col-lg-6">Помогаем найти самые дешевые билеты на автобус. Бесплатно.</h2>
-      <p class="about-text col-lg-6">Смотрите актуальное расписание автобусов и выбирайте подходящий рейс, а мы вас направим на официальные сайты с лучшей ценой</p>
+      <h2 class="title about-title col-6">Помогаем найти самые дешевые билеты на автобус. Бесплатно.</h2>
+      <p class="about-text col-6">Смотрите актуальное расписание автобусов и выбирайте подходящий рейс, а мы вас направим на официальные сайты с лучшей ценой</p>
 
       <p class="about-plus about-plus--price">Сравниваем цены по 10 агрегаторам <br>и 753 автовокзалам. Выдаем вам лучшие!</p>
       <p class="about-plus about-plus--dir">Осуществляем поиск <br>на более 2 300 направлений</p>
@@ -96,7 +96,7 @@
         </span>
       </h2>
       <div class="pop-directions-list">
-        <a href="#" class="pop-directions-item col-lg-6">
+        <a href="#" class="pop-directions-item col-6">
           <img src="img/novgorod.jpg"
                srcset="img/novgorod@2x.jpg 2x,
                        img/novgorod@3x.jpg 3x" alt="Img">
@@ -107,7 +107,7 @@
           </div>
         </a>
 
-        <a href="#" class="pop-directions-item col-lg-6">
+        <a href="#" class="pop-directions-item col-6">
           <img src="img/spb.jpg"
                srcset="img/spb@2x.jpg 2x,
                        img/spb@3x.jpg 3x" alt="Img">
@@ -118,7 +118,7 @@
           </div>
         </a>
         
-        <a href="#" class="pop-directions-item col-lg-4">
+        <a href="#" class="pop-directions-item col-4">
           <img src="img/vrn.jpg"
                srcset="img/vrn@2x.jpg 2x,
                        img/vrn@3x.jpg 3x" alt="Img">
@@ -129,7 +129,7 @@
           </div>
         </a>
         
-        <a href="#" class="pop-directions-item col-lg-4">
+        <a href="#" class="pop-directions-item col-4">
           <img src="img/ryazan.jpg"
                srcset="img/ryazan@2x.jpg 2x,
                        img/ryazan@3x.jpg 3x" alt="Img">
@@ -140,7 +140,7 @@
           </div>
         </a>
         
-        <a href="#" class="pop-directions-item col-lg-4">
+        <a href="#" class="pop-directions-item col-4">
           <img src="img/bitmap.jpg"
                srcset="img/bitmap@2x.jpg 2x,
                        img/bitmap@3x.jpg 3x" alt="Img">
@@ -157,11 +157,12 @@
     <div class="container">
       <h2 class="title bus-stations-title">Автовокзалы России</h2>
       <form class="bus-stations-form">
+        <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="17px" height="17px"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"/></svg>
         <input class="bus-stations-form-field" id="bus-stations" type="search" name="s" placeholder="Начните вводить название города…">
         <input class="visually-hidden" type="submit" value="Найти">
       </form>
       <div>
-        <div class="bus-stations-cities col-lg-2">
+        <div class="bus-stations-cities col-2">
           <a class="link" href="#">Алушта</a>
           <a class="link" href="#">Анапа</a>
           <a class="link" href="#">Астрахань</a>
@@ -170,7 +171,7 @@
           <a class="link" href="#">Белгород</a>
           <a class="link" href="#">Братск</a>
         </div>
-        <div class="bus-stations-cities col-lg-2">
+        <div class="bus-stations-cities col-2">
           <a class="link" href="#">Алушта</a>
           <a class="link" href="#">Анапа</a>
           <a class="link" href="#">Астрахань</a>
@@ -179,7 +180,7 @@
           <a class="link" href="#">Белгород</a>
           <a class="link" href="#">Братск</a>
         </div>
-        <div class="bus-stations-cities col-lg-2">
+        <div class="bus-stations-cities col-2">
           <a class="link" href="#">Алушта</a>
           <a class="link" href="#">Анапа</a>
           <a class="link" href="#">Астрахань</a>
@@ -188,7 +189,7 @@
           <a class="link" href="#">Белгород</a>
           <a class="link" href="#">Братск</a>
         </div>
-        <div class="bus-stations-cities col-lg-2">
+        <div class="bus-stations-cities col-2">
           <a class="link" href="#">Алушта</a>
           <a class="link" href="#">Анапа</a>
           <a class="link" href="#">Астрахань</a>
@@ -205,7 +206,10 @@
     <div class="container">
       <div class="footer-col">
         <a href="/" class="logo">
-          <img src="img/logo-white.svg" alt="Logo">
+          <img src="img/logo-white.png"
+               srcset="img/logo-white@2x.png 2x,
+                       img/logo-white@3x.png 3x"
+               class="logo-white" alt="Logo">
         </a>
         <div class="social-links">
           <a href="#" class="social-link"><i class="fa fa-vk"></i></a>
@@ -245,7 +249,7 @@
       </div>
 
       <div>
-        <p class="footer-copyright col-lg-9">© 2019 Все права защищены. Запрещается копировать, использовать, распространять, модифицировать любое содержимое этого сайта.</p>
+        <p class="footer-copyright col-9">© 2019 Все права защищены. Запрещается копировать, использовать, распространять, модифицировать любое содержимое этого сайта.</p>
         <a class="footer-politic link" href="#">Политика конфиденциальности</a>
       </div>
     </div>
@@ -262,7 +266,7 @@
   <!-- bootstrap-datepicker + locale -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.ru.min.js"></script>
-  
+
   <!-- slick -->
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 

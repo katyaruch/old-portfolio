@@ -52,7 +52,7 @@
       </nav>
       <h1 class="visually-hidden">Билеты на автобус</h1>
       <form class="main-form row" action="timetable.html">
-        <div class="col-lg-9">
+        <div class="col-9">
           <div class="main-form-fields">
             <div class="main-form-field main-form-field--from">
               <input class="main-form-input" id="from" type="text" value="Самара" required>
@@ -64,13 +64,13 @@
               <label class="main-form-label" for="to">Куда</label>
             </div>
             <div class="main-form-field main-form-field--date">
-              <input class="main-form-input" id="date" data-toggle="datetimepicker" type="text" placeholder="Все дни">
+              <input class="main-form-input" id="date" data-toggle="datetimepicker" type="text" placeholder="Все дни" readonly>
               <label class="main-form-label" for="date">Дата поездки</label>
               <span class="main-form-calendar"></span>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">          
+        <div class="col-3">          
           <button class="button button--search" type="submit">Найти билеты</button>
         </div>
       </form>
@@ -195,7 +195,7 @@
   <section class="page-timetable">
     <div class="container">
       <h1 class="page-timetable-title title">Билеты и расписание автобусов Самара – Тольятти</h1>
-      <p class="page-timetable-text col-lg-10">На странице вы можете купить билет на автобус 
+      <p class="page-timetable-text col-10">На странице вы можете купить билет на автобус 
         <span>Самара</span> – <span>Тольятти</span> 
         по цене от <span>300</span> руб. и ознакомиться с актуальным расписанием автобусов. Средняя цена билета на автобус 
         <span>Самара</span> – <span>Тольятти</span> составляет 
@@ -582,7 +582,7 @@
   <section class="info">
     <div class="container">
       <div class="cards d-flex justify-content-between">
-        <div class="card card--fast col-lg-6">
+        <div class="card card--fast col-6">
           <div class="card-header d-flex justify-content-between">
             <span class="card-title">Самый быстрый рейс</span>
             <a href="#" class="button button--white">Показать</a>
@@ -591,7 +591,7 @@
             Билет на самый быстрый рейс из Самары в Тольятти стоит 2 089 р. Этот рейс от перевозчика «ЗАО Движение», отправление в 6:30 по местному времени. Время в пути – 2 ч 30 мин.
           </div>
         </div>
-        <div class="card card--cheap col-lg-6">
+        <div class="card card--cheap col-6">
           <div class="card-header d-flex justify-content-between">
             <span class="card-title">Самый быстрый рейс</span>
             <a href="#" class="button button--white">Показать</a>
@@ -601,7 +601,7 @@
           </div>
         </div>
       </div>
-      <div class="sidebar-wrapper col-lg-3">
+      <div class="sidebar-wrapper col-3">
         
         <div class="sidebar sidebar--ref">
           <p class="sidebar-title">Справка о маршруте</p>
@@ -610,13 +610,13 @@
 
         <div class="sidebar sidebar--ref">
           <p class="sidebar-title">Здесь еще можно:</p>
-            <span>Узнать <a href="#" class="link">расписание автобусов из Тольятти в Самару</a></span>
-            <span>Узнать <a href="#" class="link">расписание автобусов из Самары</a></span>
-            <span>Узнать <a href="#" class="link">расписание автобусов из Тольятти</a></span>
-            <span>Узнать <a href="#" class="link">расписание автобусов на любые направления</a></span>
+            <span class="text">Узнать <a href="#" class="link">расписание автобусов из Тольятти в Самару</a></span>
+            <span class="text">Узнать <a href="#" class="link">расписание автобусов из Самары</a></span>
+            <span class="text">Узнать <a href="#" class="link">расписание автобусов из Тольятти</a></span>
+            <span class="text">Узнать <a href="#" class="link">расписание автобусов на любые направления</a></span>
         </div>
       </div>
-      <div class="info-left col-lg-9">
+      <div class="info-left col-9">
         <h3 class="info-title">Информация о маршруте автобуса Самара – Тольятти</h3>
         <p class="text">Ниже собраны все автобусные рейсы из Самары в Тольятти на 2019 год: всего 25 рейсов, из которых 10 проходящих. Среднее время в пути 2 ч 30 мин. Цены на билеты начинаются от 200 р. Узнайте точное расписание автобусов из Самары в Тольятти, выбрав конкретную дату, затем подберите удобный для себя рейс и купите билет онлайн.</p>
 
@@ -707,7 +707,10 @@
     <div class="container">
       <div class="footer-col">
         <a href="/" class="logo">
-          <img src="img/logo-white.svg" alt="Logo">
+          <img src="img/logo-white.png"
+               srcset="img/logo-white@2x.png 2x,
+                       img/logo-white@3x.png 3x"
+               class="logo-white" alt="Logo">
         </a>
         <div class="social-links">
           <a href="#" class="social-link"><i class="fa fa-vk"></i></a>
@@ -747,7 +750,7 @@
       </div>
 
       <div>
-        <p class="footer-copyright col-lg-9">© 2019 Все права защищены. Запрещается копировать, использовать, распространять, модифицировать любое содержимое этого сайта.</p>
+        <p class="footer-copyright col-9">© 2019 Все права защищены. Запрещается копировать, использовать, распространять, модифицировать любое содержимое этого сайта.</p>
         <a class="footer-politic link" href="#">Политика конфиденциальности</a>
       </div>
     </div>
