@@ -6,12 +6,13 @@
 		<link rel="stylesheet" type="text/css" href="css/libs.css">
 		<link rel="stylesheet" type="text/css" href="css/style.min.css">
 		<link rel="stylesheet" type="text/css" href="fonts/latofonts.css">
+		<script src="https://use.fontawesome.com/80a0dc5ef5.js"></script>
 		<script src="js/yandex-metrika.js"></script>
 		<title>Портфолио HTML-верстальщика</title>
 	</head>
 	<body>
 		<header class="header">
-			<div class="container"><a class="logo" href="/katyaruch.github.io">Katya Ruch</a>
+			<div class="container"><a class="logo" href="/">Katya Ruch</a>
 				<button class="gamburger-menu">Навигация</button>
 				<nav class="navigation gamburger-menu__list" tabindex="-1"><a class="gamburger-menu__close">Закрыть</a><a class="navigation__link gamburger-menu__link">Обо мне</a><a class="navigation__link gamburger-menu__link" href="#verstka">Качество</a><a class="navigation__link gamburger-menu__link" href="#portfolio">Мои работы</a></nav>
 			</div>
@@ -78,12 +79,14 @@
 							<p class="portfolio__info">Вёрстка сайта для рекрутинговой компании. Подключение CMS Wordpress, настройка блога</p>
 						</li>
 					</ul>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
 				</div>
 			</section>
 		</div>
-		<section class="verstka container" id="verstka">
+		<section class="verstka container" id="verstka"> 
 			<h2 class="title">Критерии качества вёрстки</h2>
-			<dl class="verstka__norms">
+			<dl class="verstka__norms"> 
 				<dt class="verstka__norm">Единообразное написание кода</dt>
 				<dd class="verstka__descr">Единый стиль написания и форматирования кода облегчает его понимание и дальнейшую поддержку, а также упрощает взаимодействие нескольких человек при разработке</dd>
 				<dt class="verstka__norm">Валидность</dt>
@@ -112,21 +115,20 @@
 						<label class="feedback__label" for="user-message">Сообщение</label>
 						<textarea class="feedback__input feedback__input_text" id="user-message" name="message" placeholder="Опишите вашу задачу" minlength="20" maxlength="350" required></textarea>
 						<label></label>
-						<input type="file" name="file">
 					</p>
 					<button class="button" type="submit">Отправить</button>
 				</form>
 			</div>
 		</section>
-		<div class="popup" id="popup_thanks">
+		<div class="popup" id="popup_thanks"> 
 			<div class="popup__content"> 
 				<p>Спасибо, ваше сообщение отправлено :)</p>
 				<p class="popup__close">Закрыть</p>
 			</div>
 		</div>
 		<div class="popup" id="popup_fail">
-			<div class="popup__content"> 
-				<p>Что-то пошло не так, напишите мне на адрес <b> katya.ruch@gmail.com </b></p>
+			<div class="popup__content">
+				<p>Что-то пошло не так, напишите мне на адрес <b> katya.ruch@gmail.com</b></p>
 				<p class="popup__close">Закрыть</p>
 			</div>
 		</div>
