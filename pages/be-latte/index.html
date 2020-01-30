@@ -9,29 +9,31 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,500,600,700,900" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header container">
+    <header class="main-header">
       <nav class="main-navigation">
         <ul class="navigation-list">
           <li><a class="navigation-link navigation-link-current">Home</a></li>
-          <li><a class="navigation-link" href="#">About us</a></li>
+          <li><a class="navigation-link" href="#about">About us</a></li>
           <li class="logo"><a><img src="img/logo.png" width="154" height="127" alt="Be Latte"></a></li>
-          <li><a class="navigation-link" href="#">Menu</a></li>
+          <li><a class="navigation-link" href="#menu">Menu</a></li>
           <li><a class="navigation-link" href="#">Blog</a></li>
-          <li><a class="navigation-link" href="#">Contact</a></li>
+          <li><a class="navigation-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main class="container">
-    	<section class="welcome">
+    <section class="welcome">
+      <div class="container">
         <h1 class="welcome-title">Welcome to Be Latte</h1>
         <p class="welcome-text">Enjoy of a fresh new approach to coffee. Proin gravida nibh vel velit. Auctor aliquet sollicitudin lorem quis.</p>
-        <a class="button" href="menu.html">See menu</a>
-     	</section>
-      <section class="lead">
+        <a class="button" href="#menu">See menu</a>
+      </div>
+    </section>
+    <main class="container">
+      <section class="lead" id="about">
         <h2 class="lead-title">Coffee never tasted <span class="underline"> so good!</span></h2>
         <p class="lead-text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
       </section>
-      <section class="menu">
+      <section class="menu" id="menu">
         <h2 class="title">Menu</h2>
         <ul class="menu-category">
           <li class="menu-cart">
@@ -68,7 +70,7 @@
             </ul>
           </li>
         </ul>
-        <a class="button button-light" href="menu.html">See full menu</a>
+        <a class="button button-light" href="#">See full menu</a>
       </section>
       <section class="testimonials">
         <h2 class="title">Testimonials</h2>
@@ -113,7 +115,7 @@
           </li>
         </ul>
       </section>
-      <section class="info">
+      <section class="info" id="contact">
         <h2 class="title">Location</h2>
         <div class="info-wrapper">
         	<iframe class="info-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52909.728119360414!2d-118.51577513770661!3d34.02185553703134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4cec2910019%3A0xb4170ab5ff23f5ab!2z0KHQsNC90YLQsC3QnNC-0L3QuNC60LAsINCa0LDQu9C40YTQvtGA0L3QuNGPLCDQodCo0JA!5e0!3m2!1sru!2sru!4v1536710533492" allowfullscreen></iframe>
@@ -141,4 +143,8 @@
           <li><a class="social-button social-button-instagram" href="#" aria-label="Instagram"></a></li>
         </ul>
         <p class="footer-address">St. Thomas street 21st, Suite 110, Santa Monica, California</p>
-      </footer>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
