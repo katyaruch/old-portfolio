@@ -287,12 +287,6 @@ button.close {
   border: 1px solid transparent; }
 
 .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   min-width: 100px;
   padding-bottom: 20px; }
 
@@ -308,7 +302,8 @@ button.close {
   margin: 0 10px;
   font-size: 0px;
   border-radius: 50%;
-  border: 1px solid #ffffff; }
+  border: 1px solid #ffffff;
+  vertical-align: middle; }
 
 .social-link:hover {
   opacity: 0.5; }
@@ -361,6 +356,8 @@ button.close {
 
 .main-video {
   position: absolute;
+  left: 0;
+  top: -140px;
   width: 100%;
   -webkit-filter: brightness(0.2);
           filter: brightness(0.2); }
@@ -392,7 +389,11 @@ button.close {
 
 .main .social {
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: 0 auto; }
 
 .about-oxygen {
   position: relative;
@@ -504,7 +505,7 @@ button.close {
   bottom: 0px;
   padding: 15px 20px;
   font-size: 18px;
-  z-index: 10; }
+  z-index: 1; }
 
 .programs-item-title::after {
   content: "";
@@ -766,6 +767,41 @@ button.close {
 
 .form-capture-title .text-accent::after {
   bottom: -5px; }
+
+.modal--form .modal-dialog {
+  margin-top: 10%; }
+
+.modal--form .modal-body {
+  text-align: center; }
+
+.modal--form .title {
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-size: 18px;
+  color: #171717; }
+
+.modal--form button.close {
+  margin-left: auto;
+  padding: 20px; }
+
+.modal--form .close::before,
+.modal--form .close::after {
+  background-color: rgba(0, 0, 0, 0.25); }
+
+.modal-input {
+  display: block;
+  width: 80%;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  background: rgba(196, 196, 196, 0.2);
+  border-radius: 5px;
+  border: none; }
+
+.modal-input:placeholder {
+  color: #171717; }
 
 .footer-address {
   padding: 100px 0;
