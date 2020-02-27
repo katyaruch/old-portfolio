@@ -357,8 +357,11 @@ button.close {
 .main-video {
   position: absolute;
   left: 0;
-  top: -140px;
-  width: 100%;
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
   -webkit-filter: brightness(0.2);
           filter: brightness(0.2); }
 
