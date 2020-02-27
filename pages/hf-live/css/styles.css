@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap");
 html, body {
   height: 100%;
@@ -326,6 +327,19 @@ button.close {
   line-height: 145%;
   text-transform: uppercase; }
 
+.title--underline {
+  margin-bottom: 40px; }
+
+.title--underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #875D33; }
+
 .main {
   position: relative;
   display: -webkit-box;
@@ -489,11 +503,35 @@ button.close {
   position: absolute;
   bottom: 0px;
   padding: 15px 20px;
-  font-size: 18px; }
+  font-size: 18px;
+  z-index: 10; }
+
+.programs-item-title::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 20px;
+  border: 1px solid #fff;
+  border-bottom: none;
+  border-left: none;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
 
 .programs-item img {
-  min-width: 100%;
-  min-height: 100%; }
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50%;
+     object-position: 50%;
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6); }
+
+.programs-item:hover img {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8); }
 
 .spa {
   padding: 100px 0;
@@ -542,20 +580,28 @@ button.close {
   width: 70%;
   padding: 15px 20px;
   font-size: 18px;
-  line-height: 120%; }
+  line-height: 120%;
+  z-index: 1; }
 
 .spa-item .button--play {
   position: absolute;
   right: 0;
   padding: 15px 20px;
   color: #ffffff;
-  font-weight: normal; }
+  font-weight: normal;
+  z-index: 1; }
 
 .spa-item img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover; }
+     object-fit: cover;
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8); }
+
+.spa-item:hover img {
+  -webkit-filter: brightness(1);
+          filter: brightness(1); }
 
 .trainers {
   padding: 80px 0; }
@@ -617,22 +663,67 @@ button.close {
   font-size: 16px;
   line-height: 165%; }
 
-.about-club .title {
-  margin-bottom: 40px; }
-
-.about-club .title::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #875D33; }
-
 .about-club-logo {
   margin-top: 60px;
   text-align: center; }
+
+.reviews {
+  padding-bottom: 100px; }
+
+.reviews-list {
+  position: relative;
+  padding-bottom: 40px; }
+
+.reviews-item-client {
+  width: 30%;
+  margin-bottom: 20px;
+  opacity: 0.5; }
+
+.reviews-item-text {
+  position: relative;
+  height: 100%;
+  padding: 20px 20px 20px 60px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 8px 4px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 8px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 5px 5px 5px; }
+
+.reviews-item-text::after {
+  content: "«";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  display: block;
+  font-size: 64px;
+  line-height: 100%;
+  color: #111111;
+  opacity: 0.5; }
+
+.slick-arrow {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  font-size: 0;
+  border: none;
+  background: url("../img/arrow.svg") no-repeat 50%; }
+
+.slick-arrow:active, .slick-arrow:hover, .slick-arrow:focus {
+  outline: 0;
+  outline-offset: 0; }
+
+.slick-prev {
+  left: 39%;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.slick-next {
+  right: 39%; }
+
+.slick-disabled {
+  opacity: 0.2; }
 
 .form-capture {
   padding: 100px 0;
