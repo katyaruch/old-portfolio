@@ -31,6 +31,10 @@ a:hover {
   -o-transition: 0.2s;
   transition: 0.2s; }
 
+a:not([href]) {
+  cursor: default;
+  opacity: 0.3; }
+
 .page {
   padding-top: 100px; }
 
@@ -120,6 +124,7 @@ a:hover {
 
 .modal--header .modal-content {
   height: 100%;
+  min-height: 100vh;
   padding-top: 50px;
   padding-left: 0;
   border-radius: 0;
@@ -209,7 +214,7 @@ a:hover {
   background: linear-gradient(80.54deg, #F6C891 -51.99%, #7C532A 99.77%); }
 
 .nav-item.active .nav-link::after,
-.nav-item:hover .nav-link::after {
+.nav-item:hover .nav-link[href]::after {
   width: 60%;
   -webkit-transition: 0.5s width;
   -o-transition: 0.5s width;
@@ -295,6 +300,24 @@ a:hover {
 .btn-burger svg {
   width: 30px;
   height: 16px; }
+
+.btn-mute {
+  position: absolute;
+  left: 8%;
+  bottom: 20px;
+  font-size: 0; }
+
+.btn-mute svg {
+  width: 30px;
+  height: 25px; }
+
+@media (max-width: 1200px) {
+  .btn-mute {
+    left: 1%; } }
+
+@media (max-width: 576px) {
+  .btn-mute {
+    display: none; } }
 
 button.close {
   position: relative;
@@ -444,6 +467,9 @@ button.close {
   text-align: center;
   overflow: hidden; }
 
+.main .container {
+  position: relative; }
+
 .main-inner {
   padding: 0; }
 
@@ -451,9 +477,9 @@ button.close {
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  width: auto;
+  min-height: 100%;
   -webkit-transform: scale(1.5);
       -ms-transform: scale(1.5);
           transform: scale(1.5);
@@ -492,7 +518,8 @@ button.close {
   left: 0;
   right: 0;
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  z-index: -5; }
 
 @media (max-width: 576px) {
   .main-title {
@@ -501,15 +528,9 @@ button.close {
   .main {
     height: 410px; }
   .main-video {
-    -webkit-transform: scale(2.3);
-        -ms-transform: scale(2.3);
-            transform: scale(2.3); } }
-
-@media (max-width: 320px) {
-  .main-video {
-    -webkit-transform: scale(3.1);
-        -ms-transform: scale(3.1);
-            transform: scale(3.1); } }
+    display: none; }
+  .main-video--screen {
+    display: block; } }
 
 .about-oxygen {
   position: relative;
@@ -802,6 +823,8 @@ button.close {
 
 .trainers-item img {
   min-height: 100%;
+  width: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover; }
 
@@ -859,7 +882,6 @@ button.close {
 
 .reviews-item-text {
   position: relative;
-  height: 100%;
   padding: 20px 20px 20px 60px;
   background: rgba(255, 255, 255, 0.1);
   -webkit-box-shadow: 8px 4px 20px rgba(0, 0, 0, 0.25);

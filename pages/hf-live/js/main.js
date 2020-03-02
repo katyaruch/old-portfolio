@@ -6,18 +6,18 @@ $(document).ready(function(){
   var buttonPortfolio = document.querySelector(".button-portfolio");
   var links = document.querySelector(".navigation");
 
-  $('a[href*="#"]').click(function (evt) {
+  $("a[href*='#']").click(function (evt) {
     evt.preventDefault();
 
-    var id  = $(this).attr('href'),
+    var id  = $(this).attr("href"),
       top = $(id).offset().top - 60;
-    $('body,html').animate({scrollTop: top}, 1500);
+    $("body,html").animate({scrollTop: top}, 1500);
   });
 
 
   //////////// slick
 
-  $('.reviews-list').slick({
+  $(".reviews-list").slick({
     infinite: false,
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -30,5 +30,13 @@ $(document).ready(function(){
         }
       }
     ]
+  });
+
+  ////////////////
+
+  $("#btn-mute").click( function(evt) {
+    evt.preventDefault();
+    var bool = $(".main-video").prop("muted");
+    $(".main-video").prop("muted",!bool);
   });
 })
