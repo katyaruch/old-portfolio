@@ -1,5 +1,5 @@
 body {
-  min-width: 1170px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 
@@ -70,14 +70,7 @@ img {
   color: #ffffff;
 }
 
-.navigation {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.navigation a {
+.navigation-link {
   margin: 9px 17px;
   line-height: 29px;
   color: #cdcdcd;

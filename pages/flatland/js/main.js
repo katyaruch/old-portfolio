@@ -87,22 +87,12 @@ $(document).ready(function(){
   });
 
   ///////// timer 2019,10-1,20/////////
-
-  $(async function() {
+  $(function(){
     var dataSold = new Date(2019,10-1,20);
     $('.timer').countdown({
       until: dataSold,
-      format: 'dHM',
-      tickInterval: 60
+      format: 'dHM'
     });
   })
-
-
-  ///////// share and map scripts /////////
-
-  $(async function() { 
-    $('.sharethis-script').attr('src','https://platform-api.sharethis.com/js/sharethis.js#property=5da7a0b4af9b970012ee9b08&product=inline-share-buttons');
-    $('.location__map').attr('src','https://yandex.ru/map-widget/v1/?um=constructor%3A5203e34583b1d823e992e99ce3fdd4900720fbdce5a70d5cb9d3de4969fa89a3&amp;source=constructor');
-  });
 
 });
