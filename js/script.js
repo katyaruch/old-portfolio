@@ -33,14 +33,11 @@ $(document).ready(function(){
 
   //////////// animate scroll
 
-  var buttonPortfolio = document.querySelector(".button-portfolio");
-  var links = document.querySelector(".navigation");
-
   $('a[href*="#"]').click(function (evt) {
     evt.preventDefault();
     var id  = $(this).attr('href'),
       top = $(id).offset().top - 80;
-    $('body,html').animate({scrollTop: top}, 1500);
+    $('html').animate({scrollTop: top}, 1500);
   });
 
   //////////// Swiper
