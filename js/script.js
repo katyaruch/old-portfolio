@@ -1,38 +1,35 @@
 $(document).ready(function(){
 
+  if($(window).width() > 576) {
+    $('.main__bg').attr('src', 'img/video.mp4');
+  }
+
   //////////// gamburger-menu
 
-  var menuToggle = document.querySelector(".gamburger-menu");
-  var menu = document.querySelector(".gamburger-menu__list");
-  var closeMenu = document.querySelector(".gamburger-menu__close");
+  var menuBtn = document.querySelector(".navigation__btn");
+  var menu = document.querySelector(".navigation");
+  var closeMenu = document.querySelector(".navigation__close");
 
-  $(menuToggle).on("click", function (evt) {
-    evt.preventDefault();   //отменяем стандартную обработку нажатия по ссылке
-    menu.classList.toggle("gamburger-menu__list_show"); //добавляем класс появления меню
-    $(menuToggle).fadeOut(300);
-    // $(menu).fadeIn(300,function(){$(this).focus();});
-  });
-
-  $(window).on("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      $(menu).classList.remove("gamburger-menu__list_show");//при нажатии клавиши ESC меню закрывается
-      // $(menu).fadeOut(300);
-      
-    }
+  $(menuBtn).on("click", function (evt) {
+    evt.preventDefault();
+    $(menu).addClass("navigation_show");
+    $(menuBtn).fadeOut(300);
   });
 
   $(closeMenu).on("click", function (evt) {
     evt.preventDefault();
-    menu.classList.remove("gamburger-menu__list_show");
-    // $(menu).fadeOut(300);
-    $(menuToggle).fadeIn(300);
+    $(menu).removeClass("navigation_show");
+    $(menuBtn).fadeIn(300);
   })
 
-  // $(menu).on('blur',function(){
-  //   $(this).fadeOut(300);
-  //   $(menuToggle).fadeIn(300);
-  // });
+  $(window).on("keydown", function (evt) {
+    if (evt.keyCode === 27) { //клавиша ESC
+      evt.preventDefault();
+      $(menu).removeClass("navigation_show");
+      $(menuBtn).fadeIn(300);
+      
+    }
+  });
 
   //////////// animate scroll
 
@@ -40,16 +37,9 @@ $(document).ready(function(){
   var links = document.querySelector(".navigation");
 
   $('a[href*="#"]').click(function (evt) {
-    //отменяем стандартную обработку нажатия по ссылке
     evt.preventDefault();
-
-    //забираем идентификатор блока с атрибута href
     var id  = $(this).attr('href'),
-
-    //узнаем высоту от начала страницы до блока на который ссылается якорь
       top = $(id).offset().top - 80;
-    
-    //анимируем переход на расстояние - top за 1500 мс
     $('body,html').animate({scrollTop: top}, 1500);
   });
 
@@ -78,32 +68,6 @@ $(document).ready(function(){
   });
 
   //////////// Feedback
-
-  // $('#feedback-form').on('submit', function(evt) {
-  //   evt.preventDefault();
-  //   var name = $('input[name=user-name]').val();
-  //   var email = $('input[name=user-email]').val();
-  //   var message = $('textarea[name=user-message]').val();
-
-  //   $.ajax({
-  //       headers: {          
-  //         Accept: "application/json; charset=utf-8",         
-  //         contentType: "application/json; charset=utf-8"   
-  //       },     
-  //       url: "https://formcarry.com/s/N1B21VwHRca",
-  //       method: "POST",
-  //       data: {
-  //           user_name: name,
-  //           user_email: email,
-  //           user_message: message
-  //       },
-  //       dataType: "json"
-  //   }).done(function(){
-  //       $('.feedback__success').show();
-  //     }).fail(function() {
-  //       $('.feedback__fail').show();
-  //     })
-  // });
 
   $("#feedback-form").submit(function(e){
     e.preventDefault();

@@ -12,82 +12,126 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="container"><a class="logo" href="/">Katya Ruch</a>
-				<button class="gamburger-menu">Навигация</button>
-				<nav class="navigation gamburger-menu__list" tabindex="-1"><a class="gamburger-menu__close">Закрыть</a><a class="navigation__link gamburger-menu__link">Обо мне</a><a class="navigation__link gamburger-menu__link" href="#verstka">Качество</a><a class="navigation__link gamburger-menu__link" href="#portfolio">Мои работы</a></nav>
+			<div class="container"><a class="logo" href="https://teleg.run/katya_ruch" target="_blanc"><img class="logo__img" src="img/logo-img.png">Катя Руч</a>
+				<button class="navigation__btn">
+					<div class="gamburger">Навигация</div>
+				</button>
 			</div>
 		</header>
-		<div class="page container">
-			<section class="main">
-				<h1 class="main__title">Чистая вёрстка</h1>
-				<ul class="skills-list">
-					<li class="skills-list__item">html</li>
-					<li class="skills-list__item">css</li>
-					<li class="skills-list__item">pug</li>
-					<li class="skills-list__item">less</li>
-					<li class="skills-list__item">BEM</li>
-				</ul>
-				<div class="social"><a class="social__link social__link_e-mail" href="mailto:katya.ruch@gmail.com" target="_blanc">E-mail</a><a class="social__link social__link_vk" href="https://vk.com/k_ruch" target="_blanc">Vk</a><a class="social__link social__link_tg" href="https://teleg.run/katya_ruch" target="_blanc">Telegram</a></div>
-			</section>
-			<section class="portfolio fadeInRight" id="portfolio">
+		<div class="navigation">
+			<nav class="navigation__list"><a class="navigation__close">Закрыть</a><a class="navigation__link" href="#portfolio">Мои работы</a><a class="navigation__link" href="#skills">Навыки</a><a class="navigation__link" href="#verstka">Критерии качества</a></nav>
+		</div>
+		<section class="main">
+			<video class="main__bg" src="" autoplay loop></video>
+			<div class="container">
+				<p class="main__sign">&lt;/&gt;</p>
+				<h1 class="main__title">Чистая вёрстка
+					<p class="main__subtitle">по всем правилам</p>
+				</h1>
+				<div class="social"><a class="social__link social__link_e-mail" href="mailto:katya.ruch@gmail.com" target="_blanc">E-mail</a><a class="social__link social__link_tg" href="https://teleg.run/katya_ruch" target="_blanc">Telegram</a></div>
+			</div>
+		</section>
+		<section class="portfolio fadeInRight" id="portfolio">
+			<div class="container">
+				<h2 class="title">Мои работы</h2>
 				<div class="swiper-container">
 					<ul class="portfolio__list swiper-wrapper">
-						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/sravni-bilety/" target="_blank"><img class="portfolio__img" src="img/sravni-bilety.png" width="380" height="301" alt="Flatland"></a>
+						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/sravni-bilety/" target="_blank"><img class="portfolio__img" src="img/sravni-bilety.png" width="270" alt="Flatland"></a>
 							<p class="portfolio__name">Сравни билеты</p>
 							<p class="portfolio__info">Вёрстка сайта для сервиса по поиску выгодных билетов на автобус. Календарь в форме поиска</p>
 						</li>
-						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="https://hf.live" target="_blank"><img class="portfolio__img" src="img/hfp.png" width="380" height="301" alt="Happy Fitness Premium"></a>
+						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="https://hf.live" target="_blank"><img class="portfolio__img" src="img/hfp.png" width="270" alt="Happy Fitness Premium"></a>
 							<p class="portfolio__name">Happy Fitness Premium</p>
 							<p class="portfolio__info">Вёрстка сайта для фитнесс клуба. Подключение CMS Wordpress</p>
 						</li>
-						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/Wheels" target="_blank"><img class="portfolio__img" src="img/iMac-wheels.png" width="380" height="315" alt="Wheels"></a>
+						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/Wheels" target="_blank"><img class="portfolio__img" src="img/iMac-wheels.png" width="270" alt="Wheels"></a>
 							<div>
 								<p class="portfolio__name">Wheels</p>
 								<p class="portfolio__info">Вёрстка сайта по продаже велосипедов</p>
 							</div>
 						</li>
-						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/sea-cruises" target="_blank"><img class="portfolio__img" src="img/MacBook-cruises.png" width="450" height="260" alt="Морские круизы"></a>
+						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/sea-cruises" target="_blank"><img class="portfolio__img" src="img/MacBook-cruises.png" width="300" alt="Морские круизы"></a>
 							<div>
 								<p class="portfolio__name">Морские круизы</p>
 								<p class="portfolio__info">Вёрстка сайта по продаже морских круизов</p>
 							</div>
 						</li>
-						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/device" target="_blank"><img class="portfolio__img" src="img/iMac-device.png" width="380" height="315" alt="Device"></a>
+						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/device" target="_blank"><img class="portfolio__img" src="img/iMac-device.png" width="270" alt="Device"></a>
 							<div>
 								<p class="portfolio__name">Device</p>
 								<p class="portfolio__info">Вёрстка основных страниц интернет магазина электронных гаджетов</p>
 							</div>
 						</li>
-						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/be-latte" target="_blank"><img class="portfolio__img" src="img/be-latte.png" width="380" height="315" alt="Be Latte"></a>
+						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/be-latte" target="_blank"><img class="portfolio__img" src="img/be-latte.png" width="270" alt="Be Latte"></a>
 							<p class="portfolio__name">Be Latte</p>
 							<p class="portfolio__info">Вёрстка сайта кофейни</p>
 						</li>
-						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/animal-shelter" target="_blank"><img class="portfolio__img" src="img/iMac-shelter.png" width="380" height="315" alt="Animal Shelter"></a>
+						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/animal-shelter" target="_blank"><img class="portfolio__img" src="img/iMac-shelter.png" width="270" alt="Animal Shelter"></a>
 							<p class="portfolio__name">Animal Shelter</p>
 							<p class="portfolio__info">Вёрстка сайта приюта для животных</p>
 						</li>
-						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/cardly" target="_blank"><img class="portfolio__img" src="img/iMac-cardly.png" width="380" height="315" alt="Cardly"></a>
+						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/cardly" target="_blank"><img class="portfolio__img" src="img/iMac-cardly.png" width="270" alt="Cardly"></a>
 							<p class="portfolio__name">Cardly</p>
 							<p class="portfolio__info">Вёрстка адаптивного сайта</p>
 						</li>
-						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/Absolute" target="_blank"><img class="portfolio__img" src="img/Absolute adaptive.png" width="380" height="237" alt="Absolute"></a>
+						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/Absolute" target="_blank"><img class="portfolio__img" src="img/Absolute adaptive.png" width="270" alt="Absolute"></a>
 							<p class="portfolio__name">Absolute</p>
 							<p class="portfolio__info">Вёрстка сайта по оформлению кредита. JS-калькулятор рассчета платежа.</p>
 						</li>
-						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/flatland" target="_blank"><img class="portfolio__img" src="img/flatland adaptive.png" width="380" height="237" alt="Flatland"></a>
+						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/flatland" target="_blank"><img class="portfolio__img" src="img/flatland adaptive.png" width="270" alt="Flatland"></a>
 							<p class="portfolio__name">Flatland</p>
 							<p class="portfolio__info">Вёрстка сайта по продаже квартиры. Сборка Gulp+Sass</p>
 						</li>
-						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="https://mmbusiness.ru/" target="_blank"><img class="portfolio__img" src="img/mmbusiness.png" width="380" height="301" alt="Flatland"></a>
+						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="https://mmbusiness.ru/" target="_blank"><img class="portfolio__img" src="img/mmbusiness.png" width="270" alt="Flatland"></a>
 							<p class="portfolio__name">mmbusiness</p>
 							<p class="portfolio__info">Вёрстка сайта для рекрутинговой компании. Подключение CMS Wordpress, настройка блога</p>
 						</li>
 					</ul>
-					<div class="swiper-button-next"></div>
-					<div class="swiper-button-prev"></div>
 				</div>
-			</section>
-		</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		</section>
+		<section class="skills" id="skills">
+			<div class="container">
+				<h2 class="title">Мои навыки</h2>
+				<ul class="skills__list">
+					<li class="skills__item skills__item_html">HTML
+						<ul class="skills__sublist">
+							<li>Логичная семантическая разметка</li>
+							<li>Доступность</li>
+							<li>SEO</li>
+						</ul>
+					</li>
+					<li class="skills__item skills__item_css">CSS
+						<ul class="skills__sublist">
+							<li>BEM архитектура</li>
+							<li>Адаптивность</li>
+							<li>Bootstrap</li>
+							<li>Анимация</li>
+						</ul>
+					</li>
+					<li class="skills__item skills__item_js">JS
+						<ul class="skills__sublist">
+							<li>jQuery</li>
+							<li>Ajax</li>
+						</ul>
+					</li>
+				</ul>
+				<p class="mark">100% совпадения моей вёрстки и вашего макета благодаря <b>Pixel Perfect</b></p>
+				<p class="text">Google PageSpeed <b>90-100</b></p>
+				<div class="skills-use">использую</div>
+				<ul class="skills-use__list">
+					<li class="skills-use__item">npm<img src="img/use/npm.svg"></li>
+					<li class="skills-use__item">gulp<img src="img/use/gulp.svg"></li>
+					<li class="skills-use__item">git<img src="img/use/git.svg"></li>
+					<li class="skills-use__item">pug<img src="img/use/pug.svg"></li>
+					<li class="skills-use__item">sass<img src="img/use/sass.svg"></li>
+					<li class="skills-use__item">less<img src="img/use/less.svg"></li>
+					<li class="skills-use__item">Wordpress<img src="img/use/Wordpress.svg"></li>
+				</ul>
+			</div>
+		</section>
 		<section class="verstka container" id="verstka"> 
 			<h2 class="title">Критерии качества вёрстки</h2>
 			<dl class="verstka__norms"> 
@@ -105,7 +149,7 @@
 		</section>
 		<section class="feedback container">
 			<div class="feedback__inner">
-				<h2 class="title">Напишите мне на почту</h2>
+				<h2 class="title">Пишите</h2>
 				<form class="feedback__form" id="feedback-form" method="post" accept-charset="UTF-8">
 					<p>
 						<label class="feedback__label" for="user-name">Имя</label>
@@ -136,7 +180,6 @@
 				<p class="popup__close">Закрыть</p>
 			</div>
 		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="js/libs.js"></script>
 		<script src="js/script.js"></script>
 	</body>
