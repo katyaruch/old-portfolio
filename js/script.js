@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   if($(window).width() > 576) {
-    $('.main__bg').attr('src', 'img/video.mp4');
+    setTimeout($('.main__bg').attr('src', 'img/video.mp4'), 1000);
   }
 
   //////////// gamburger-menu

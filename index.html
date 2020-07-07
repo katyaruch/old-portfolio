@@ -6,7 +6,6 @@
 		<link rel="stylesheet" type="text/css" href="css/libs.css">
 		<link rel="stylesheet" type="text/css" href="css/style.min.css">
 		<link rel="stylesheet" type="text/css" href="fonts/latofonts.css">
-		<script src="https://use.fontawesome.com/80a0dc5ef5.js"></script>
 		<script src="js/yandex-metrika.js"></script>
 		<title>Портфолио HTML-верстальщика</title>
 	</head>
@@ -19,7 +18,9 @@
 			</div>
 		</header>
 		<div class="navigation">
-			<nav class="navigation__list"><a class="navigation__close">Закрыть</a><a class="navigation__link" href="#portfolio">Мои работы</a><a class="navigation__link" href="#skills">Навыки</a><a class="navigation__link" href="#verstka">Критерии качества</a></nav>
+			<nav class="navigation__list">
+				<button class="navigation__close">Закрыть</button><a class="navigation__link" href="#portfolio">Мои работы</a><a class="navigation__link" href="#skills">Навыки</a><a class="navigation__link" href="#verstka">Критерии качества</a>
+			</nav>
 		</div>
 		<section class="main">
 			<video class="main__bg" src="" autoplay loop></video>
@@ -31,7 +32,7 @@
 				<div class="social"><a class="social__link social__link_e-mail" href="mailto:katya.ruch@gmail.com" target="_blanc">E-mail</a><a class="social__link social__link_tg" href="https://teleg.run/katya_ruch" target="_blanc">Telegram</a></div>
 			</div>
 		</section>
-		<section class="portfolio fadeInRight" id="portfolio">
+		<section class="portfolio" id="portfolio">
 			<div class="container">
 				<h2 class="title">Мои работы</h2>
 				<div class="swiper-container">
@@ -88,8 +89,6 @@
 						</li>
 					</ul>
 				</div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
 			</div>
 		</section>
 		<section class="skills" id="skills">
@@ -122,13 +121,13 @@
 				<p class="text">Google PageSpeed <b>90-100</b></p>
 				<div class="skills-use">использую</div>
 				<ul class="skills-use__list">
-					<li class="skills-use__item">npm<img src="img/use/npm.svg"></li>
-					<li class="skills-use__item">gulp<img src="img/use/gulp.svg"></li>
-					<li class="skills-use__item">git<img src="img/use/git.svg"></li>
-					<li class="skills-use__item">pug<img src="img/use/pug.svg"></li>
-					<li class="skills-use__item">sass<img src="img/use/sass.svg"></li>
-					<li class="skills-use__item">less<img src="img/use/less.svg"></li>
-					<li class="skills-use__item">wordpress<img src="img/use/wordpress.svg"></li>
+					<li class="skills-use__item">npm<img src="img/use/npm.svg" alt="npm" title="npm"></li>
+					<li class="skills-use__item">gulp<img src="img/use/gulp.svg" alt="gulp" title="gulp"></li>
+					<li class="skills-use__item">git<img src="img/use/git.svg" alt="git" title="git"></li>
+					<li class="skills-use__item">pug<img src="img/use/pug.svg" alt="pug" title="pug"></li>
+					<li class="skills-use__item">sass<img src="img/use/sass.svg" alt="sass" title="sass"></li>
+					<li class="skills-use__item">less<img src="img/use/less.svg" alt="less" title="less"></li>
+					<li class="skills-use__item">wordpress<img src="img/use/wordpress.svg" alt="wordpress" title="wordpress"></li>
 				</ul>
 			</div>
 		</section>
@@ -181,6 +180,6 @@
 			</div>
 		</div>
 		<script src="js/libs.js"></script>
-		<script src="js/script.js"></script>
+		<script src="js/script.js" async></script>
 	</body>
 </html>
