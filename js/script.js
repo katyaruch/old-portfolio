@@ -56,7 +56,7 @@ $(document).ready(function(){
     slidesPerView: 'auto',
     lazy: {
       loadPrevNext: true,
-      loadPrevNextAmount: 3,
+      loadPrevNextAmount: 1,
     },
     autoplay: {
       delay: 3000,
