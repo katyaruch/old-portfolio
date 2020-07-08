@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+  // const el = document.querySelectorAll('.portfolio__img');
+  // const observer = lozad(el);
+  // observer.observe();
+
   if($(window).width() > 576) {
     setTimeout($('.main__bg').attr('src', 'img/video.mp4'), 1000);
   }
@@ -50,6 +54,10 @@ $(document).ready(function(){
     centeredSlides: true,
     mousewheel: true,
     slidesPerView: 'auto',
+    lazy: {
+      loadPrevNext: true,
+      loadPrevNextAmount: 3,
+    },
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
