@@ -5,7 +5,7 @@ $(document).ready(function(){
   // observer.observe();
 
   if($(window).width() > 576) {
-    setTimeout($('.main__bg').attr('src', 'img/video.mp4'), 1000);
+    setTimeout($('.main__bg').attr('src', 'img/video.mp4').play(), 1000);
   }
 
   //////////// gamburger-menu
