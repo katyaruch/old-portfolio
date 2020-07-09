@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/fontawesome/css/fontawesome.css">
+  <link rel="stylesheet" href="css/fontawesome/css/solid.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:400,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Вкусно</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="logo"><img src="img/logo.png" width="97" height="89"></a>
+        <div class="header-top-right d-flex flex-column">
+          <div class="header-top--1 d-flex justify-content-end">
+            <div class="search">
+              <span class="search-icon"></span>
+              <input class="search-input" type="text">
+            </div>
+            <div class="social-links d-flex justify-content-center">
+              <a href="#" class="social-link">
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.5 0C6.04441 0 0 6.04413 0 13.5C0 20.9559 6.04441 27 13.5 27C20.9556 27 27 20.9559 27 13.5C27 6.04413 20.9556 0 13.5 0ZM20.3479 14.9601C20.9771 15.5746 21.6428 16.153 22.2077 16.8312C22.4579 17.1311 22.6938 17.4413 22.8734 17.7902C23.1297 18.2876 22.8982 18.8332 22.453 18.8627L19.6872 18.8622C18.9729 18.9213 18.4045 18.6332 17.9252 18.1448C17.5427 17.7556 17.1877 17.3399 16.8193 16.9375C16.6687 16.7723 16.5102 16.6168 16.3213 16.4944C15.9442 16.2492 15.6166 16.3243 15.4006 16.7182C15.1805 17.119 15.1302 17.5631 15.1092 18.0092C15.0791 18.6614 14.8825 18.8318 14.2281 18.8624C12.8299 18.9279 11.5032 18.7158 10.2702 18.0109C9.18249 17.3891 8.34058 16.5116 7.60696 15.518C6.17837 13.5812 5.08429 11.4555 4.10124 9.26867C3.87999 8.77617 4.04185 8.51266 4.58517 8.50245C5.48784 8.48504 6.39051 8.48725 7.29318 8.50162C7.66054 8.50742 7.90361 8.71762 8.04476 9.06427C8.53255 10.2644 9.13056 11.4063 9.87993 12.4653C10.0796 12.7473 10.2835 13.0285 10.5738 13.2277C10.8942 13.4475 11.1384 13.3749 11.2895 13.0172C11.3861 12.7899 11.4278 12.5468 11.4488 12.3032C11.5206 11.4687 11.5292 10.6345 11.4049 9.80342C11.3276 9.2833 11.0351 8.94743 10.5166 8.84909C10.2525 8.7991 10.2912 8.70132 10.4197 8.55051C10.6426 8.28976 10.8514 8.12845 11.2687 8.12845L14.3936 8.1279C14.886 8.22457 14.9965 8.44555 15.0634 8.94163L15.0661 12.4142C15.0603 12.6062 15.1625 13.1752 15.5073 13.3008C15.7835 13.392 15.9658 13.1705 16.1309 12.9956C16.8803 12.2004 17.4142 11.2618 17.8924 10.2904C18.1034 9.86197 18.2854 9.41865 18.4622 8.9745C18.5937 8.64608 18.7981 8.48449 19.1688 8.49002L22.1778 8.49361C22.2665 8.49361 22.3566 8.49444 22.4444 8.50963C22.9515 8.59636 23.0905 8.81457 22.9336 9.30927C22.6866 10.0865 22.2068 10.734 21.7378 11.3831C21.2351 12.078 20.699 12.7487 20.2012 13.4467C19.7438 14.0847 19.78 14.406 20.3479 14.9601Z" fill="#C8C8C8"/>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.6767 26.8243C15.5643 26.8426 15.4514 26.8595 15.3381 26.875C15.4514 26.8595 15.5643 26.8426 15.6767 26.8243Z" fill="#C8C8C8"/>
+                  <path d="M15.9468 26.7781C15.8931 26.788 15.8393 26.7971 15.7855 26.8064C15.8393 26.7971 15.8931 26.788 15.9468 26.7781Z" fill="#C8C8C8"/>
+                  <path d="M15.0365 26.9124C14.9048 26.9273 14.7724 26.9405 14.6395 26.9516C14.7724 26.9405 14.9048 26.9273 15.0365 26.9124Z" fill="#C8C8C8"/>
+                  <path d="M15.2959 26.8807C15.2326 26.8892 15.169 26.897 15.1055 26.9044C15.169 26.897 15.2326 26.8892 15.2959 26.8807Z" fill="#C8C8C8"/>
+                  <path d="M16.3143 26.7052C16.2669 26.7153 16.2193 26.7254 16.1718 26.7351C16.2193 26.7254 16.2669 26.7153 16.3143 26.7052Z" fill="#C8C8C8"/>
+                  <path d="M17.2264 26.4786C17.1881 26.4896 17.1498 26.4999 17.1115 26.5106C17.1498 26.4999 17.1881 26.4896 17.2264 26.4786Z" fill="#C8C8C8"/>
+                  <path d="M16.9506 26.554C16.909 26.5649 16.8672 26.5761 16.8254 26.5866C16.8672 26.5761 16.909 26.5651 16.9506 26.554Z" fill="#C8C8C8"/>
+                  <path d="M16.5897 26.6443C16.5456 26.6546 16.5011 26.6642 16.4566 26.6741C16.5011 26.6642 16.5456 26.6546 16.5897 26.6443Z" fill="#C8C8C8"/>
+                  <path d="M14.6352 26.952C14.5642 26.958 14.4931 26.9633 14.4218 26.9681C14.4931 26.9633 14.5642 26.958 14.6352 26.952Z" fill="#C8C8C8"/>
+                  <path d="M27 13.5C27 6.0453 20.9547 0 13.5 0C6.0453 0 0 6.0453 0 13.5C0 20.9547 6.0453 27 13.5 27C13.5793 27 13.6582 26.9984 13.7373 26.9969V16.4877H10.8369V13.1076H13.7373V10.6202C13.7373 7.73547 15.4983 6.16539 18.0716 6.16539C19.3039 6.16539 20.3631 6.25726 20.6719 6.29826V9.31318H18.8974C17.4975 9.31318 17.2264 9.97854 17.2264 10.9547V13.1076H20.5738L20.1375 16.4877H17.2264V26.4784C22.8692 24.8608 27 19.6621 27 13.5Z" fill="#C8C8C8"/>
+                  <path d="M14.392 26.9699C14.2515 26.979 14.1104 26.9862 13.9689 26.9909C14.1104 26.9862 14.2515 26.979 14.392 26.9699Z" fill="#C8C8C8"/>
+                  <path d="M13.9616 26.9913C13.887 26.9938 13.8123 26.9957 13.7375 26.9969C13.8123 26.9957 13.887 26.9938 13.9616 26.9913Z" fill="#C8C8C8"/>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.084 13.5C16.084 14.9271 14.9271 16.084 13.5 16.084C12.0729 16.084 10.916 14.9271 10.916 13.5C10.916 12.0729 12.0729 10.916 13.5 10.916C14.9271 10.916 16.084 12.0729 16.084 13.5Z" fill="#C8C8C8"/>
+                  <path d="M19.543 8.92818C19.4188 8.59159 19.2206 8.28693 18.9631 8.03685C18.7131 7.77936 18.4086 7.58119 18.0718 7.45698C17.7986 7.35089 17.3883 7.22462 16.6325 7.19022C15.8149 7.15293 15.5698 7.1449 13.5 7.1449C11.4299 7.1449 11.1848 7.15273 10.3674 7.19001C9.61163 7.22462 9.20109 7.35089 8.92815 7.45698C8.59135 7.58119 8.28668 7.77936 8.03681 8.03685C7.77932 8.28693 7.58115 8.59139 7.45673 8.92818C7.35065 9.20133 7.22437 9.61188 7.18997 10.3677C7.15269 11.1851 7.14465 11.4302 7.14465 13.5002C7.14465 15.57 7.15269 15.8152 7.18997 16.6328C7.22437 17.3886 7.35065 17.7989 7.45673 18.072C7.58115 18.4088 7.77911 18.7133 8.03661 18.9634C8.28668 19.2209 8.59114 19.419 8.92794 19.5432C9.20109 19.6495 9.61163 19.7758 10.3674 19.8102C11.1848 19.8475 11.4297 19.8553 13.4998 19.8553C15.57 19.8553 15.8151 19.8475 16.6323 19.8102C17.3881 19.7758 17.7986 19.6495 18.0718 19.5432C18.7479 19.2825 19.2822 18.7481 19.543 18.072C19.6491 17.7989 19.7754 17.3886 19.81 16.6328C19.8473 15.8152 19.8551 15.57 19.8551 13.5002C19.8551 11.4302 19.8473 11.1851 19.81 10.3677C19.7756 9.61188 19.6493 9.20133 19.543 8.92818ZM13.5 17.4806C11.3014 17.4806 9.51914 15.6986 9.51914 13.5C9.51914 11.3014 11.3014 9.51939 13.5 9.51939C15.6983 9.51939 17.4806 11.3014 17.4806 13.5C17.4806 15.6986 15.6983 17.4806 13.5 17.4806ZM17.638 10.2923C17.1242 10.2923 16.7077 9.87576 16.7077 9.36201C16.7077 8.84826 17.1242 8.43174 17.638 8.43174C18.1517 8.43174 18.5682 8.84826 18.5682 9.36201C18.568 9.87576 18.1517 10.2923 17.638 10.2923Z" fill="#C8C8C8"/>
+                  <path d="M13.5 0C6.0453 0 0 6.0453 0 13.5C0 20.9547 6.0453 27 13.5 27C20.9547 27 27 20.9547 27 13.5C27 6.0453 20.9547 0 13.5 0ZM21.2052 16.696C21.1677 17.5212 21.0365 18.0846 20.8449 18.5777C20.4422 19.619 19.619 20.4422 18.5777 20.8449C18.0848 21.0365 17.5212 21.1675 16.6962 21.2052C15.8695 21.2429 15.6055 21.252 13.5002 21.252C11.3947 21.252 11.1309 21.2429 10.304 21.2052C9.479 21.1675 8.91541 21.0365 8.42246 20.8449C7.90501 20.6502 7.43658 20.3452 7.04931 19.9507C6.65504 19.5636 6.34996 19.095 6.1553 18.5777C5.96372 18.0848 5.8325 17.5212 5.79501 16.6962C5.7569 15.8693 5.74805 15.6053 5.74805 13.5C5.74805 11.3947 5.7569 11.1307 5.79481 10.304C5.8323 9.4788 5.96331 8.91541 6.15488 8.42226C6.34955 7.90501 6.65483 7.43637 7.04931 7.04931C7.43637 6.65483 7.90501 6.34975 8.42226 6.15509C8.91541 5.96352 9.4788 5.8325 10.304 5.79481C11.1307 5.75711 11.3947 5.74805 13.5 5.74805C15.6053 5.74805 15.8693 5.75711 16.696 5.79501C17.5212 5.8325 18.0846 5.96352 18.5777 6.15488C19.095 6.34955 19.5636 6.65483 19.9509 7.04931C20.3452 7.43658 20.6505 7.90501 20.8449 8.42226C21.0367 8.91541 21.1677 9.4788 21.2054 10.304C21.2431 11.1307 21.252 11.3947 21.252 13.5C21.252 15.6053 21.2431 15.8693 21.2052 16.696Z" fill="#C8C8C8"/>
+                </svg>
+              </a>
+            </div>
+            <a href="#" class="header-login">Войти/Регистрация</a>
+          </div>
+          <div class="header-top--2 d-flex justify-content-end">
+            <p class="header-text">Food market</p>
+            <div class="header-contacts">
+              <a href="tel:+7 000 000 00 00" class="header-tel">+7 000 000 00 00</a>
+              <p class="header-time">Работаем с 9:00 до 21:00</p>
+            </div>
+            <div class="header-delivery">Доставка <br>в день заказа</div>
+            <button class="button button-call">Заказать звонок</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex">
+          <div class="button-drop-catalog dropdown">
+            <a class="" data-toggle="dropdown" href="#" data-display="static" aria-expanded="false">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                <path d="M1.19714 20.7147H17.2458C17.9073 20.7147 18.4434 20.1786 18.4434 19.5172C18.4434 18.8558 17.9073 18.3197 17.2458 18.3197H1.19754C0.536098 18.3197 -1.90735e-06 18.8558 -1.90735e-06 19.5172C-1.90735e-06 20.1786 0.5357 20.7147 1.19714 20.7147Z" fill="white"/>
+                <path d="M1.19714 13.1977H22.2458C22.9073 13.1977 23.4434 12.6616 23.4434 12.0002C23.4434 11.3388 22.9073 10.8027 22.2458 10.8027H1.19754C0.5361 10.8027 -1.90735e-06 11.3388 -1.90735e-06 12.0002C-0.000400543 12.6616 0.5357 13.1977 1.19714 13.1977Z" fill="white"/>
+                <path d="M1.19714 5.68077H22.2458C22.9073 5.68077 23.4434 5.14466 23.4434 4.48322C23.4434 3.82178 22.9073 3.28568 22.2458 3.28568H1.19754C0.5361 3.28568 -1.90735e-06 3.82178 -1.90735e-06 4.48322C-1.90735e-06 5.14466 0.5357 5.68077 1.19714 5.68077Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="24" height="24" fill="white" transform="matrix(-1 0 0 1 24 1.52588e-05)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </a>
+            <ul class="category-list dropdown-menu">
+              <li class="category-item category-item--sale"><a href="#" data-toggle="tab">Акции и скидки</a></li>
+              <li class="category-item category-item--sale"><a href="#" data-toggle="tab">Икра</a></li>
+              <li class="category-item category-item--sale"><a href="#" data-toggle="tab">Морепродукты</a></li>
+              <li class="category-item category-item--sale"><a href="#" data-toggle="tab">Рыба</a></li>
+              <li class="category-item category-item--sale"><a href="#" data-toggle="tab">Консервы</a></li>
+              <li class="category-item category-item--sale"><a href="#" data-toggle="tab">Бакалея</a></li>
+              <li class="category-item category-item--sale"><a href="#" data-toggle="tab">Кулинария</a></li>
+              <li class="category-item category-item--sale"><a href="#" data-toggle="tab">Соль и специи</a></li>
+              <li class="category-item category-item--sale"><a href="#" data-toggle="tab">Энергия океана</a></li>
+              <li class="category-item category-item--sale"><a href="#" data-toggle="tab">Витамины</a></li>
+            </ul>
+          </div>
+          <a class="header-link-catalog" href="#">Каталог товаров</a>
+        </div>
+        <ul class="nav d-flex justify-content-center">
+          <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Оплата и доставка</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Акции и скидки</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Новости</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Рецепт</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+        </ul>
+        <a href="#" class="header-basket d-flex flex-column justify-content-center">
+          Мои покупки
+          <p class="header-basket-summ">0 руб.</p>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="content">
+    <section class="main container">
+      <div class="row justify-content-between">
+        <div class="col-lg-3 main-category">
+          <ul class="category-list">
+            <li class="category-item category-item--sale"><a href="#">Акции и скидки</a></li>
+            <li class="category-item category-item--ikra category-item--active"><a href="#">Икра</a></li>
+            <li class="category-item category-item--sea"><a href="#">Морепродукты</a></li>
+            <li class="category-item category-item--fish"><a href="#">Рыба</a></li>
+            <li class="category-item category-item--konserv"><a href="#">Консервы</a></li>
+            <li class="category-item category-item--bak"><a href="#">Бакалея</a></li>
+            <li class="category-item category-item--kul"><a href="#">Кулинария</a></li>
+            <li class="category-item category-item--spice"><a href="#">Соль и специи</a></li>
+            <li class="category-item category-item--energy"><a href="#">Энергия океана</a></li>
+            <li class="category-item category-item--vit"><a href="#">Витамины</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-9">
+          <div class="main-lead">
+            <h1 class="title main-title">Камчатский краб</h1>
+            <h4 class="main-subtitle">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать</h4>
+            <a href="#" class="button">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recommend container">
+      <h2 class="title">Рекомендуем</h2>
+      <div class="products-list row">
+        <div class="products-item col-md-6 col-lg-3">
+          <div class="products-item-img">
+            <img src="img/product-1.png">
+          </div>
+          <div class="products-item-inner">
+            <div class="products-rate">
+                <label aria-label="1 star" class="products-rate-label" for="rating-1"><i class="products-rate-icon fa fa-star"></i></label>
+                <input name="rating1" id="rating-1" value="1" type="radio">
+                <label aria-label="2 stars" class="products-rate-label" for="rating-2"><i class="products-rate-icon fa fa-star"></i></label>
+                <input name="rating1" id="rating-2" value="2" type="radio">
+                <label aria-label="3 stars" class="products-rate-label" for="rating-3"><i class="products-rate-icon fa fa-star"></i></label>
+                <input name="rating1" id="rating-3" value="3" type="radio">
+                <label aria-label="4 stars" class="products-rate-label" for="rating-4"><i class="products-rate-icon fa fa-star"></i></label>
+                <input name="rating1" id="rating-4" value="4" type="radio" checked>
+                <label aria-label="5 stars" class="products-rate-label" for="rating-5"><i class="products-rate-icon fa fa-star"></i></label>
+                <input name="rating1" id="rating-5" value="5" type="radio">
+            </div>
+            <a href="#" class="products-name">Барабулька черноморская (10-13 см) свежемороженая, 1 кг</a>
+            <div class="products-weight">
+              <input id="1" type="radio" name="products-1-weight" value="5 кг" checked>
+              <label for="1" class="products-weight-kg">5 кг</label>
+
+              <input id="2" type="radio" name="products-1-weight" value="20 кг">
+              <label for="2" class="products-weight-kg">20 кг</label>
+            </div>
+            <div>
+              <p class="products-cost products-cost-old">870 руб.</p>
+              <p class="products-cost">870 руб.</p>
+              <button class="button products-button" href="#">В корзину</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="products-item col-md-6 col-lg-3">
+          <div class="products-item-img">
+            <img src="img/product-2.png">
+          </div>
+          <div class="products-item-inner">
+            <div class="products-rate">
+                <label aria-label="1 star" class="products-rate-label" for="rating-21"><i class="products-rate-icon fa fa-star"></i></label>
+                <input name="rating2" id="rating-21" value="1" type="radio">
+                <label aria-label="2 stars" class="products-rate-label" for="rating-22"><i class="products-rate-icon fa fa-star"></i></label>
+                <input name="rating2" id="rating-22" value="2" type="radio">
+                <label aria-label="3 stars" class="products-rate-label" for="rating-23"><i class="products-rate-icon fa fa-star"></i></label>
+                <input name="rating2" id="rating-23" value="3" type="radio">
+                <label aria-label="4 stars" class="products-rate-label" for="rating-24"><i class="products-rate-icon fa fa-star"></i></label>
+                <input name="rating2" id="rating-24" value="4" type="radio" checked>
+                <label aria-label="5 stars" class="products-rate-label" for="rating-25"><i class="products-rate-icon fa fa-star"></i></label>
+                <input name="rating2" id="rating-25" value="5" type="radio">
+            </div>
+            <a href="#" class="products-name">Барабулька черноморская (10-13 см) свежемороженая, 1 кг</a>
+            <div class="products-weight">
+              <input id="3" type="radio" name="products-2-weight" value="5 кг" checked>
+              <label for="3" class="products-weight-kg">5 кг</label>
+
+              <input id="4" type="radio" name="products-2-weight" value="20 кг">
+              <label for="4" class="products-weight-kg">20 кг</label>
+            </div>
+            <div>
+              <p class="products-cost products-cost-old">870 руб.</p>
+              <p class="products-cost">870 руб.</p>
+              <button class="button products-button" href="#">В корзину</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="products-item col-md-6 col-lg-3">
+          <div class="products-item-img">
+            <img src="img/product-3.png">
+          </div>
+          <div class="products-item-inner">
+            <div class="products-rate">
+                <label aria-label="1 star" class="products-rate-label" for="rating-31"><i class="products-rate-icon fa fa-star"></i></label>
+                <input name="rating3" id="rating-31" value="1" type="radio">
+                <label aria-label="2 stars" class="products-rate-label" for="rating-32"><i class="products-rate-icon fa fa-star"></i></label>
+                <input name="rating3" id="rating-32" value="2" type="radio">
+                <label aria-label="3 stars" class="products-rate-label" for="rating-33"><i class="products-rate-icon fa fa-star"></i></label>
+                <input name="rating3" id="rating-33" value="3" type="radio">
+                <label aria-label="4 stars" class="products-rate-label" for="rating-34"><i class="products-rate-icon fa fa-star"></i></label>
+                <input name="rating3" id="rating-34" value="4" type="radio" checked>
+                <label aria-label="5 stars" class="products-rate-label" for="rating-35"><i class="products-rate-icon fa fa-star"></i></label>
+                <input name="rating3" id="rating-35" value="5" type="radio">
+            </div>
+            <a href="#" class="products-name">Барабулька черноморская (10-13 см) свежемороженая, 1 кг</a>
+            <div class="products-weight">
+              <input id="5" type="radio" name="products-3-weight" value="5 кг" checked>
+              <label for="5" class="products-weight-kg">5 кг</label>
+
+              <input id="6" type="radio" name="products-3-weight" value="20 кг">
+              <label for="6" class="products-weight-kg">20 кг</label>
+            </div>
+            <div>
+              <p class="products-cost products-cost-old">870 руб.</p>
+              <p class="products-cost">870 руб.</p>
+              <button class="button products-button" href="#">В корзину</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="products-item col-md-6 col-lg-3">
+          <div class="products-item-img">
+            <img src="img/product-4.png">
+          </div>
+          <div class="products-item-inner">
+            <div class="products-rate">
+                <label aria-label="1 star" class="products-rate-label" for="rating-41"><i class="products-rate-icon fa fa-star"></i></label>
+                <input name="rating4" id="rating-41" value="1" type="radio">
+                <label aria-label="2 stars" class="products-rate-label" for="rating-42"><i class="products-rate-icon fa fa-star"></i></label>
+                <input name="rating4" id="rating-42" value="2" type="radio">
+                <label aria-label="3 stars" class="products-rate-label" for="rating-43"><i class="products-rate-icon fa fa-star"></i></label>
+                <input name="rating4" id="rating-43" value="3" type="radio">
+                <label aria-label="4 stars" class="products-rate-label" for="rating-44"><i class="products-rate-icon fa fa-star"></i></label>
+                <input name="rating4" id="rating-44" value="4" type="radio">
+                <label aria-label="5 stars" class="products-rate-label" for="rating-45"><i class="products-rate-icon fa fa-star"></i></label>
+                <input name="rating4" id="rating-45" value="5" type="radio" checked>
+            </div>
+            <a href="#" class="products-name">Барабулька черноморская (10-13 см) свежемороженая, 1 кг</a>
+            <div class="products-weight">
+              <input id="7" type="radio" name="products-4-weight" value="5 кг" checked>
+              <label for="7" class="products-weight-kg">5 кг</label>
+
+              <input id="8" type="radio" name="products-4-weight" value="20 кг">
+              <label for="8" class="products-weight-kg">20 кг</label>
+            </div>
+            <div>
+              <p class="products-cost products-cost-old">870 руб.</p>
+              <p class="products-cost">870 руб.</p>
+              <button class="button products-button" href="#">В корзину</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <a class="button">Перейти в каталог</a>
+    </section>
+
+    <div class="container">
+      <section class="advantage">
+        <h2 class="title">Наши преимущества</h2>
+        <div class="row advantage-list">
+          <div class="col-md-3 advantage-item">
+            <p class="advantage-text">Быстрая доставка</p>
+          </div>
+          <div class="col-md-4 advantage-item">
+            <p class="advantage-text">Высокое качество продуктов</p>
+          </div>
+          <div class="col-md-3 advantage-item">
+            <p class="advantage-text">Бонусы за покупки</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="news container">
+      <h2 class="title">Новости</h2>
+      <div class="news-list row">
+        <a href="#" class="news-item col-md-4">
+          <img src="img/news-1.png">
+          <div class="news-item-inner">
+            <p class="news-item-title">Сайт рыба текст поможет дизайнеру</p>
+            <p class="news-item-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру</p>
+            <p class="news-item-more">Читать далее...</p>
+          </div>
+        </a>
+        <a href="#" class="news-item col-md-4">
+          <img src="img/news-1.png">
+          <div class="news-item-inner">
+            <p class="news-item-title">Сайт рыба текст поможет дизайнеру</p>
+            <p class="news-item-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру</p>
+            <p class="news-item-more">Читать далее...</p>
+          </div>
+        </a>
+        <a href="#" class="news-item col-md-4">
+          <img src="img/news-1.png">
+          <div class="news-item-inner">
+            <p class="news-item-title">Сайт рыба текст поможет дизайнеру</p>
+            <p class="news-item-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру</p>
+            <p class="news-item-more">Читать далее...</p>
+          </div>
+        </a>
+      </div>
+      <a href="#" class="button">Все новости</a>
+    </section>
+
+    <section class="subscribe">
+      <div class="container">
+        <h2 class="subscribe-title col-lg-4">ПОДПИШИТЕСЬ НА НОВОСТИ И ПОЛУЧАЙТЕ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ!</h2>
+        <form class="subscribe-form row">
+          <input class="col-lg-4" type="text" name="user-name" placeholder="Ваше имя">
+          <input class="col-lg-4" type="email" name="user-email" placeholder="Ваш E-mail">
+          <div class="col-lg-4 subscribe-btn-wrapper">
+            <button class="button">Подписаться</button>
+            <p class="subscribe-text">Нажимая на кнопку, Вы соглашаетесь <a href="#" class="subscribe-text--mark"> с политикой конфиденциальности</a></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <a href="#" class="logo"><img src="img/logo.png" width="132" height="121"></a>
+        <div class="contacts col">
+          <address class="contacts-item contacts-item--address">
+            г. Санкт-Петербург ул. Садовая 5
+            <a class="contacts-item-link" href="#">Смотреть на карте</a>
+          </address>
+          <a class="contacts-item contacts-item--tel" href="tel:+7 000 000 00 00">
+            +7 000 000 00 00
+            <p class="contacts-item--time">Работаем с 9:00 до 21:00</p>
+          </a>
+          <a class="contacts-item contacts-item--email" href="mailto:Info@gmail.com">Info@gmail.com</a>
+        </div>
+        <ul class="col-6 col-md-3 col-lg-2">
+          <li class="nav-item"><a href="#">О нас</a></li>
+          <li class="nav-item"><a href="#">Оплата и доставка</a></li>
+          <li class="nav-item"><a href="#">Акции и скидки</a></li>
+          <li class="nav-item"><a href="#">Новости</a></li>
+          <li class="nav-item"><a href="#">Рецепт</a></li>
+          <li class="nav-item"><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="col-6 col-md-3 col-lg-2">
+          <li class="nav-item"><a href="#">Личный кабинет</a></li>
+          <li class="nav-item"><a href="#">Ваша корзина</a></li>
+          <li class="nav-item"><a href="#">Кулинарные рецепты</a></li>
+          <li class="nav-item"><a href="#">Карта сайта</a></li>
+        </ul>
+
+        <div class="social-links d-flex justify-content-center">
+          <a href="#" class="social-link">
+            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.5 0C6.04441 0 0 6.04413 0 13.5C0 20.9559 6.04441 27 13.5 27C20.9556 27 27 20.9559 27 13.5C27 6.04413 20.9556 0 13.5 0ZM20.3479 14.9601C20.9771 15.5746 21.6428 16.153 22.2077 16.8312C22.4579 17.1311 22.6938 17.4413 22.8734 17.7902C23.1297 18.2876 22.8982 18.8332 22.453 18.8627L19.6872 18.8622C18.9729 18.9213 18.4045 18.6332 17.9252 18.1448C17.5427 17.7556 17.1877 17.3399 16.8193 16.9375C16.6687 16.7723 16.5102 16.6168 16.3213 16.4944C15.9442 16.2492 15.6166 16.3243 15.4006 16.7182C15.1805 17.119 15.1302 17.5631 15.1092 18.0092C15.0791 18.6614 14.8825 18.8318 14.2281 18.8624C12.8299 18.9279 11.5032 18.7158 10.2702 18.0109C9.18249 17.3891 8.34058 16.5116 7.60696 15.518C6.17837 13.5812 5.08429 11.4555 4.10124 9.26867C3.87999 8.77617 4.04185 8.51266 4.58517 8.50245C5.48784 8.48504 6.39051 8.48725 7.29318 8.50162C7.66054 8.50742 7.90361 8.71762 8.04476 9.06427C8.53255 10.2644 9.13056 11.4063 9.87993 12.4653C10.0796 12.7473 10.2835 13.0285 10.5738 13.2277C10.8942 13.4475 11.1384 13.3749 11.2895 13.0172C11.3861 12.7899 11.4278 12.5468 11.4488 12.3032C11.5206 11.4687 11.5292 10.6345 11.4049 9.80342C11.3276 9.2833 11.0351 8.94743 10.5166 8.84909C10.2525 8.7991 10.2912 8.70132 10.4197 8.55051C10.6426 8.28976 10.8514 8.12845 11.2687 8.12845L14.3936 8.1279C14.886 8.22457 14.9965 8.44555 15.0634 8.94163L15.0661 12.4142C15.0603 12.6062 15.1625 13.1752 15.5073 13.3008C15.7835 13.392 15.9658 13.1705 16.1309 12.9956C16.8803 12.2004 17.4142 11.2618 17.8924 10.2904C18.1034 9.86197 18.2854 9.41865 18.4622 8.9745C18.5937 8.64608 18.7981 8.48449 19.1688 8.49002L22.1778 8.49361C22.2665 8.49361 22.3566 8.49444 22.4444 8.50963C22.9515 8.59636 23.0905 8.81457 22.9336 9.30927C22.6866 10.0865 22.2068 10.734 21.7378 11.3831C21.2351 12.078 20.699 12.7487 20.2012 13.4467C19.7438 14.0847 19.78 14.406 20.3479 14.9601Z" fill="#C8C8C8"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.6767 26.8243C15.5643 26.8426 15.4514 26.8595 15.3381 26.875C15.4514 26.8595 15.5643 26.8426 15.6767 26.8243Z" fill="#C8C8C8"/>
+              <path d="M15.9468 26.7781C15.8931 26.788 15.8393 26.7971 15.7855 26.8064C15.8393 26.7971 15.8931 26.788 15.9468 26.7781Z" fill="#C8C8C8"/>
+              <path d="M15.0365 26.9124C14.9048 26.9273 14.7724 26.9405 14.6395 26.9516C14.7724 26.9405 14.9048 26.9273 15.0365 26.9124Z" fill="#C8C8C8"/>
+              <path d="M15.2959 26.8807C15.2326 26.8892 15.169 26.897 15.1055 26.9044C15.169 26.897 15.2326 26.8892 15.2959 26.8807Z" fill="#C8C8C8"/>
+              <path d="M16.3143 26.7052C16.2669 26.7153 16.2193 26.7254 16.1718 26.7351C16.2193 26.7254 16.2669 26.7153 16.3143 26.7052Z" fill="#C8C8C8"/>
+              <path d="M17.2264 26.4786C17.1881 26.4896 17.1498 26.4999 17.1115 26.5106C17.1498 26.4999 17.1881 26.4896 17.2264 26.4786Z" fill="#C8C8C8"/>
+              <path d="M16.9506 26.554C16.909 26.5649 16.8672 26.5761 16.8254 26.5866C16.8672 26.5761 16.909 26.5651 16.9506 26.554Z" fill="#C8C8C8"/>
+              <path d="M16.5897 26.6443C16.5456 26.6546 16.5011 26.6642 16.4566 26.6741C16.5011 26.6642 16.5456 26.6546 16.5897 26.6443Z" fill="#C8C8C8"/>
+              <path d="M14.6352 26.952C14.5642 26.958 14.4931 26.9633 14.4218 26.9681C14.4931 26.9633 14.5642 26.958 14.6352 26.952Z" fill="#C8C8C8"/>
+              <path d="M27 13.5C27 6.0453 20.9547 0 13.5 0C6.0453 0 0 6.0453 0 13.5C0 20.9547 6.0453 27 13.5 27C13.5793 27 13.6582 26.9984 13.7373 26.9969V16.4877H10.8369V13.1076H13.7373V10.6202C13.7373 7.73547 15.4983 6.16539 18.0716 6.16539C19.3039 6.16539 20.3631 6.25726 20.6719 6.29826V9.31318H18.8974C17.4975 9.31318 17.2264 9.97854 17.2264 10.9547V13.1076H20.5738L20.1375 16.4877H17.2264V26.4784C22.8692 24.8608 27 19.6621 27 13.5Z" fill="#C8C8C8"/>
+              <path d="M14.392 26.9699C14.2515 26.979 14.1104 26.9862 13.9689 26.9909C14.1104 26.9862 14.2515 26.979 14.392 26.9699Z" fill="#C8C8C8"/>
+              <path d="M13.9616 26.9913C13.887 26.9938 13.8123 26.9957 13.7375 26.9969C13.8123 26.9957 13.887 26.9938 13.9616 26.9913Z" fill="#C8C8C8"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.084 13.5C16.084 14.9271 14.9271 16.084 13.5 16.084C12.0729 16.084 10.916 14.9271 10.916 13.5C10.916 12.0729 12.0729 10.916 13.5 10.916C14.9271 10.916 16.084 12.0729 16.084 13.5Z" fill="#C8C8C8"/>
+              <path d="M19.543 8.92818C19.4188 8.59159 19.2206 8.28693 18.9631 8.03685C18.7131 7.77936 18.4086 7.58119 18.0718 7.45698C17.7986 7.35089 17.3883 7.22462 16.6325 7.19022C15.8149 7.15293 15.5698 7.1449 13.5 7.1449C11.4299 7.1449 11.1848 7.15273 10.3674 7.19001C9.61163 7.22462 9.20109 7.35089 8.92815 7.45698C8.59135 7.58119 8.28668 7.77936 8.03681 8.03685C7.77932 8.28693 7.58115 8.59139 7.45673 8.92818C7.35065 9.20133 7.22437 9.61188 7.18997 10.3677C7.15269 11.1851 7.14465 11.4302 7.14465 13.5002C7.14465 15.57 7.15269 15.8152 7.18997 16.6328C7.22437 17.3886 7.35065 17.7989 7.45673 18.072C7.58115 18.4088 7.77911 18.7133 8.03661 18.9634C8.28668 19.2209 8.59114 19.419 8.92794 19.5432C9.20109 19.6495 9.61163 19.7758 10.3674 19.8102C11.1848 19.8475 11.4297 19.8553 13.4998 19.8553C15.57 19.8553 15.8151 19.8475 16.6323 19.8102C17.3881 19.7758 17.7986 19.6495 18.0718 19.5432C18.7479 19.2825 19.2822 18.7481 19.543 18.072C19.6491 17.7989 19.7754 17.3886 19.81 16.6328C19.8473 15.8152 19.8551 15.57 19.8551 13.5002C19.8551 11.4302 19.8473 11.1851 19.81 10.3677C19.7756 9.61188 19.6493 9.20133 19.543 8.92818ZM13.5 17.4806C11.3014 17.4806 9.51914 15.6986 9.51914 13.5C9.51914 11.3014 11.3014 9.51939 13.5 9.51939C15.6983 9.51939 17.4806 11.3014 17.4806 13.5C17.4806 15.6986 15.6983 17.4806 13.5 17.4806ZM17.638 10.2923C17.1242 10.2923 16.7077 9.87576 16.7077 9.36201C16.7077 8.84826 17.1242 8.43174 17.638 8.43174C18.1517 8.43174 18.5682 8.84826 18.5682 9.36201C18.568 9.87576 18.1517 10.2923 17.638 10.2923Z" fill="#C8C8C8"/>
+              <path d="M13.5 0C6.0453 0 0 6.0453 0 13.5C0 20.9547 6.0453 27 13.5 27C20.9547 27 27 20.9547 27 13.5C27 6.0453 20.9547 0 13.5 0ZM21.2052 16.696C21.1677 17.5212 21.0365 18.0846 20.8449 18.5777C20.4422 19.619 19.619 20.4422 18.5777 20.8449C18.0848 21.0365 17.5212 21.1675 16.6962 21.2052C15.8695 21.2429 15.6055 21.252 13.5002 21.252C11.3947 21.252 11.1309 21.2429 10.304 21.2052C9.479 21.1675 8.91541 21.0365 8.42246 20.8449C7.90501 20.6502 7.43658 20.3452 7.04931 19.9507C6.65504 19.5636 6.34996 19.095 6.1553 18.5777C5.96372 18.0848 5.8325 17.5212 5.79501 16.6962C5.7569 15.8693 5.74805 15.6053 5.74805 13.5C5.74805 11.3947 5.7569 11.1307 5.79481 10.304C5.8323 9.4788 5.96331 8.91541 6.15488 8.42226C6.34955 7.90501 6.65483 7.43637 7.04931 7.04931C7.43637 6.65483 7.90501 6.34975 8.42226 6.15509C8.91541 5.96352 9.4788 5.8325 10.304 5.79481C11.1307 5.75711 11.3947 5.74805 13.5 5.74805C15.6053 5.74805 15.8693 5.75711 16.696 5.79501C17.5212 5.8325 18.0846 5.96352 18.5777 6.15488C19.095 6.34955 19.5636 6.65483 19.9509 7.04931C20.3452 7.43658 20.6505 7.90501 20.8449 8.42226C21.0367 8.91541 21.1677 9.4788 21.2054 10.304C21.2431 11.1307 21.252 11.3947 21.252 13.5C21.252 15.6053 21.2431 15.8693 21.2052 16.696Z" fill="#C8C8C8"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
