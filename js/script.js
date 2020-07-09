@@ -1,11 +1,9 @@
 $(document).ready(function(){
 
-  // const el = document.querySelectorAll('.portfolio__img');
-  // const observer = lozad(el);
-  // observer.observe();
+  //////////// video > mobile-width
 
   if($(window).width() > 576) {
-    setTimeout($('.main__bg').attr('src', 'img/video.mp4').play(), 1000);
+    setTimeout($('.main__bg').attr('src', 'img/video.mp4'), 1000);
   }
 
   //////////// gamburger-menu
