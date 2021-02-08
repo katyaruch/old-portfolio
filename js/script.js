@@ -70,6 +70,13 @@ $(document).ready(function(){
       },
   });
 
+  /////////////
+
+  $('.verstka__norm').hover(function() {
+    $('.verstka__norm').removeClass('active');
+    $(this).addClass('active');
+  });
+
   //////////// Feedback
 
   $("#feedback-form").submit(function(e){
