@@ -1904,6 +1904,7 @@ section {
 
   .projects__list {
     padding-left: 20px;
+    height: 60%;
   }
   .production__item {
     width: 960px;
@@ -1927,8 +1928,10 @@ section {
     margin-right: 20px;
     /*height: 400px;*/
   }
+  .projects__gallery .slick-list,
+  .projects__gallery .slick-track,
   .projects__gallery-item {
-    height: 60vh;
+    height: 100%;
   }
 
   .grid {
@@ -2167,13 +2170,19 @@ section {
     display: flex;
   }
 
+  .news__list {
+    height: calc(40% - 20px);
+  }
+  .news__list .slick-list,
+  .news__list .slick-track,
   .news__item {
-    width: 320px;
-    height: calc(40vh - 100px);
-    margin: 0 10px;
+    height: 100%;
   }
 
-
+  .news__item {
+    width: 320px;
+    margin: 0 10px;
+  }
   .contacts .title:after {
     right: calc(50% + 65px);
   }
@@ -2250,16 +2259,16 @@ section {
     padding: 10px 0 20px;
   }
   .projects__list {
+    height: 50%
     padding-bottom: 10px;
   }
   .projects__gallery-item {
-    height: 50vh;
   }
   .projects__line {
     margin-bottom: 10px;
   }
-  .news__item {
-    height: calc(50vh - 80px);
+  .news__list {
+    height: calc(50% - 40px);
   }
   .news__text {
     opacity: 0;

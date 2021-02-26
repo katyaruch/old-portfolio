@@ -109,24 +109,6 @@ $(document).ready(function () {
         autoplaySpeed: 5000,
         // fade: true,
         cssEase: 'linear',
-        responsive: [
-            {
-              breakpoint: 737,
-              settings: {
-                dots: false,
-                arrows: true,
-                prevArrow: '<a href="#" class="arrow-prev"><i class="icon icon__arrow-left"></i></a>',
-                nextArrow: '<a href="#" class="arrow-next"><i class="icon icon__arrow-right"></i></a>',
-              }
-            },
-            {
-              breakpoint: 415,
-              settings: {
-                dots: true,
-                arrows: false
-              }
-            }
-        ]
     });
 
     $('.partners__list').slick({
