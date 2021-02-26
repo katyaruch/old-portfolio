@@ -1977,10 +1977,6 @@ section {
     height: 100%;
   }
 
-  .news__item {
-    height: calc(40vh - 100px);
-  }
-
   .footer {
     height: 100%;
   }
@@ -2268,7 +2264,6 @@ section {
     margin-bottom: 10px;
   }
   .news__list {
-    height: calc(50% - 40px);
   }
   .news__text {
     opacity: 0;
