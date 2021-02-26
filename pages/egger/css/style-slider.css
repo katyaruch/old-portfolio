@@ -189,7 +189,7 @@ a {
 
 .cd-slider-wrapper {
   position: relative;
-  height: calc(100vh - 63px);
+  height: calc(100% - 63px);
 }
 
 .cd-slider {
@@ -256,7 +256,7 @@ a {
 }
 
 .cd-slider .image img {
-  height: calc(100vh - 64px);
+  height: calc(100% - 64px);
   background-size: cover;
   filter: saturate(0);
   transition: 0.5s;
@@ -363,7 +363,7 @@ a {
     float: right;
   }
   .cd-slider .cd-half-block img {
-    height: calc(100vh - 64px);
+    height: calc(100% - 64px);
     object-fit: cover;
   }
   .cd-slider .cd-half-block.content {
@@ -511,7 +511,7 @@ a {
 
 @media only screen and (max-width: 1024px) {
   .cd-slider-wrapper {
-    height: 100vh;
+    height: 100%;
   }
   .cd-slider li {
     display: flex;

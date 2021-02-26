@@ -2206,8 +2206,17 @@ section {
   .footer__list,
   .footer p {
     margin-bottom: 10px;
-    font-size: 12px;
-
+  }
+  .footer__location {
+    margin-right: 20px;
+  }
+  .footer__location, .footer__phone, .footer__address {
+    margin-bottom: 10px;
+    margin-left: 40px;
+  }
+  .footer__location span, .footer__phone span, .footer__address span,
+  .footer__list, .footer p {
+    font-size: 10px;
   }
   .footer .button {
     margin-top: 10px;
@@ -2222,6 +2231,14 @@ section {
     position: absolute;
     top: 30px;
     right: 30px;
+  }
+
+  .footer .copyright {
+    width: 100%;
+  }
+
+  label[for="agree"] {
+    line-height: 1.5;
   }
 }
 @media only screen and (orientation: landscape) and (max-width: 812px) {
