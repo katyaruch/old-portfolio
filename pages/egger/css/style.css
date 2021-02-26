@@ -623,12 +623,17 @@ section {
 
 .top-banner {
   position: relative;
-  margin-bottom: 0;
+  margin-bottom: 1px;
   overflow: hidden;
 }
 .top-banner__slider {
-  height: 100vh;
+  height: 100%;
   margin-bottom: 0 !important;
+}
+
+.top-banner__slider .slick-list,
+.top-banner__slider .slick-track {
+  height: inherit;
 }
 .top-banner__slider .slick-dots {
   position: absolute;
@@ -665,7 +670,7 @@ section {
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   outline: none;
 }
 .top-banner__slide:hover, .top-banner__slide:focus, .top-banner__slide:active {
@@ -825,7 +830,7 @@ section {
   text-align: center;
 }
 .about__wrapper {
-  height: 100vh;
+  height: 100%;
 }
 .about .title:after {
   left: calc(50% + 125px);
@@ -833,7 +838,7 @@ section {
 .about__list {
   display: flex;
   align-items: center;
-  height: calc(100vh - 193px);
+  height: calc(100% - 193px);
   /*padding-top: 210px;*/
   padding: 50px 0;
   background: url("../img/about.jpg") center no-repeat;
@@ -1007,7 +1012,7 @@ section {
 .production__item {
   position: relative;
   /*width: 1230px;*/
-  height: calc(100vh - 64px);
+  height: calc(100% - 64px);
   background: #ffffff;
 }
 .production__item:after {
@@ -1542,7 +1547,7 @@ section {
   text-align: center;
 }
 .contacts__wrapper {
-  height: 100vh;
+  height: 100%;
 }
 .contacts .title:after {
   right: calc(50% + 125px);
@@ -1550,7 +1555,7 @@ section {
 }
 
 .footer {
-  height: calc(100vh - 63px);
+  height: calc(100% - 63px);
   padding: 40px 0;
   background: #313131;
 }
@@ -1885,7 +1890,7 @@ section {
   }
 
   .about__list {
-    height: calc(100vh - 130px);
+    height: calc(100% - 130px);
   }
 
   .partners {
@@ -1965,7 +1970,7 @@ section {
   }
 
   .footer {
-    height: 100vh;
+    height: 100%;
   }
 
   .footer {
@@ -2174,7 +2179,7 @@ section {
   }
 
   .footer {
-    height: 100vh;
+    height: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -2221,7 +2226,7 @@ section {
 }
 @media only screen and (orientation: landscape) and (max-width: 812px) {
   .about__list {
-    height: calc(100vh - 100px);
+    height: calc(100% - 100px);
   }
   .partners {
     height: auto;
@@ -2243,7 +2248,7 @@ section {
     opacity: 0;
   }
   .footer {
-    height: 100vh;
+    height: 100%;
   }
 
   .footer {
