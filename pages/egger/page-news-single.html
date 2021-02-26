@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная | Egger</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom-checkbox.css">
+    <link rel="stylesheet" href="css/custom-select.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+    <link rel="stylesheet" href="vendor/lightbox/css/lightbox.min.css">
+    <link rel="stylesheet" href="vendor/fullPage.js-master/src/fullpage.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="modal fade" id="recall" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a>
+                        <img src="img/logo.png" alt="Логотип">
+                    </a>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon icon__close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-title">
+                        Оставить заявку
+                    </div>
+
+                    <form action="#" method="post">
+                        <div class="input__wrapper">
+                            <input type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="input__wrapper">
+                            <input type="text" class="phone__input" placeholder="Номер телефона">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="button button__accent">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a>
+                        <img src="img/logo.png" alt="Логотип">
+                    </a>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon icon__close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-title">
+                        Регистрация партнеров
+                    </div>
+
+                    <form action="#" method="post">
+                        <div class="input__wrapper">
+                            <input type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="input__wrapper">
+                            <input type="text" placeholder="Ваша фамилия">
+                        </div>
+                        <div class="input__wrapper">
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">Оренбург</option>
+                                    <option value="0">Москва</option>
+                                    <option value="0">Санкт - Петербург</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input__wrapper">
+                            <input type="text" class="phone__input" placeholder="Номер телефона">
+                        </div>
+                        <div class="input__wrapper">
+                            <input type="password" placeholder="Придумайте пароль">
+                        </div>
+                        <div class="input__wrapper">
+                            <input type="password" placeholder="Повторите пароль">
+                        </div>
+                        <div class="input__checkbox">
+                            <label class="container-checkbox">
+                                Согласен с условиями <a href="#" class="accent">пользовательского соглашения</a>
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="button button__accent">Регистрация</button>
+                        </div>
+                    </form>
+                    <p class="px-3">Если вы уже зарегистрированы, то воспользуйтесь формой для <a href="#" class="accent">входа в систему</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a>
+                        <img src="img/logo.png" alt="Логотип">
+                    </a>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon icon__close"></i>
+                    </button>
+                </div>
+                <div class="modal-body modal-body--login active">
+                    <div class="modal-title">
+                        Вход для партнеров
+                    </div>
+
+                    <form action="#" method="post">
+                        <div class="input__wrapper">
+                            <input type="text" class="phone__input" placeholder="Номер телефона">
+                        </div>
+                        <div class="input__wrapper">
+                            <input type="password" placeholder="Пароль">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="button button__accent">Войти</button>
+                        </div>
+                    </form>
+                    <p class="px-5">Если вы еще не зарегистрированы, воспользуйтесь формой для <a href="#" class="accent to-reg">регистрации</a></p>
+                </div>
+
+                <div class="modal-body modal-body--reg">
+                    <div class="modal-title">
+                        Регистрация партнеров
+                    </div>
+
+                    <form action="#" method="post">
+                        <div class="input__wrapper">
+                            <input type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="input__wrapper">
+                            <input type="text" placeholder="Ваша фамилия">
+                        </div>
+                        <div class="input__wrapper">
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">Оренбург</option>
+                                    <option value="0">Москва</option>
+                                    <option value="0">Санкт - Петербург</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input__wrapper">
+                            <input type="text" class="phone__input" placeholder="Номер телефона">
+                        </div>
+                        <div class="input__wrapper">
+                            <input type="password" placeholder="Придумайте пароль">
+                        </div>
+                        <div class="input__wrapper">
+                            <input type="password" placeholder="Повторите пароль">
+                        </div>
+                        <div class="input__checkbox">
+                            <label class="container-checkbox">
+                                Согласен с условиями <a href="#" class="accent">пользовательского соглашения</a>
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="button button__accent">Регистрация</button>
+                        </div>
+                    </form>
+                    <p class="px-5">Если вы уже зарегистрированы, то воспользуйтесь формой для <a href="#" class="accent to-login">входа в систему</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cityModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a>
+                        <img src="img/logo.png" alt="Логотип">
+                    </a>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon icon__close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-title">
+                        Выберите город
+                    </div>
+
+                    <div class="select__wrapper">
+                        <div class="input__wrapper">
+                            <input type="text" id="select__input" onkeyup="citySelect()" placeholder="Поиск">
+                            <i class="icon icon__search"></i>
+                        </div>
+
+                        <ul class="select__city" id="select__city">
+                            <li><a href="#">Оренбург</a></li>
+                            <li><a href="#">Москва</a></li>
+                            <li><a href="#">Санкт - Петербург</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section sidenav">
+        <a href="#" class="sidenav__close">
+            <i class="icon icon__close"></i>
+        </a>
+        <a href="#" class="sidenav__logo">
+            <img src="img/logo.png" alt="Логотип">
+        </a>
+        <ul>
+            <li><a href="#top-banner">Главная</a></li>
+            <li><a href="#about">О компании</a></li>
+            <li><a href="#production">Производство</a></li>
+            <li><a href="#projects">Последние работы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+
+        <div class="sidenav__auth">
+            <a href="#">Личный кабинет</a>
+            <a href="#" class="button button__accent">Регистрация</a>
+        </div>
+
+        <div class="sidenav__bottom">
+            <a href="#" class="sidenav__location">
+                <i class="icon icon__location-black"></i>
+                <span class="sidenav__location-right">
+                <span>Ваш город</span>
+                <span class="accent">Оренбург</span>
+            </span>
+            </a>
+            <a href="#" class="sidenav__phone">
+                <i class="icon icon__phone-black"></i>
+                <span class="sidenav__phone-right">
+                <span>Бесплатный звонок</span>
+                <span class="accent">8-800-505-27-28</span>
+            </span>
+            </a>
+        </div>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div>
+
+        <div class="section page-news">
+        <!-- fp-auto-height fp-noscroll fp-auto-height-responsive -->
+            <header class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="header__row header__row--left">
+                                <a href="#" class="header__location">
+                                    <i class="icon icon__location"></i>
+                                    <span class="header__location-right">
+                                        <span>Ваш город</span>
+                                        <span class="accent">Оренбург</span>
+                                    </span>
+                                </a>
+                                <a href="#" class="header__phone">
+                                    <i class="icon icon__phone"></i>
+                                    <span class="header__phone-right">
+                                        <span>Бесплатный звонок</span>
+                                        <span class="accent">8-800-505-27-28</span>
+                                    </span>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" class="header__logo">
+                                <img src="img/logo.png" alt="Логотип">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="header__row header__row--right">
+                                <a href="#" class="header__auth">
+                                    <i class="icon icon__user"></i>
+                                    <span>Личный кабинет</span>
+                                </a>
+                                <a href="#" class="button button__accent" data-toggle="modal" data-target="#recall">Оставить заявку</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="page-news-single">
+                <div class="page-news-single__img" style="background-image: url(img/about.jpg)"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 mx-auto">
+                            <div class="news__bottom">
+                                <div class="news__date">8 января 2021</div>
+                                <div class="news__action">
+                                    <p>
+                                        <button class="news-btn-like">
+                                            <i class="icon icon__heart"></i>
+                                        </button>
+                                        <span class="like">32</span>
+                                    </p>
+                                    <p>
+                                        <i class="icon icon__view"></i>
+                                        <span class="like">153</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <h2 class="h1 my-3 page-news-single__title">Lorem ipsum dolor sit amet consectetur</h2>
+                            <div class="page-news-single__text">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Animi aut suscipit error quasi neque dolore, incidunt, unde qui, inventore modi rerum nihil enim molestiae voluptate illo blanditiis, nam hic deserunt? Totam, quaerat? Nemo ipsam tempore ea, amet iste, quae voluptas, repellat magnam ipsum error enim minima excepturi. Modi doloribus delectus hic enim, praesentium sapiente quas beatae ea.
+                                </p>
+
+                              <div class="page-news-single__slider">
+                                    <img src="img/grid-1.jpg" alt="alt">
+                                    <img src="img/grid-1.jpg" alt="alt">
+                                    <img src="img/grid-1.jpg" alt="alt">
+                              </div>
+                                <p>
+                                    Deserunt, veniam saepe voluptatem quia quidem asperiores, nulla excepturi iste laudantium. Rerum ullam dignissimos soluta ipsum molestiae, culpa nulla placeat obcaecati quam possimus neque molestias quisquam odit odio, qui quo voluptas dolorum fugiat atque id ipsam dolore. Repudiandae, sequi, aliquid. Est nihil nemo, deserunt perferendis aut architecto, quod. Incidunt porro cum saepe recusandae facere, minus esse. Cumque consectetur temporibus nesciunt cupiditate facilis aspernatur necessitatibus quis quisquam quibusdam quidem, perspiciatis nam, tenetur neque, laudantium! Perspiciatis asperiores natus rem aut deserunt est, accusantium eaque illo vero nesciunt consequuntur nobis recusandae ipsa repudiandae, sunt qui expedita ad. Provident velit ea, perspiciatis, hic ut placeat cupiditate. Sunt dolore repellendus praesentium atque aperiam eos explicabo officiis hic distinctio. Numquam reiciendis, tempora explicabo blanditiis laborum necessitatibus iure rerum eligendi consectetur impedit molestiae voluptates qui, assumenda, nisi distinctio perferendis harum optio atque? Ab a corrupti eos. Inventore autem sit maiores.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        
+        <div class="section contacts__wrapper">
+            <section class="contacts">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="title">Контакты</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer" data-anchor="contacts">
+                <div class="container d-flex flex-column justify-content-around h-100">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="#" class="footer__logo">
+                                <img src="img/logo.png" alt="Логотип">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer__row">
+                                <div class="footer__column">
+                                    <div class="footer__title">
+                                        Личный кабинет для партнеров
+                                    </div>
+                                    <p>
+                                        Выполняем комплекс услуг по высокоточному<br>
+                                        раскрою и кромлению плитных материалов<br>
+                                        на современном немецком оборудовании.
+                                    </p>
+                                    <ul class="footer__list">
+                                        <li>Различные цветовые решения</li>
+                                        <li>Оплата онлайн</li>
+                                        <li>Своевременная информация о деталях</li>
+                                        <li>Система лояльности</li>
+                                        <li>Акции, скидки, бонусы</li>
+                                    </ul>
+                                    <a href="#" class="button button__accent openLogin">Вход в личный кабинет</a>
+                                </div>
+                                <div class="footer__column">
+                                    <div class="footer__block">
+                                        <div class="footer__title">Кухни</div>
+                                        <ul class="footer__menu">
+                                            <li><a href="#">Классические кухни</a></li>
+                                            <li><a href="#">Кухни в стиле прованс</a></li>
+                                            <li><a href="#">Кухни в стиле лофт</a></li>
+                                            <li><a href="#">Кухни в стиле хай - тек и минимализм</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer__block">
+                                        <div class="footer__title">Шкафы - купэ</div>
+                                        <ul class="footer__menu">
+                                            <li><a href="#">Классические кухни</a></li>
+                                            <li><a href="#">Кухни в стиле прованс</a></li>
+                                            <li><a href="#">Кухни в стиле лофт</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer__block">
+                                        <div class="footer__title">Гардеробные</div>
+                                        <ul class="footer__menu">
+                                            <li><a href="#">Классические кухни</a></li>
+                                            <li><a href="#">Кухни в стиле прованс</a></li>
+                                            <li><a href="#">Кухни в стиле лофт</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="footer__column">
+                                    <div class="footer__title">
+                                        Контакты
+                                    </div>
+                                    <a href="#" class="footer__location">
+                                        <i class="icon icon__location"></i>
+                                        <span class="footer__location-right">
+                                    <span>Ваш город</span>
+                                    <span class="accent">Оренбург</span>
+                                </span>
+                                    </a>
+                                    <a href="#" class="footer__phone">
+                                        <i class="icon icon__phone"></i>
+                                        <span class="footer__phone-right">
+                                    <span>Бесплатный звонок</span>
+                                    <span class="accent">8-800-505-27-28</span>
+                                </span>
+                                    </a>
+                                    <a href="#" class="footer__address">
+                                        <i class="icon icon__location"></i>
+                                        <span class="footer__address-right">
+                                    <span>Адрес</span>
+                                    <span class="accent">Ул. Пионерская, д. 12</span>
+                                </span>
+                                    </a>
+
+                                    <div class="footer__title">
+                                        Подписка
+                                    </div>
+                                    <p>
+                                        Новинки мебельного производства<br>
+                                        Скидка 5% на корпусную мебель всем подписчикам*
+                                    </p>
+                                    <form action="#" method="post">
+                                        <div class="input__wrapper">
+                                            <label for="subscribe">Ваш E-mail</label>
+                                            <input type="text" name="subscribe" id="subscribe" placeholder="Ваш E-mail">
+                                            <button type="submit" class="button button__accent">Подписаться</button>
+                                        </div>
+                                        <div class="input__checkbox">
+                                            <input type="checkbox" name="agree" id="agree">
+                                            <label for="agree">Согласен с условиями 
+                                                <a href="#" data-toggle="modal" data-target="#user-agree">пользовательского соглашения</a>
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="copyright">
+                                Информация указанная на сайте носит исключительно информиативный характер, и никак нее являеется публичной офертой относящейся к статье гражданского кодекса РФ.
+                                Для получения более подробной информации об услугах и ценах компании Вы можете обратиться к менеджерам, по указанным на сайте телефона
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div class="modal fade" id="user-agree" aria-labelledby="user-agreeTitle" tabindex="0" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a>
+                        <img src="img/logo.png" alt="Логотип">
+                    </a>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon icon__close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 id="user-agreeTitle" class="modal-title">
+                        Пользовательское соглашение
+                    </h5>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi tempora enim, sequi dolore ducimus voluptatem quae alias voluptatibus quidem aperiam veniam repellendus at? Error tempora ipsa, iusto temporibus dolorem voluptatem, dolorum eveniet maiores dicta, impedit amet nesciunt dignissimos sapiente corporis quae asperiores vel est, ut voluptatibus fuga dolores veniam iure. Ab doloribus, eveniet voluptas quidem a autem est eius odit cum eum tempora asperiores. Libero harum, ipsum. Voluptas esse harum voluptate hic quidem vel facere non blanditiis, sint delectus nesciunt aperiam dolor laudantium explicabo maxime incidunt quod, iusto veritatis alias atque error ratione quia. Quasi id in sit at ipsa nesciunt modi, aspernatur esse iusto ullam fuga aut quas magni ab, quaerat veniam pariatur, illum assumenda consectetur excepturi sed enim corporis minima tempore voluptatem. Dolorem excepturi voluptatibus repellat iste eligendi eveniet, illum, perferendis consequatur. Neque laboriosam, tempora temporibus ipsum cumque debitis eveniet possimus vel dolor animi molestias quasi velit sed, tenetur consequatur? Accusantium quisquam velit voluptate? Recusandae, sint sit illo nesciunt iure cupiditate dolorem placeat nihil quo nostrum ut eius ipsam corrupti? Inventore nisi beatae molestias culpa vel distinctio reprehenderit dolor, ad corrupti consectetur praesentium ipsa mollitia, laboriosam doloremque voluptatum, iste ea quae dignissimos, dolorum blanditiis illum temporibus esse enim necessitatibus? Nostrum placeat veniam dignissimos eaque repellat debitis quas vitae neque, dolorum quia eius eos, architecto, quibusdam laborum possimus aliquam? Blanditiis, debitis, corporis distinctio ad est, temporibus, quae numquam sit sequi possimus pariatur necessitatibus ut sed? Magni, quia facilis error, veniam id ipsam sunt dolore et, quos blanditiis tempora voluptates, esse placeat eligendi odit consequuntur ducimus. Recusandae fugit ipsam voluptate, at doloremque pariatur nulla, hic. Incidunt accusantium assumenda impedit vero pariatur cupiditate eveniet quis sapiente est reprehenderit, corporis neque quae vitae illum, officiis enim iste? Inventore necessitatibus eaque a magni atque, dolorem qui nihil, saepe recusandae libero quam sit eos deserunt sequi numquam nobis. Consequuntur itaque tempora ea. Aut minus cupiditate ex accusamus maiores voluptas ipsum non, provident dolor quis iusto magni quo. Modi corporis, explicabo doloremque vel culpa sunt corrupti, minus nisi possimus enim velit? Numquam non ipsam dignissimos, impedit voluptatem voluptates tempora placeat atque facere sit doloremque eos veniam distinctio voluptatum officia nemo nisi, ipsa dolorum, accusamus nam expedita in dolor. Consectetur itaque nihil praesentium architecto inventore quod quaerat harum possimus consequuntur necessitatibus odit ea ducimus beatae quisquam iure accusantium, quia soluta vero nobis, sint! Aspernatur doloremque maiores architecto ipsum eveniet asperiores quisquam vero saepe, eligendi porro nihil, accusantium quo culpa ipsa eum expedita impedit! Consectetur architecto excepturi facilis, iste soluta officiis assumenda enim, debitis aspernatur, magni commodi molestiae! Et dignissimos expedita nobis non aliquid libero commodi error aliquam culpa accusantium, qui ipsam officia iusto? Molestiae quam, non? Officiis amet ipsum perferendis modi. Odit, vitae nemo amet ullam nesciunt in inventore eius iure est animi nam assumenda, suscipit nulla ex aliquam, aliquid delectus qui omnis a distinctio deserunt earum quis aut sunt ipsa? Eum itaque dicta, quod officiis repudiandae nesciunt molestiae. Deleniti, aspernatur. Delectus ratione totam a velit exercitationem est quo nobis explicabo quibusdam cum sapiente qui fugit, obcaecati atque doloremque et ab expedita deleniti accusantium quas dignissimos unde! Accusamus similique doloribus repudiandae id suscipit, dolorum minima dolores recusandae veritatis atque placeat rerum architecto repellat tenetur voluptates velit debitis reprehenderit aliquam, enim voluptatem blanditiis harum. Facilis, quae? Debitis expedita, architecto est cum illo quas consequatur dolore nemo voluptate odit corporis reiciendis maiores ea, labore dicta quia et, fuga ullam, pariatur amet doloribus necessitatibus? Vitae nesciunt, laudantium accusamus autem ipsum facilis dolore earum harum quis in excepturi voluptates recusandae dolorem aliquam molestiae commodi maxime quod optio, dicta. Qui facere consectetur dignissimos tempore numquam porro impedit aspernatur reprehenderit totam error odio doloribus distinctio quo eos, necessitatibus deleniti modi optio, assumenda ducimus odit consequatur dolorum. Aliquid excepturi tempora earum dignissimos odit dolore ullam est in velit? Totam iure quae minima rem sit repudiandae animi, similique? Nesciunt distinctio neque fugit similique nobis maxime animi! Dolor quo accusamus libero impedit mollitia iste velit minus doloribus commodi necessitatibus nulla sint voluptates eaque, possimus harum quisquam dolorem. Tempore, amet, quia! Ea atque corporis pariatur molestiae placeat quo accusamus exercitationem, in, sapiente, dolore incidunt blanditiis voluptatum eum necessitatibus nesciunt magnam magni, nihil nemo. Amet, at veritatis. Hic officiis ut tempora repellendus, corporis dicta tempore sit quidem odio, a quibusdam. Autem quas vel sint, cumque earum, facilis perferendis, molestias ratione, et voluptatem praesentium laudantium! Non, asperiores odio nulla nisi voluptas, vel laudantium ab porro deserunt totam provident vitae neque quibusdam exercitationem. Eligendi, perferendis. Aliquid nam eum doloremque dolore iure sit id quod, tempora impedit ducimus placeat, voluptates, soluta. Impedit fugit consequatur repudiandae! Debitis voluptatem est consequatur perferendis, modi dolorem, quae error! Nisi sed asperiores nihil voluptates perferendis hic soluta sint id ullam et culpa, autem voluptatem voluptatum explicabo cumque ducimus facere, earum? Quasi dignissimos, eum! Eum, quam, tenetur omnis incidunt nobis nisi praesentium repudiandae in iure libero iste necessitatibus tempore temporibus dolorem ad odit suscipit facere qui deleniti laborum illum aspernatur ullam, vitae itaque. Non modi voluptatem, molestiae porro unde nisi facere ad tempora. Quidem sit qui vel animi alias sed optio mollitia, excepturi ipsum quam, voluptas aliquid illo. Architecto quis molestias, dicta magnam quidem, debitis non corporis ipsam fuga saepe, similique natus enim quia minima vitae doloremque ex nesciunt excepturi necessitatibus facere exercitationem neque ab dolore dignissimos officia. Expedita quas facere itaque quasi deserunt nam labore ipsum laboriosam, obcaecati animi dignissimos quaerat dolores dolorem placeat omnis, eius dicta voluptas maiores. Totam ducimus eaque porro harum aliquam aspernatur quibusdam enim aut, in eos provident quae cumque ipsa eius culpa ullam consequuntur nam quam, dolorem molestias sapiente fuga inventore odit. Odit, doloribus ducimus commodi debitis consequuntur ullam dolorem distinctio maxime nostrum numquam at quo blanditiis ipsum minus modi quaerat rem eveniet voluptates, illo officia necessitatibus vel sunt. Explicabo natus repellat officia eum ducimus aut quam quod vitae voluptas eius aspernatur, id suscipit facere velit vel cum ut fuga praesentium quasi molestiae recusandae, iure. Deserunt voluptatem, nobis similique non asperiores optio expedita ea error architecto consectetur. Nisi, officia dignissimos necessitatibus animi rerum vitae similique a ducimus, consequatur beatae sit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="vendor/slick/slick.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="vendor/lightbox/js/lightbox.min.js"></script>
+    <script src="vendor/fullPage.js-master/src/fullpage.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

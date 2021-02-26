@@ -1,0 +1,1594 @@
+$accent-color: #ff0000
+
+.modal
+  &-dialog
+    max-width: 810px
+  &-content
+    height: 590px
+    min-height: 590px
+  &#signupModal
+    .modal-content
+      height: 900px
+      min-height: 900px
+    .modal-title
+      &:before
+        width: calc(50% - 155px)
+  &-header
+    justify-content: center
+    border: none
+  .close
+    position: absolute
+    top: 30px
+    right: 30px
+    border: none
+    background: none
+    font-size: 46px
+    color: #464646
+  &-body
+    padding: 0
+  &-title
+    margin-bottom: 50px
+    text-align: center
+    color: $accent-color
+    font-size: 18px
+    position: relative
+    font-weight: 300
+    text-transform: uppercase
+    &:before
+      content: ''
+      position: absolute
+      width: calc(50% - 120px)
+      height: 5px
+      top: calc(50% - 2.5px)
+      left: 0
+      background: $accent-color
+  form
+    width: 390px
+    margin: 0 auto 20px
+    .button
+      font-weight: 300
+      font-size: 12px
+      text-transform: uppercase
+      margin-top: 40px
+  p
+    text-align: center
+    color: #000
+    font-weight: 300
+    font-size: 12px
+    a
+      color: $accent-color
+      text-decoration: underline
+  .input__wrapper
+    width: 390px
+    margin: 0 auto 15px
+    position: relative
+    input
+      -webkit-border-radius: 3px
+      -moz-border-radius: 3px
+      border-radius: 3px
+      padding: 8px 15px
+      border: none
+      background: #e4e4e4
+      width: 100%
+      font-family: Roboto, sans-serif
+      font-weight: 100
+      color: #8b8b8b
+
+.input__checkbox
+  .container-checkbox
+    font-size: 12px
+    color: #000
+    .accent
+      color: $accent-color
+  .label-checkbox
+    margin-top: 3px
+  .checkmark
+    margin-top: 3px
+    background: #ffffff !important
+    border: 1px solid #000
+    -webkit-border-radius: 3px
+    -moz-border-radius: 3px
+    border-radius: 3px
+  .container-checkbox:hover input ~ .checkmark
+    background: #ffffff !important
+  .container-checkbox:hover:checked input ~ .checkmark
+    background: #ffffff !important
+  .container-checkbox .checkmark:after
+    border-color: #000
+
+.select
+  &__wrapper
+    .input__wrapper
+      width: 390px
+      margin: 0 auto 15px
+      position: relative
+    input
+      -webkit-border-radius: 3px
+      -moz-border-radius: 3px
+      border-radius: 3px
+      padding: 8px 15px
+      border: none
+      background: #e4e4e4
+      width: 100%
+      font-family: Roboto, sans-serif
+      font-weight: 100
+      color: #8b8b8b
+    .icon__search
+      position: absolute
+      top: 10px
+      right: 10px
+  &__city
+    padding: 0
+    list-style-type: none
+    width: 390px
+    margin: 0 auto
+    font-size: 16px
+    line-height: 24px
+    font-weight: 100
+    a
+      color: #8b8b8b
+      text-decoration: none
+      &:hover, &:focus, &:active
+        color: #8b8b8b
+        text-decoration: none
+
+
+body
+  background: #ffffff
+  color: #ffffff
+  font-size: 18px
+  line-height: 24px
+  font-family: 'Montserrat', sans-serif
+  &.opacity
+    &:after
+      content: ''
+      width: 100%
+      height: 100%
+      position: fixed
+      top: 0
+      left: 0
+      background: rgba(0, 0, 0, .5)
+
+.sidenav
+  opacity: 1
+  visibility: hidden
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: flex-start
+  padding: 30px
+  position: absolute
+  top: 0
+  left: -420px
+  height: 100%
+  width: 500px
+  z-index: 100
+  background: #ffffff
+  -webkit-transition: all .4s ease
+  -moz-transition: all .4s ease
+  -ms-transition: all .4s ease
+  -o-transition: all .4s ease
+  transition: all .4s ease
+  &.active
+    left: 0
+    visibility: visible
+  &__close
+    display: none
+  &__location, &__phone
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: center
+    text-decoration: none
+    margin-bottom: 15px
+    .icon
+      min-width: 28px
+      margin-right: 16px
+      background-repeat: no-repeat
+    &-right
+      display: flex
+      flex-direction: column
+    span
+      font-family: 'Montserrat', sans-serif
+      font-weight: 100
+      font-size: 16px
+      line-height: 16px
+      color: #000
+      &.accent
+        font-family: Roboto, sans-serif
+        font-weight: 400
+        margin-top: 8px
+        color: $accent-color
+  ul
+    padding: 0
+    margin: 0
+    list-style-type: none
+    font-size: 18px
+    font-weight: 300
+    text-transform: uppercase
+    li
+      margin-bottom: 15px
+      a
+        display: flex
+        flex-direction: row
+        align-items: center
+        position: relative
+        color: #000
+        text-decoration: none
+        -webkit-transition: all .4s ease
+        -moz-transition: all .4s ease
+        -ms-transition: all .4s ease
+        -o-transition: all .4s ease
+        transition: all .4s ease
+        &:hover, &:focus, &:active, &.active
+          text-decoration: none
+          color: $accent-color
+          &:before
+            width: 160px
+        &:before
+          content: ''
+          -webkit-transition: all .4s ease
+          -moz-transition: all .4s ease
+          -ms-transition: all .4s ease
+          -o-transition: all .4s ease
+          transition: all .4s ease
+          margin-right: 18px
+          display: inline-block
+          width: 0
+          height: 5px
+          background: $accent-color
+  &__auth
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    a
+      text-decoration: none
+      color: $accent-color
+      font-weight: 300
+      font-size: 18px
+      text-transform: uppercase
+      &:hover, &:focus, &:active
+        text-decoration: none
+        color: $accent-color
+    .button
+      margin-top: 20px
+      font-size: 12px
+      text-transform: uppercase
+      color: #ffffff
+      &:hover, &:focus, &:active
+        color: #ffffff
+
+.hamburger
+  opacity: 1
+  visibility: visible
+  cursor: pointer
+  width: 80px
+  height: 364px
+  background: url("../img/wave.png") center no-repeat
+  position: absolute
+  top: calc(50% - 182px)
+  right: 0
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: flex-start
+  z-index: 100
+  span
+    margin-left: 8px
+    margin-bottom: 10px
+    background: $accent-color
+    width: 58px
+    height: 8px
+    -webkit-transition: all .4s ease
+    -moz-transition: all .4s ease
+    -ms-transition: all .4s ease
+    -o-transition: all .4s ease
+    transition: all .4s ease
+
+  &.active
+    span:first-child
+      -webkit-transform: rotate(-45deg) translate(-10px, 15px)
+      -moz-transform: rotate(-45deg) translate(-10px, 15px)
+      -ms-transform: rotate(-45deg) translate(-10px, 15px)
+      -o-transform: rotate(-45deg) translate(-10px, 15px)
+      transform: rotate(-45deg) translate(-10px, 15px)
+    span:nth-child(2)
+      opacity: 0
+    span:nth-child(3)
+      -webkit-transform: rotate(45deg) translate(-10px, -15px)
+      -moz-transform: rotate(45deg) translate(-10px, -15px)
+      -ms-transform: rotate(45deg) translate(-10px, -15px)
+      -o-transform: rotate(45deg) translate(-10px, -15px)
+      transform: rotate(45deg) translate(-10px, -15px)
+
+
+@-webkit-keyframes rightThenLeft
+  0%
+    left: 0
+  50%
+    left: calc(100% - 72px)
+  100%
+    left: 0
+
+.header
+  z-index: 90
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  padding: 34px 0
+  &__row
+    height: 100%
+    display: flex
+    flex-direction: row
+    align-self: center
+    justify-content: space-between
+    align-items: center
+  &__logo
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    img
+      width: 168px
+  &__location, &__phone, &__auth
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: center
+    .icon
+      margin-right: 16px
+    &-right
+      display: flex
+      flex-direction: column
+    span
+      font-family: 'Montserrat', sans-serif
+      font-weight: 400
+      font-size: 12px
+      line-height: 10px
+      &.accent
+        font-family: Roboto, sans-serif
+        font-weight: 400
+        margin-top: 8px
+        color: $accent-color
+  a
+    text-decoration: none
+    color: #ffffff
+    &:hover, &:focus, &:active
+      text-decoration: none
+      color: #ffffff
+
+section
+  overflow: hidden
+
+.top-banner
+  overflow: hidden
+  margin-bottom: 0
+  &__slider
+    height: 100vh
+    margin-bottom: 0 !important
+    .slick-dots
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      width: 10px
+      height: 180px
+      position: absolute
+      right: 70px
+      top: calc(50% - 70px)
+      li
+        margin: 0 0 10px
+        &:last-child
+          margin-bottom: 0
+        button
+          &:before
+            color: #ffffff
+            opacity: 1
+            font-size: 10px
+            line-height: 10px
+        &.slick-active
+          button
+            &:before
+              color: $accent-color
+
+  &__slide
+    background-repeat: no-repeat
+    background-position: center
+    -webkit-background-size: cover
+    background-size: cover
+    height: 100vh
+    outline: none
+    &:hover, &:focus, &:active
+      outline: none
+    .container, .row, .col-md-12
+      height: 100%
+    .col-md-12
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+  &__title
+    text-transform: uppercase
+    margin-bottom: 10px
+    padding: 0 56px 10px
+    display: inline-block
+    font-size: 25px
+    line-height: 25px
+    border-bottom: 5px solid $accent-color
+    font-weight: 400
+  &__text
+    display: block
+    width: 100%
+    text-align: center
+    font-family: Roboto, sans-serif
+    font-weight: 100
+    font-size: 25px
+    line-height: 25px
+  &__caption
+    font-weight: 100
+    font-size: 18px
+    padding-bottom: 10px
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    align-items: center
+    width: 285px
+    position: absolute
+    bottom: 135px
+    right: -75px
+    border-bottom: 5px solid #fff
+    transform: rotate(90deg)
+    -webkit-transition: all .4s ease
+    -moz-transition: all .4s ease
+    -ms-transition: all .4s ease
+    -o-transition: all .4s ease
+    transition: all .4s ease
+    &:hover, &:focus, &:active
+      border-color: #ff0000
+    >a
+      -webkit-animation: rightThenLeft 10s linear infinite
+      -o-animation: rightThenLeft 10s linear infinite
+      animation: rightThenLeft 10s linear infinite
+      position: absolute
+      left: 0
+      text-decoration: none
+      color: #ffffff
+      &:hover, &:focus, &:active
+        color: $accent-color
+        text-decoration: none
+
+.about
+  overflow: hidden
+  padding-top: 30px
+  padding-bottom: 30px
+  background: #ffffff
+  text-align: center
+  &__wrapper
+    height: 100vh
+  .title
+    color: #000
+    font-size: 24px
+    font-weight: 100
+    text-transform: uppercase
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      left: calc(50% + 125px)
+      top: calc(50% - 2.5px)
+      background: $accent-color
+      width: 100%
+      height: 5px
+  &__list
+    padding-top: 210px
+    padding-bottom: 50px
+    background: url("../img/about.jpg") center no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    &.slick-dotted.slick-slider
+      margin-bottom: 0
+    .slick-dots
+      position: absolute
+      bottom: calc(100% - 202px)
+      left: 0
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      align-items: flex-start
+      li
+        position: relative
+        -webkit-transition: width .4s ease
+        -moz-transition: width .4s ease
+        -ms-transition: width .4s ease
+        -o-transition: width .4s ease
+        transition: width .4s ease
+        margin-bottom: 20px
+        height: 5px
+        width: 80px
+        margin-left: 0
+        button
+          padding: 0
+          width: 100%
+          height: 100%
+          &:before
+            content: ''
+            background: #ffffff
+            width: 100%
+            height: 100%
+            color: #ffffff
+            opacity: 1
+        span
+          opacity: 0
+          visibility: hidden
+          -webkit-transition: all .4s ease
+          -moz-transition: all .4s ease
+          -ms-transition: all .4s ease
+          -o-transition: all .4s ease
+          transition: all .4s ease
+          text-transform: uppercase
+          font-size: 20px
+          position: absolute
+          top: -27px
+          left: calc(50% - 140px)
+        &.slick-active
+          width: 50%
+          button
+            &:before
+              background: $accent-color
+          span
+            opacity: 1
+            visibility: visible
+
+  &__title
+    opacity: 0
+    visibility: hidden
+    font-size: 24px
+    text-transform: uppercase
+    font-weight: 100
+  &__text
+    font-size: 14px
+    line-height: 20px
+    font-weight: 400
+    font-family: Roboto, sans-serif
+  &__item
+    outline: none
+    &:hover, &:focus, &:active
+      outline: none
+    .button
+      margin-top: 265px
+      font-size: 12px
+      text-transform: uppercase
+      width: 240px
+      height: 40px
+
+.partners
+  padding-top: 40px
+  padding-bottom: 40px
+  background: #313131
+  .slick-slide
+    margin: 0 15px
+    outline: none
+    &:hover, &:focus, &:active
+      outline: none
+  .slick-list
+    margin: 0 -15px
+  &__wrapper
+    height: 90px
+    min-height: 90px
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    align-items: flex-end
+
+    img
+      position: relative
+      width: 100%
+      height: auto
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      opacity: .4
+      -webkit-transition: all .4s ease
+      -moz-transition: all .4s ease
+      -ms-transition: all .4s ease
+      -o-transition: all .4s ease
+      transition: all .4s ease
+      //filter: grayscale(100%)
+      &:hover, &:focus, &:active
+        opacity: 1
+        cursor: pointer
+        //filter: grayscale(0)
+
+.production
+  overflow: hidden
+  padding-top: 30px
+  padding-bottom: 30px
+  background: #ffffff
+  text-align: center
+  .title
+    color: #000
+    font-size: 24px
+    font-weight: 100
+    text-transform: uppercase
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      right: calc(50% + 260px)
+      top: calc(50% - 2.5px)
+      background: $accent-color
+      width: 100%
+      height: 5px
+  &__list
+    .slick-slide
+      margin: 0 15px
+    .slick-list
+      margin: 0 -15px
+    .slick-arrow
+      position: absolute
+      top: calc(50% - 38.5px)
+      z-index: 10
+      &.arrow-prev
+        left: 12%
+      &.arrow-next
+        right: 12%
+  &__item
+    position: relative
+    width: 1230px
+    background: #ffffff
+    &:after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: rgba(0, 0, 0, 0.8)
+    &.slick-center
+      &:after
+        display: none
+  &__title
+    text-transform: uppercase
+    font-weight: 300
+    font-size: 18px
+    margin-bottom: 30px
+  &__features
+    padding: 0
+    margin: 0
+    list-style-type: none
+    font-weight: 100
+    font-size: 14px
+    line-height: 16px
+    li
+      display: flex
+      flex-direction: row
+      align-items: center
+      margin-bottom: 5px
+      position: relative
+      span
+        margin-right: 12px
+        width: 12px
+        height: 12px
+        background: #ff0000
+
+
+.grid
+  width: 1230px
+  height: 960px
+  position: relative
+  &-item
+    position: absolute
+    width: 390px
+    height: 300px
+    -webkit-background-size: cover
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    .overlay
+      background: rgba(0, 0, 0, .6)
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      padding: 50px 0 30px 30px
+      -webkit-transition: all .4s ease
+      -moz-transition: all .4s ease
+      -ms-transition: all .4s ease
+      -o-transition: all .4s ease
+      transition: all .4s ease
+      visibility: visible
+      .button
+        font-size: 12px
+        text-transform: uppercase
+        font-weight: 300
+        position: absolute
+        bottom: 30px
+        left: 30px
+    &-width-2
+      width: 830px
+    &-height-2
+      height: 650px
+    &:nth-child(1)
+      top: 0
+      left: 0
+    &:nth-child(2)
+      top: 0
+      left: 840px
+    &:nth-child(3)
+      top: 310px
+      height: 340px
+    &:nth-child(4)
+      height: 340px
+      top: 310px
+      left: 400px
+      width: 430px
+    &:nth-child(5)
+      top: 660px
+      width: 610px
+      height: 305px
+    &:nth-child(6)
+      top: 660px
+      left: 620px
+      width: 610px
+      height: 305px
+    &__slide
+      height: 100%
+      -webkit-background-size: cover
+      background-size: cover
+      background-position: center
+      background-repeat: no-repeat
+
+.grid-item__slider
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.4)
+    visibility: visible
+    -webkit-transition: all .4s ease
+    -moz-transition: all .4s ease
+    -ms-transition: all .4s ease
+    -o-transition: all .4s ease
+    transition: all .4s ease
+  .slick-arrow
+    position: absolute
+    top: calc(50% - 24.5px)
+    z-index: 10
+  .arrow-prev
+    left: 11px
+  .arrow-next
+    right: 11px
+  &:hover, &:focus, &:active
+    &:after
+      opacity: 0
+      visibility: hidden
+
+.projects
+  overflow: hidden
+  padding-top: 30px
+  padding-bottom: 30px
+  background: #ffffff
+  text-align: center
+  .title
+    color: #000
+    font-size: 24px
+    font-weight: 100
+    text-transform: uppercase
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      left: calc(50% + 185px)
+      top: calc(50% - 2.5px)
+      background: $accent-color
+      width: 100%
+      height: 5px
+  &__list
+    overflow: hidden
+    background: #ffffff
+    .slick-list
+      margin: 0 -15px
+    .slick-slide
+      margin: 0 15px
+  &__gallery
+    position: relative
+    width: 523px
+    height: 523px
+    outline: none
+    a[data-lightbox]
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+    .slick-arrow
+      opacity: 0
+      visibility: hidden
+      position: absolute
+      top: calc(50% - 24.5px)
+      z-index: 50
+    .arrow-prev
+      left: 15px
+    .arrow-next
+      right: 15px
+    .slick-dots
+      position: absolute
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: center
+      bottom: 31px
+      li
+        width: 10px
+        height: 10px
+        margin: 0 5px
+        button
+          &:before
+            color: #ffffff
+            opacity: 1
+            font-size: 10px
+            line-height: 10px
+        &.slick-active
+          button
+            &:before
+              color: $accent-color
+    &:hover, &:focus, &:active
+      outline: none
+      .overlay
+        opacity: 0
+        visibility: hidden
+      .slick-dots
+        opacity: 0
+        visibility: hidden
+      .slick-arrow
+        opacity: 1
+        visibility: visible
+    .slick-list
+      margin: 0
+    .slick-slide
+      margin: 0
+    &-item
+      position: relative
+      height: 523px
+      background-repeat: no-repeat
+      -webkit-background-size: cover
+      background-size: cover
+      background-position: center
+      outline: none
+      cursor: pointer
+      &:hover, &:focus, &:active
+        outline: none
+        .overlay
+          opacity: 0
+          visibility: hidden
+    .overlay
+      background: rgba(0, 0, 0, .6)
+      position: absolute
+      width: 100%
+      height: 100%
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      -webkit-transition: all .4s ease
+      -moz-transition: all .4s ease
+      -ms-transition: all .4s ease
+      -o-transition: all .4s ease
+      transition: all .4s ease
+      visibility: visible
+      z-index: 50
+      cursor: pointer
+  &__price
+    font-weight: 300
+    color: $accent-color
+    font-size: 24px
+    position: absolute
+    right: 31px
+    top: 28px
+  &__logo
+    opacity: .5
+
+#range
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  margin: 30px 0
+  width: 100%
+  height: 2px
+  background: #949494
+  outline: none
+  -webkit-transition: all .2s ease
+  -moz-transition: all .2s ease
+  -ms-transition: all .2s ease
+  -o-transition: all .2s ease
+  transition: all .2s ease
+  &::-webkit-slider-thumb
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    width: 40px
+    height: 14px
+    background: url("../img/range.png") center no-repeat
+    cursor: pointer
+    -webkit-border-radius: 15px
+    -moz-border-radius: 15px
+    border-radius: 15px
+    position: relative
+
+.news
+  overflow: hidden
+  padding-top: 30px
+  padding-bottom: 30px
+  background: #ffffff
+  text-align: center
+  .title
+    color: #000
+    font-size: 24px
+    font-weight: 100
+    text-transform: uppercase
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      left: calc(50% + 125px)
+      top: calc(50% - 2.5px)
+      background: $accent-color
+      width: 100%
+      height: 5px
+  &__list
+    overflow: hidden
+    background: #ffffff
+    .slick-list
+      margin: 0 -15px
+    .slick-slide
+      margin: 0 15px
+  &__item
+    background-position: center
+    background-repeat: no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+    width: 508px
+    height: 404px
+    outline: none
+    &:hover, &:focus, &:active
+      outline: none
+    &-wrapper
+      padding: 29px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: flex-start
+      width: 100%
+      height: 100%
+  &__title
+    display: block
+    text-decoration: none
+    color: #ffffff
+    width: 292px
+    font-weight: 100
+    font-size: 14px
+    text-transform: uppercase
+    margin-bottom: 10px
+    outline: none
+    &:hover, &:focus, &:active
+      outline: none
+      color: #ffffff
+      text-decoration: none
+  &__text
+    width: 395px
+    font-weight: 100
+    font-size: 12px
+    line-height: 16px
+    font-family: Roboto, sans-serif
+  &__bottom
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+  &__date
+    font-size: 12px
+    text-transform: uppercase
+  &__action
+    font-size: 12px
+    font-weight: 400
+    display: flex
+    flex-direction: row
+    a
+      display: flex
+      flex-direction: row
+      align-items: center
+      margin-right: 12px
+      color: #ffffff
+      text-decoration: none
+      .icon
+        margin-right: 5px
+      &:last-child
+        margin-right: 0
+      &:hover, &:focus, &:active
+        color: #ffffff
+        text-decoration: none
+
+.contacts
+  overflow: hidden
+  padding-top: 30px
+  padding-bottom: 30px
+  background: #ffffff
+  text-align: center
+  &__wrapper
+    height: 100vh
+  .title
+    color: #000
+    font-size: 24px
+    font-weight: 100
+    text-transform: uppercase
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      right: calc(50% + 125px)
+      top: calc(50% - 2.5px)
+      background: $accent-color
+      width: 100%
+      height: 5px
+
+.footer
+  padding: 60px 0 70px
+  background: #313131
+  &__row
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: flex-start
+  &__column
+    display: flex
+    flex-direction: column
+    .container-checkbox
+      font-size: 16px
+    .checkmark
+      margin-top: 3px
+    &:first-child
+      min-width: 353px
+      margin-right: 137px
+    &:nth-child(2n)
+      min-width: 276px
+      margin-right: 35px
+  &__logo
+    display: block
+    text-align: center
+    margin-bottom: 90px
+  &__list
+    padding: 0
+    margin: 0
+    list-style-type: none
+    font-weight: 100
+    font-size: 16px
+    line-height: 24px
+  &__menu
+    font-size: 16px
+    line-height: 24px
+    padding: 0
+    margin: 0
+    list-style-type: none
+    font-family: Roboto, sans-serif
+    font-weight: 100
+    li
+      &:last-child
+        margin-bottom: 30px
+      a
+        color: #ffffff
+        text-decoration: none
+        &:hover, &:focus, &:active
+          color: $accent-color
+          text-decoration: none
+  &__title
+    margin-bottom: 25px
+    color: $accent-color
+    text-transform: uppercase
+    font-size: 18px
+    font-weight: 300
+  &__location, &__phone, &__address
+    margin-bottom: 20px
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: center
+    .icon
+      margin-right: 16px
+    &-right
+      display: flex
+      flex-direction: column
+    span
+      font-family: 'Montserrat', sans-serif
+      font-weight: 100
+      font-size: 16px
+      line-height: 16px
+      &.accent
+        font-family: Roboto, sans-serif
+        font-weight: 400
+        margin-top: 8px
+        color: $accent-color
+  a
+    color: #ffffff
+    text-decoration: none
+    &:hover, &:focus, &:active
+      color: #ffffff
+      text-decoration: none
+  .copyright
+    margin-top: 45px
+    text-align: center
+    font-size: 16px
+    line-height: 20px
+    font-family: Roboto, sans-serif
+    font-weight: 100
+  p
+    margin-bottom: 20px
+    font-size: 16px
+    line-height: 24px
+    font-family: Roboto, sans-serif
+    font-weight: 100
+  .button
+    margin-top: 30px
+    width: 210px
+    height: 40px
+    font-size: 12px
+    text-transform: uppercase
+    font-weight: 300
+
+  form
+    .input__wrapper
+      display: flex
+      flex-direction: row
+      position: relative
+      input
+        color: #b0b0b0
+        font-weight: 100
+        font-family: Roboto, sans-serif
+        padding-left: 10px
+        font-size: 16px
+        line-height: 24px
+        width: calc(100% - 210px)
+        height: 40px
+      label
+        display: none
+      .button
+        font-size: 12px
+        line-height: 12px
+        text-transform: uppercase
+        margin: 0
+        border: none
+        position: absolute
+        right: 0
+        top: 0
+        width: 210px
+        height: 40px
+    .input__checkbox
+      margin-top: 12px
+      display: flex
+      flex-direction: row
+      justify-content: flex-start
+      align-items: center
+      font-weight: 100
+      font-size: 12px
+      input[type=checkbox]
+        margin-right: 12px
+      a
+        font: 300
+        opacity: 1
+        color: $accent-color
+        text-decoration: underline
+
+.button
+  border: none
+  font-family: 'Montserrat', sans-serif
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  font-weight: 400
+  width: 160px
+  height: 40px
+  outline: none
+  &__accent
+    background: $accent-color
+    color: #ffffff
+    text-decoration: none
+    &:hover, &:focus, &:active
+      text-decoration: none
+      color: #ffffff
+      background: $accent-color
+      outline: none
+      background: darken(#ff0000, 10%)
+
+
+.icon
+  display: inline-block
+  &__prod-left
+    width: 77px
+    height: 77px
+    background: url("../img/prod__arrow-left.png")
+  &__prod-right
+    width: 77px
+    height: 77px
+    background: url("../img/prod__arrow-right.png")
+  &__close
+    width: 21px
+    height: 22px
+    background: url("../img/icon__close.png") center no-repeat
+  &__search
+    width: 20px
+    height: 21px
+    background: url("../img/icon__search.png") center no-repeat
+  &__arrow-left
+    width: 23px
+    height: 43px
+    background: url("../img/icon__arrow-left.png")
+  &__arrow-right
+    width: 23px
+    height: 43px
+    background: url("../img/icon__arrow-right.png")
+  &__location
+    width: 20px
+    height: 28px
+    background: url("../img/icon__location.png")
+    &-black
+      width: 20px
+      height: 28px
+      background: url("../img/icon__location-black.png")
+  &__phone
+    width: 26px
+    height: 26px
+    background: url("../img/icon__phone.png")
+    &-black
+      width: 26px
+      height: 26px
+      background: url("../img/icon__phone-black.png")
+  &__user
+    width: 23px
+    height: 27px
+    background: url("../img/icon__user.png")
+  &__heart
+    width: 16px
+    height: 14px
+    background: url("../img/icon__heart.png")
+  &__view
+    width: 21px
+    height: 13px
+    background: url("../img/icon__view.png")
+
+
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1440px)
+
+  .top-banner
+    &__caption
+      width: 150px
+      bottom: 55px
+      right: -13px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px)
+  .header
+    .col-md-4:last-child
+      .header__row
+        display: none
+
+  .header__location
+    display: flex
+    position: absolute
+    left: 50px
+
+  .header__phone
+    position: absolute
+    right: 50px
+    display: flex
+
+  .hamburger
+    width: 35px
+    height: 188px
+    background: url("../img/hamburger__mobile.png") center no-repeat
+    top: calc(50% - 99px)
+    span
+      margin-left: 4px
+      width: 21px
+      height: 2px
+      margin-bottom: 6px
+
+  .top-banner
+    &__title
+      padding: 0 30px
+      font-size: 24px
+      text-transform: uppercase
+      border-bottom: 2px solid $accent-color
+    &__text
+      font-size: 18px
+      text-transform: uppercase
+    &__caption
+      bottom: 123px
+      right: -115px
+
+  .about
+    &__list
+      .slick-dots
+        li
+          span
+            font-size: 24px
+    &__text
+      margin: 0 auto
+      font-size: 18px
+
+  .partners
+    padding-top: 0
+    padding-bottom: 45px
+
+  .production
+    .title
+      font-size: 24px
+    &__item
+      width: 960px
+    &__list
+      .slick-arrow
+        display: none
+    &__title
+      font-size: 12px
+      line-height: 14px
+    &__features
+      .container-checkbox
+        font-size: 10px
+        .checkmark
+          margin-top: 4px
+      li
+
+  .projects
+    &__gallery
+      width: 300px
+      height: 400px
+      margin: 0 auto
+
+
+  .grid
+    width: 960px
+    &-item
+      width: 50%
+      &-width-2
+        width: 100%
+      &:nth-child(3)
+        width: 50%
+      &:nth-child(4)
+        width: calc(50% - 10px)
+        left: calc(50% + 10px)
+      &:nth-child(5)
+        width: 100%
+    &-item-half
+      width: 100%
+    &-item__slider
+      overflow: hidden
+  .grid-item:nth-child(6)
+    display: none
+  .grid-item-height-2
+    display: none
+
+
+
+  .footer
+    padding-top: 20px
+    padding-bottom: 50px
+    &__row
+      flex-direction: row
+      flex-wrap: wrap
+    &__column
+      margin-bottom: 20px
+    &__logo
+      margin-bottom: 35px
+    &__title
+      margin-bottom: 10px
+
+  .sidenav
+    &.active
+      width: 100%
+      z-index: 110
+    &__close
+      display: block
+      position: absolute
+      top: 30px
+      right: 30px
+
+@media only screen and (max-width : 992px)
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+  .header
+    &__row
+      display: none
+
+  .sidenav
+    left: -465px
+    &.active
+      .hamburger
+        display: none
+
+  .hamburger
+    width: 35px
+    height: 188px
+    background: url("../img/hamburger__mobile.png") center no-repeat
+    top: calc(50% - 99px)
+    span
+      margin-left: 4px
+      width: 21px
+      height: 2px
+      margin-bottom: 6px
+
+  .top-banner
+    &__title
+      padding: 0 30px
+      font-size: 14px
+      line-height: 16px
+      text-transform: uppercase
+      border-bottom: 2px solid $accent-color
+    &__text
+      font-size: 10px
+      line-height: 12px
+      text-transform: uppercase
+    .slick-dots
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      position: absolute
+      right: 10px
+      top: calc(50% - 70px)
+      li
+        margin: 0 0 5px
+        &:last-child
+          margin-bottom: 0
+        button
+          width: 5px
+          height: 5px
+          &:before
+            color: #ffffff
+            opacity: 1
+            width: 15px
+            height: 15px
+        &.slick-active
+          button
+            &:before
+              color: $accent-color
+    &__caption
+      bottom: 123px
+      right: -115px
+
+  .about
+    &__wrapper
+      height: auto
+    &__list
+      .slick-dots
+        li
+          height: 2px
+          span
+            font-size: 11px
+            top: -20px
+            left: calc(50% - 53px)
+    &__text
+      width: 300px
+      margin: 0 auto
+      font-size: 10px
+      line-height: 12px
+
+  .partners
+    padding-top: 0
+    padding-bottom: 45px
+
+  .production
+    .title
+      font-size: 12px
+      line-height: 14px
+    &__item
+      width: 300px
+    &__list
+      .slick-arrow
+        display: none
+    &__title
+      font-size: 12px
+      line-height: 14px
+    &__features
+      .container-checkbox
+        font-size: 10px
+        .checkmark
+          margin-top: 4px
+      li
+        margin-bottom: 5px
+
+
+  .grid
+    width: 300px
+    height: 635px
+    &-item
+      display: none
+      position: relative
+      width: 300px
+      height: 100%
+      .overlay
+        padding: 30px
+        .button
+          left: calc(50% - 90px)
+    .grid-item-width-2
+      display: flex
+
+  .projects
+    &__gallery
+      width: 300px
+      height: 400px
+      margin: 0 auto
+
+  .news
+    &__item
+      width: 320px
+
+  .footer
+    padding-top: 20px
+    padding-bottom: 50px
+    &__row
+      flex-direction: column
+    &__column
+      margin-bottom: 20px
+    &__logo
+      margin-bottom: 35px
+    &__title
+      margin-bottom: 10px
+    .copyright
+      display: none
+
+  .sidenav
+    &.active
+      width: 100%
+      z-index: 110
+    &__close
+      display: block
+      position: absolute
+      top: 30px
+      right: 30px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 767px)
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
