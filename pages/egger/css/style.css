@@ -1904,7 +1904,7 @@ section {
 
   .projects__list {
     padding-left: 20px;
-    height: 60%;
+    height: 70%;
   }
   .production__item {
     width: 960px;
@@ -1966,6 +1966,15 @@ section {
 
   .grid-item-height-2 {
     display: none;
+  }
+
+  .news__list {
+    height: calc(30% - 20px);
+  }
+  .news__list .slick-list,
+  .news__list .slick-track,
+  .news__item {
+    height: 100%;
   }
 
   .news__item {
@@ -2168,15 +2177,6 @@ section {
   }
   .grid .grid-item-width-2 {
     display: flex;
-  }
-
-  .news__list {
-    height: calc(40% - 20px);
-  }
-  .news__list .slick-list,
-  .news__list .slick-track,
-  .news__item {
-    height: 100%;
   }
 
   .news__item {

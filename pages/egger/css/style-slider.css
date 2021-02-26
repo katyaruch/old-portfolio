@@ -256,7 +256,7 @@ a {
 }
 
 .cd-slider .image img {
-  height: calc(100% - 64px);
+  height: 100%;
   background-size: cover;
   filter: saturate(0);
   transition: 0.5s;
