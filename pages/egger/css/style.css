@@ -1147,6 +1147,11 @@ section {
   background-repeat: no-repeat;
 }
 
+.grid-item__slider .slick-list,
+.grid-item__slider .slick-track {
+  height: 100%;
+}
+
 .grid-item__slider:after {
   content: "";
   position: absolute;

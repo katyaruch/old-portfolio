@@ -1,14 +1,14 @@
 $(document).ready(function () {
 
-/////////////// fullpage
+/////////////// fullpage.js
 
     $('#fullpage').fullpage({
         //options here
         recordHistory: false,
         anchors : [ 'top-banner' ,  'about', 'production', 'projects', 'contacts' ],
         normalScrollElements: '.modal',
-        // scrollBar: true,
-        navigation: true
+        scrollBar: true,
+        // navigation: true
     });
 
     $('.modal').on('show.bs.modal', function (e) {
@@ -143,6 +143,16 @@ $(document).ready(function () {
             }
         ]
     });
+
+    $('.grid-item__slider').slick({
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        draggable: false,
+        dots: false,
+        arrows: true,
+        prevArrow: '<a href="#" class="arrow-prev"><i class="icon icon__arrow-left"></i></a>',
+        nextArrow: '<a href="#" class="arrow-next"><i class="icon icon__arrow-right"></i></a>',
+    })
 
     $('.production__list').slick({
         slidesToShow: 3,
