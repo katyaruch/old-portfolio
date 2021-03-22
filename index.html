@@ -5,163 +5,197 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/style.min.css">
 		<link rel="stylesheet" type="text/css" href="fonts/latofonts.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css" integrity="sha512-q54FvbV+gGBn+NvgaD4gpJ7w4wrO00DgW7Rx503PIhrf0CuMwLOwbS+bXgOBFSob+6GVy1HDPfaRLJ8w2jiS4g==" crossorigin="anonymous">
 		<title>Портфолио HTML-верстальщика</title>
 	</head>
 	<body>
 		<header class="header">
 			<div class="container"><a class="logo" href="https://teleg.run/katya_ruch" target="_blanc"><img class="logo__img" src="img/logo-img.png" width="40" height="40" alt="Катя">Катя Руч</a>
-				<button class="navigation__btn">
-					<div class="gamburger">Навигация</div>
+				<button class="header__btn"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.3334 10C13.3334 10.8841 12.9822 11.7319 12.3571 12.357C11.732 12.9822 10.8841 13.3334 10.0001 13.3334C9.11603 13.3334 8.26818 12.9822 7.64306 12.357C7.01794 11.7319 6.66675 10.8841 6.66675 10C6.66675 9.11597 7.01794 8.26812 7.64306 7.643C8.26818 7.01788 9.11603 6.66669 10.0001 6.66669C10.8841 6.66669 11.732 7.01788 12.3571 7.643C12.9822 8.26812 13.3334 9.11597 13.3334 10V10Z" fill="#D4A373"/>
+<path d="M13.3334 20C13.3334 20.8841 12.9822 21.7319 12.3571 22.357C11.732 22.9822 10.8841 23.3334 10.0001 23.3334C9.11603 23.3334 8.26818 22.9822 7.64306 22.357C7.01794 21.7319 6.66675 20.8841 6.66675 20C6.66675 19.116 7.01794 18.2681 7.64306 17.643C8.26818 17.0179 9.11603 16.6667 10.0001 16.6667C10.8841 16.6667 11.732 17.0179 12.3571 17.643C12.9822 18.2681 13.3334 19.116 13.3334 20Z" fill="#D4A373"/>
+<path d="M10.0001 33.3333C10.8841 33.3333 11.732 32.9822 12.3571 32.357C12.9822 31.7319 13.3334 30.8841 13.3334 30C13.3334 29.116 12.9822 28.2681 12.3571 27.643C11.732 27.0179 10.8841 26.6667 10.0001 26.6667C9.11603 26.6667 8.26818 27.0179 7.64306 27.643C7.01794 28.2681 6.66675 29.116 6.66675 30C6.66675 30.8841 7.01794 31.7319 7.64306 32.357C8.26818 32.9822 9.11603 33.3333 10.0001 33.3333V33.3333Z" fill="#D4A373"/>
+<path d="M23.3334 10C23.3334 10.8841 22.9822 11.7319 22.3571 12.357C21.732 12.9822 20.8841 13.3334 20.0001 13.3334C19.116 13.3334 18.2682 12.9822 17.6431 12.357C17.0179 11.7319 16.6667 10.8841 16.6667 10C16.6667 9.11597 17.0179 8.26812 17.6431 7.643C18.2682 7.01788 19.116 6.66669 20.0001 6.66669C20.8841 6.66669 21.732 7.01788 22.3571 7.643C22.9822 8.26812 23.3334 9.11597 23.3334 10V10Z" fill="#D4A373"/>
+<path d="M20.0001 23.3334C20.8841 23.3334 21.732 22.9822 22.3571 22.357C22.9822 21.7319 23.3334 20.8841 23.3334 20C23.3334 19.116 22.9822 18.2681 22.3571 17.643C21.732 17.0179 20.8841 16.6667 20.0001 16.6667C19.116 16.6667 18.2682 17.0179 17.6431 17.643C17.0179 18.2681 16.6667 19.116 16.6667 20C16.6667 20.8841 17.0179 21.7319 17.6431 22.357C18.2682 22.9822 19.116 23.3334 20.0001 23.3334Z" fill="#D4A373"/>
+<path d="M23.3334 30C23.3334 30.8841 22.9822 31.7319 22.3571 32.357C21.732 32.9822 20.8841 33.3333 20.0001 33.3333C19.116 33.3333 18.2682 32.9822 17.6431 32.357C17.0179 31.7319 16.6667 30.8841 16.6667 30C16.6667 29.116 17.0179 28.2681 17.6431 27.643C18.2682 27.0179 19.116 26.6667 20.0001 26.6667C20.8841 26.6667 21.732 27.0179 22.3571 27.643C22.9822 28.2681 23.3334 29.116 23.3334 30V30Z" fill="#D4A373"/>
+<path d="M30.0001 13.3334C30.8841 13.3334 31.732 12.9822 32.3571 12.357C32.9822 11.7319 33.3334 10.8841 33.3334 10C33.3334 9.11597 32.9822 8.26812 32.3571 7.643C31.732 7.01788 30.8841 6.66669 30.0001 6.66669C29.116 6.66669 28.2682 7.01788 27.6431 7.643C27.0179 8.26812 26.6667 9.11597 26.6667 10C26.6667 10.8841 27.0179 11.7319 27.6431 12.357C28.2682 12.9822 29.116 13.3334 30.0001 13.3334V13.3334Z" fill="#D4A373"/>
+<path d="M33.3334 20C33.3334 20.8841 32.9822 21.7319 32.3571 22.357C31.732 22.9822 30.8841 23.3334 30.0001 23.3334C29.116 23.3334 28.2682 22.9822 27.6431 22.357C27.0179 21.7319 26.6667 20.8841 26.6667 20C26.6667 19.116 27.0179 18.2681 27.6431 17.643C28.2682 17.0179 29.116 16.6667 30.0001 16.6667C30.8841 16.6667 31.732 17.0179 32.3571 17.643C32.9822 18.2681 33.3334 19.116 33.3334 20Z" fill="#D4A373"/>
+<path d="M30.0001 33.3333C30.8841 33.3333 31.732 32.9822 32.3571 32.357C32.9822 31.7319 33.3334 30.8841 33.3334 30C33.3334 29.116 32.9822 28.2681 32.3571 27.643C31.732 27.0179 30.8841 26.6667 30.0001 26.6667C29.116 26.6667 28.2682 27.0179 27.6431 27.643C27.0179 28.2681 26.6667 29.116 26.6667 30C26.6667 30.8841 27.0179 31.7319 27.6431 32.357C28.2682 32.9822 29.116 33.3333 30.0001 33.3333V33.3333Z" fill="#D4A373"/>
+</svg>
+
 				</button>
 			</div>
 		</header>
 		<div class="navigation">
-			<nav class="navigation__list">
-				<button class="navigation__close">Закрыть</button><a class="navigation__link" href="#portfolio">Мои работы</a><a class="navigation__link" href="#skills">Навыки</a><a class="navigation__link" href="#verstka">Критерии качества</a>
-			</nav>
-		</div>
-		<section class="main">
-			<video class="main__bg lozad" src="" autoplay muted loop></video>
 			<div class="container">
-				<p class="main__sign">&lt;/&gt;</p>
-				<h1 class="main__title">Чистая вёрстка
-					<p class="main__subtitle">по всем правилам</p>
-				</h1>
-				<div class="social"><a class="social__link social__link_e-mail" href="mailto:katya.ruch@gmail.com" target="_blanc">E-mail</a><a class="social__link social__link_tg" href="https://teleg.run/katya_ruch" target="_blanc">Telegram</a></div>
+				<nav class="navigation__list">
+					<button class="navigation__close">Закрыть</button><a class="navigation__link" href="#portfolio">Работы</a><a class="navigation__link" href="#skills">Навыки</a><a class="navigation__link" href="#verstka">Критерии качества</a>
+				</nav>
 			</div>
-		</section>
-		<section class="portfolio" id="portfolio">
-			<div class="container">
-				<h2 class="title">Мои работы</h2>
-				<div class="swiper-container">
-					<ul class="portfolio__list swiper-wrapper">
-						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="https://taxoparkin.ru/" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/taxoparkin.png" width="270" alt="Таксопаркин">
-								<div class="swiper-lazy-preloader"></div></a>
-							<p class="portfolio__name">Таксопаркин</p>
-							<p class="portfolio__info">Вёрстка лендинга по аренде машин</p>
+		</div>
+		<div id="fullpage">
+			<section class="section main" data-anchor="main">
+				<video class="main__bg lozad" src="" autoplay muted loop data-autoplay></video>
+				<div class="container">
+					<p class="main__sign">&lt;/&gt;</p>
+					<h1 class="main__title">Portfolio</h1>
+					<ul class="main-list">
+						<li class="main-list__item">HTML</li>
+						<li class="main-list__item">CSS</li>
+						<li class="main-list__item">JS</li>
+					</ul>
+					<div class="social"><a class="social__link social__link_tg" href="https://teleg.run/katya_ruch" target="_blanc">
+							Telegram<svg viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"><path d="M9.417 15.181l-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931L23.93 3.821l.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693L18.953 5.78c.595-.394 1.136-.176.691.218z"/></svg></a><a class="social__link social__link_e-mail" href="mailto:katya.ruch@gmail.com" target="_blanc">
+							E-mail<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#ffffff"><path d="M339.392 258.624L512 367.744V144.896zM0 144.896v222.848l172.608-109.12zM480 80H32C16.032 80 3.36 91.904.96 107.232L256 275.264l255.04-168.032C508.64 91.904 495.968 80 480 80zM310.08 277.952l-45.28 29.824a15.983 15.983 0 01-8.8 2.624c-3.072 0-6.112-.864-8.8-2.624l-45.28-29.856L1.024 404.992C3.488 420.192 16.096 432 32 432h448c15.904 0 28.512-11.808 30.976-27.008L310.08 277.952z"/></svg></a></div>
+				</div>
+			</section>
+			<section class="section portfolio" data-anchor="portfolio">
+				<div class="container">
+					<h2 class="title">Мои работы</h2>
+					<div class="swiper-container">
+						<ul class="portfolio__list swiper-wrapper">
+							<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="https://taxoparkin.ru/" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/taxoparkin.png" width="270" alt="Таксопаркин">
+									<div class="swiper-lazy-preloader"></div></a>
+								<p class="portfolio__name">Таксопаркин</p>
+								<p class="portfolio__info">Вёрстка лендинга по аренде машин</p>
+							</li>
+							<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="http://e911827x.beget.tech/" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/advanced-tech.png" width="270" alt="Advanced Technology">
+									<div class="swiper-lazy-preloader"></div></a>
+								<p class="portfolio__name">Advanced Technology</p>
+								<p class="portfolio__info">Вёрстка для интернет-магазина электроники</p>
+							</li>
+							<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="http://ursamotors.ru/" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/ursa.png" width="270" alt="Урса Моторс">
+									<div class="swiper-lazy-preloader"></div></a>
+								<p class="portfolio__name">Урса Моторс</p>
+								<p class="portfolio__info">Вёрстка лендинга по продаже вездеходов</p>
+							</li>
+							<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/sravni-bilety/" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/sravni-bilety.webp" width="270" alt="Сравни билеты">
+									<div class="swiper-lazy-preloader"></div></a>
+								<p class="portfolio__name">Сравни билеты</p>
+								<p class="portfolio__info">Вёрстка сайта для сервиса по поиску выгодных билетов на автобус. Календарь в форме поиска</p>
+							</li>
+							<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="https://hf.live" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/hfp.webp" width="270" alt="Happy Fitness Premium">
+									<div class="swiper-lazy-preloader"></div></a>
+								<p class="portfolio__name">Happy Fitness Premium</p>
+								<p class="portfolio__info">Вёрстка сайта для фитнесс клуба. Подключение CMS Wordpress</p>
+							</li>
+							<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="http://gazdieva.com" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/gd.webp" width="270" alt="Gazdieva Design">
+									<div class="swiper-lazy-preloader"></div></a>
+								<p class="portfolio__name">Gazdieva Design</p>
+								<p class="portfolio__info">Вёрстка для интернет-магазина</p>
+							</li>
+							<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/device" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/iMac-device.webp" width="270" alt="Device">
+									<div class="swiper-lazy-preloader"></div></a>
+								<div>
+									<p class="portfolio__name">Device</p>
+									<p class="portfolio__info">Вёрстка основных страниц интернет магазина электронных гаджетов</p>
+								</div>
+							</li>
+							<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/Absolute" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/Absolute adaptive.webp" width="270" alt="Absolute">
+									<div class="swiper-lazy-preloader"></div></a>
+								<p class="portfolio__name">Absolute</p>
+								<p class="portfolio__info">Вёрстка сайта по оформлению кредита. JS-калькулятор рассчета платежа.</p>
+							</li>
+							<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="https://mmbusiness.ru/" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/mmbusiness.webp" width="270" alt="Flatland">
+									<div class="swiper-lazy-preloader"></div></a>
+								<p class="portfolio__name">mmbusiness</p>
+								<p class="portfolio__info">Вёрстка сайта для рекрутинговой компании. Подключение CMS Wordpress, настройка блога</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="section skills" data-anchor="skills">
+				<div class="container">
+					<h2 class="title">Мои навыки</h2>
+					<ul class="skills__list">
+						<li class="skills__item skills__item_html">HTML
+							<ul class="skills__sublist">
+								<li>Логичная семантическая разметка</li>
+								<li>Доступность</li>
+								<li>Шаблонизатор PUG</li>
+							</ul>
 						</li>
-						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="http://e911827x.beget.tech/" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/advanced-tech.png" width="270" alt="Advanced Technology">
-								<div class="swiper-lazy-preloader"></div></a>
-							<p class="portfolio__name">Advanced Technology</p>
-							<p class="portfolio__info">Вёрстка для интернет-магазина электроники</p>
+						<li class="skills__item skills__item_css">CSS
+							<ul class="skills__sublist">
+								<li>BEM методология</li>
+								<li>Адаптивность</li>
+								<li>Bootstrap</li>
+								<li>Анимация</li>
+							</ul>
 						</li>
-						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="http://ursamotors.ru/" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/ursa.png" width="270" alt="Урса Моторс">
-								<div class="swiper-lazy-preloader"></div></a>
-							<p class="portfolio__name">Урса Моторс</p>
-							<p class="portfolio__info">Вёрстка лендинга по продаже вездеходов</p>
-						</li>
-						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/sravni-bilety/" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/sravni-bilety.webp" width="270" alt="Сравни билеты">
-								<div class="swiper-lazy-preloader"></div></a>
-							<p class="portfolio__name">Сравни билеты</p>
-							<p class="portfolio__info">Вёрстка сайта для сервиса по поиску выгодных билетов на автобус. Календарь в форме поиска</p>
-						</li>
-						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="https://hf.live" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/hfp.webp" width="270" alt="Happy Fitness Premium">
-								<div class="swiper-lazy-preloader"></div></a>
-							<p class="portfolio__name">Happy Fitness Premium</p>
-							<p class="portfolio__info">Вёрстка сайта для фитнесс клуба. Подключение CMS Wordpress</p>
-						</li>
-						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="http://gazdieva.com" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/gd.webp" width="270" alt="Gazdieva Design">
-								<div class="swiper-lazy-preloader"></div></a>
-							<p class="portfolio__name">Gazdieva Design</p>
-							<p class="portfolio__info">Вёрстка для интернет-магазина</p>
-						</li>
-						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/device" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/iMac-device.webp" width="270" alt="Device">
-								<div class="swiper-lazy-preloader"></div></a>
-							<div>
-								<p class="portfolio__name">Device</p>
-								<p class="portfolio__info">Вёрстка основных страниц интернет магазина электронных гаджетов</p>
-							</div>
-						</li>
-						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/Absolute" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/Absolute adaptive.webp" width="270" alt="Absolute">
-								<div class="swiper-lazy-preloader"></div></a>
-							<p class="portfolio__name">Absolute</p>
-							<p class="portfolio__info">Вёрстка сайта по оформлению кредита. JS-калькулятор рассчета платежа.</p>
-						</li>
-						<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="https://mmbusiness.ru/" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/mmbusiness.webp" width="270" alt="Flatland">
-								<div class="swiper-lazy-preloader"></div></a>
-							<p class="portfolio__name">mmbusiness</p>
-							<p class="portfolio__info">Вёрстка сайта для рекрутинговой компании. Подключение CMS Wordpress, настройка блога</p>
+						<li class="skills__item skills__item_js">JS
+							<ul class="skills__sublist">
+								<li>jQuery</li>
+								<li>Ajax</li>
+							</ul>
 						</li>
 					</ul>
+					<p class="mark">100% совпадения моей вёрстки и вашего макета благодаря <b>Pixel Perfect</b></p>
+					<p class="text">Google PageSpeed <b>80-100</b></p>
+					<div class="skills-use">использую</div>
+					<ul class="skills-use__list">
+						<li class="skills-use__item">npm<img src="img/use/npm.svg" alt="npm" title="npm"></li>
+						<li class="skills-use__item">gulp<img src="img/use/gulp.svg" alt="gulp" title="gulp"></li>
+						<li class="skills-use__item">git<img src="img/use/git.svg" alt="git" title="git"></li>
+						<li class="skills-use__item">pug<img src="img/use/pug.svg" alt="pug" title="pug"></li>
+						<li class="skills-use__item">sass<img src="img/use/sass.svg" alt="sass" title="sass"></li>
+						<li class="skills-use__item">less<img src="img/use/less.svg" alt="less" title="less"></li>
+						<li class="skills-use__item">wordpress<img src="img/use/wordpress.svg" alt="wordpress" title="wordpress"></li>
+					</ul>
 				</div>
-			</div>
-		</section>
-		<section class="skills" id="skills">
-			<div class="container">
-				<h2 class="title">Мои навыки</h2>
-				<ul class="skills__list">
-					<li class="skills__item skills__item_html">HTML
-						<ul class="skills__sublist">
-							<li>Логичная семантическая разметка</li>
-							<li>Доступность</li>
-							<li>Шаблонизатор PUG</li>
-						</ul>
-					</li>
-					<li class="skills__item skills__item_css">CSS
-						<ul class="skills__sublist">
-							<li>BEM методология</li>
-							<li>Адаптивность</li>
-							<li>Bootstrap</li>
-							<li>Анимация</li>
-						</ul>
-					</li>
-					<li class="skills__item skills__item_js">JS
-						<ul class="skills__sublist">
-							<li>jQuery</li>
-							<li>Ajax</li>
-						</ul>
-					</li>
-				</ul>
-				<p class="mark">100% совпадения моей вёрстки и вашего макета благодаря <b>Pixel Perfect</b></p>
-				<p class="text">Google PageSpeed <b>80-100</b></p>
-				<div class="skills-use">использую</div>
-				<ul class="skills-use__list">
-					<li class="skills-use__item">npm<img src="img/use/npm.svg" alt="npm" title="npm"></li>
-					<li class="skills-use__item">gulp<img src="img/use/gulp.svg" alt="gulp" title="gulp"></li>
-					<li class="skills-use__item">git<img src="img/use/git.svg" alt="git" title="git"></li>
-					<li class="skills-use__item">pug<img src="img/use/pug.svg" alt="pug" title="pug"></li>
-					<li class="skills-use__item">sass<img src="img/use/sass.svg" alt="sass" title="sass"></li>
-					<li class="skills-use__item">less<img src="img/use/less.svg" alt="less" title="less"></li>
-					<li class="skills-use__item">wordpress<img src="img/use/wordpress.svg" alt="wordpress" title="wordpress"></li>
-				</ul>
-			</div>
-		</section>
-		<section class="verstka container" id="verstka"> 
-			<h2 class="title">Критерии качества вёрстки</h2>
-			<dl class="verstka__norms"> 
-				<dt class="verstka__norm">Единообразное написание кода</dt>
-				<dd class="verstka__descr">Единый стиль написания и форматирования кода облегчает его понимание и дальнейшую поддержку, а также упрощает взаимодействие нескольких человек при разработке</dd>
-				<dt class="verstka__norm active">Валидность</dt>
-				<dd class="verstka__descr">HTML-код в полной мере соответствует всем правилам и стандартам Консорциума Всемирной Паутины - World Wide Web Consortium (W3C). Документ проходит проверку на валидность validator.w3.org</dd>
-				<dt class="verstka__norm">Кроссбраузерность</dt>
-				<dd class="verstka__descr">Вёрстка идентично отображается в последних версиях браузеров Chrome, Opera, Firefox, Safari, а также в Internet Explorer 10+ </dd>
-				<dt class="verstka__norm">Оптимизация</dt>
-				<dd class="verstka__descr">Оптимизация архитектуры проекта с использованием препроцессоров LESS, PUG, автоматизация сборки проекта с помощью GULP.</dd>
-				<dt class="verstka__norm">Адаптивность</dt>
-				<dd class="verstka__descr">Правильное отображение сайта с любого устройства, независимо от размера экрана</dd>
-			</dl>
-		</section>
-		<section class="feedback container">
-			<div class="feedback__inner">
-				<h2 class="title">Пишите</h2>
-				<form class="feedback__form" id="feedback-form" method="post" accept-charset="UTF-8">
-					<p>
-						<label class="feedback__label" for="user-name">Имя</label>
-						<input class="feedback__input" id="user-name" type="text" name="name" placeholder="Ваше имя" maxlength="40" autocomplete="on">
-					</p>
-					<p>
-						<label class="feedback__label" for="user-email">E-mail</label>
-						<input class="feedback__input" id="user-email" type="email" name="email" placeholder="Ваш E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" required autocomplete="on">
-					</p>
-					<p>
-						<label class="feedback__label" for="user-message">Сообщение</label>
-						<textarea class="feedback__input feedback__input_text" id="user-message" name="message" placeholder="Опишите вашу задачу" minlength="20" maxlength="350" required></textarea>
-						<label></label>
-					</p>
-					<button class="button" type="submit">Отправить</button>
-				</form>
-			</div>
-		</section>
+			</section>
+			<section class="section verstka" data-anchor="verstka">
+				<div class="container">
+					<h2 class="title">Критерии качества вёрстки</h2>
+					<dl class="verstka__norms"> 
+						<dt class="verstka__norm">Единообразное написание кода</dt>
+						<dd class="verstka__descr">Единый стиль написания и форматирования кода облегчает его понимание и дальнейшую поддержку, а также упрощает взаимодействие нескольких человек при разработке</dd>
+						<dt class="verstka__norm active">Валидность</dt>
+						<dd class="verstka__descr">HTML-код в полной мере соответствует всем правилам и стандартам Консорциума Всемирной Паутины - World Wide Web Consortium (W3C). Документ проходит проверку на валидность validator.w3.org</dd>
+						<dt class="verstka__norm">Кроссбраузерность</dt>
+						<dd class="verstka__descr">Вёрстка идентично отображается в последних версиях браузеров Chrome, Opera, Firefox, Safari, а также в Internet Explorer 10+ </dd>
+						<dt class="verstka__norm">Оптимизация</dt>
+						<dd class="verstka__descr">Оптимизация архитектуры проекта с использованием препроцессоров LESS, PUG, автоматизация сборки проекта с помощью GULP.</dd>
+						<dt class="verstka__norm">Адаптивность</dt>
+						<dd class="verstka__descr">Правильное отображение сайта с любого устройства, независимо от размера экрана</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="section feedback" data-anchor="feedback">
+				<div class="container">
+					<div class="feedback__inner">
+						<h2 class="title">Свяжитесь со мной</h2>
+						<form class="feedback__form" id="feedback-form" method="post" accept-charset="UTF-8" enctype="multipart/form-data">
+							<p>
+								<label class="feedback__label" for="user-name">Имя</label>
+								<input class="feedback__input" id="user-name" type="text" name="name" placeholder="Ваше имя" maxlength="40" autocomplete="on">
+							</p>
+							<p>
+								<label class="feedback__label" for="user-email">E-mail</label>
+								<input class="feedback__input" id="user-email" type="email" name="email" placeholder="Ваш E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" required autocomplete="on">
+							</p>
+							<p>
+								<label class="feedback__label" for="user-message">Сообщение</label>
+								<textarea class="feedback__input feedback__input--text" id="user-message" name="message" placeholder="Опишите вашу задачу" minlength="20" maxlength="350" required></textarea>
+							</p>
+							<p>
+								<input class="feedback__input feedback__input--file" type="file" name="file" multiple accept=".jpg, .jpeg, .png, .doc, .docx, .txt, .pdf">
+								<label class="feedback__input feedback__label--file"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8.342C20 8.07556 19.9467 7.81181 19.8433 7.56624C19.7399 7.32068 19.5885 7.09824 19.398 6.912L14.958 2.57C14.5844 2.20466 14.0826 2.00007 13.56 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V4Z" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 13H15" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 17H12" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 2V6C14 6.53043 14.2107 7.03914 14.5858 7.41421C14.9609 7.78929 15.4696 8 16 8H20" stroke="#BDBDBD" stroke-width="2" stroke-linejoin="round"/>
+</svg>
+<span class="feedback__input-text">Прикрепить ТЗ <span>до 10 МБ</span></span>
+								</label>
+							</p>
+							<button class="button" type="submit">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</div>
 		<div class="popup" id="popup_thanks"> 
 			<div class="popup__content"> 
 				<p>Спасибо, ваше сообщение отправлено :)</p>
@@ -175,6 +209,7 @@
 			</div>
 		</div>
 		<script src="js/libs.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js" integrity="sha512-bxzECOBohzcTcWocMAlNDE2kYs0QgwGs4eD8TlAN2vfovq13kfDfp95sJSZrNpt0VMkpP93ZxLC/+WN/7Trw2g==" crossorigin="anonymous"></script>
 		<script src="js/script.js" async></script>
 	</body>
 </html>

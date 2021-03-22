@@ -1,5 +1,12 @@
 $(document).ready(function(){
 
+  $('#fullpage').fullpage({
+    //options here
+    anchors:['main', 'portfolio', 'skills', 'verstka','feedback'],
+    autoScrolling:true,
+    scrollHorizontally: true
+  });
+
   //////////// video > mobile-width
 
   if($(window).width() > 576) {
@@ -8,7 +15,7 @@ $(document).ready(function(){
 
   //////////// gamburger-menu
 
-  var menuBtn = document.querySelector(".navigation__btn");
+  var menuBtn = document.querySelector(".header__btn");
   var menu = document.querySelector(".navigation");
   var closeMenu = document.querySelector(".navigation__close");
 
@@ -35,12 +42,12 @@ $(document).ready(function(){
 
   //////////// animate scroll
 
-  $('a[href*="#"]').click(function (evt) {
-    evt.preventDefault();
-    var id  = $(this).attr('href'),
-      top = $(id).offset().top - 80;
-    $('html').animate({scrollTop: top}, 1500);
-  });
+  // $('a[href*="#"]').click(function (evt) {
+  //   evt.preventDefault();
+  //   var id  = $(this).attr('href'),
+  //     top = $(id).offset().top - 80;
+  //   $('html').animate({scrollTop: top}, 1500);
+  // });
 
   //////////// Swiper
 
@@ -107,4 +114,16 @@ $(document).ready(function(){
       $(this).fadeOut(300);
     });
   });
+
+  const fileSelector = $(".feedback__input--file");
+  const fileLabel = $(".feedback__input-text");
+  fileSelector.on('change', function(event) {
+    const fileList = event.target.files;
+    for (const file of fileList) {
+      // Not supported in Safari for iOS.
+      const name = file.name ? file.name : 'NOT SUPPORTED';
+      fileLabel.text(name);
+    }
+  });
+
 });
