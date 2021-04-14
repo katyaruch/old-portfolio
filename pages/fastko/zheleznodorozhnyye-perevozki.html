@@ -14,15 +14,6 @@
 </head>
 
 <body>
-  <!-- Прелоадер -->
-  <div class="preloader">
-    <div class="preloader__row">
-      <div class="preloader__item"></div>
-      <div class="preloader__item"></div>
-    </div>
-  </div>
-  <!-- -->
-
   <header class="header header--white fixed-top">  <!-- fixed-top -->
   <div class="container">
     <div class="row">
@@ -113,22 +104,22 @@
       <form>
         <div class="modal-body">
           <div class="form-group">
-            <label for="input-email">E-mail</label>
             <input id="input-email" class="form-control" type="email" placeholder="E-mail">
+            <label for="input-email">E-mail</label>
           </div>
 <!--           <div class="form-group">
             <label for="input-tel">Телефон</label>
             <input id="input-tel" class="form-control" type="tel" placeholder="8 (___) ___ - ____">
           </div> -->
           <div class="form-group">
-            <label for="input-password">Пароль</label>
             <input id="input-password" class="form-control" type="password" placeholder="Пароль">
+            <label for="input-password">Пароль</label>
           </div>
         </div>
         <div class="modal-footer">
           <!-- <button type="button" class="btn">Войти</button> -->
-          <a href="/account.html" class="btn">Войти</a>
-          <button type="button" class="btn btn--white" data-toggle="modal" data-target="#modal--reg">Зарегистрироваться</button>
+          <a href="/account.html" class="btn btn--accent">Войти</a>
+          <button type="button" class="btn btn--border" data-toggle="modal" data-target="#modal--reg">Зарегистрироваться</button>
         </div>
       </form>
     </div>
@@ -145,29 +136,29 @@
       <form>
         <div class="modal-body">
           <div class="form-group">
-            <label for="input-surname">Фамилия</label>
             <input id="input-surname" class="form-control" type="text" placeholder="Фамилия">
+            <label for="input-surname">Фамилия</label>
           </div>
           <div class="form-group">
-            <label for="input-name">Имя</label>
             <input id="input-name" class="form-control" type="text" placeholder="Имя">
+            <label for="input-name">Имя</label>
           </div>
           <div class="form-group">
-            <label for="input-email">E-mail</label>
             <input id="input-email" class="form-control" type="email" placeholder="E-mail">
+            <label for="input-email">E-mail</label>
           </div>
           <div class="form-group">
-            <label for="input-tel">Телефон</label>
             <input id="input-tel" class="form-control" type="tel" placeholder="8 (___) ___ - ____">
+            <label for="input-tel">Телефон</label>
           </div>
           <div class="form-group">
-            <label for="input-password">Пароль</label>
             <input id="input-password" class="form-control" type="password" placeholder="Пароль">
+            <label for="input-password">Пароль</label>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn">Зарегистрироваться</button>
-          <button class="btn btn--white" data-toggle="modal" data-target="#modal--login">Войти</button>
+          <button type="button" class="btn btn--accent">Зарегистрироваться</button>
+          <button class="btn btn--border" data-toggle="modal" data-target="#modal--login">Войти</button>
         </div>
       </form>
     </div>
@@ -917,23 +908,23 @@
         </div>
         <div class="tab-content">
           <div class="tab-pane fade show active" id="form-1" role="tabpanel" aria-labelledby="form-1-tab">
-            <form class="form" action="" data-aos="fade-left">
-              <div class="form-fields row row-cols-1 row-cols-md-2 row-cols-lg-4 pt-5">
+            <form class="form needs-validation" novalidate data-aos="fade-left">
+              <div class="form-row row-cols-1 row-cols-md-2 row-cols-lg-4 pt-5">
                 <div class="col">
                   <div class="form-group">
-                    <input id="input-date" class="form-control no-empty" type="date">
+                    <input id="input-date" class="form-control no-empty" type="date" required>
                     <label for="input-date">Планируемая дата отгрузки</label>
                   </div>
                 </div>
                 <div class="col">
                   <div class="form-group">
-                    <input id="input-station-from" class="form-control" type="text">
+                    <input id="input-station-from" class="form-control" type="text" required>
                     <label for="input-station-from">Станция отправления</label>
                   </div>
                 </div>
                 <div class="col">
                   <div class="form-group">
-                    <input id="input-station-to" class="form-control" type="text">
+                    <input id="input-station-to" class="form-control" type="text" required>
                     <label for="input-station-to">Станция назначения</label>
                   </div>
                 </div>
@@ -954,7 +945,7 @@
                 </div>
                 <div class="col">
                   <div class="form-group">
-                    <input id="input-name-gruza" class="form-control" type="text">
+                    <input id="input-name-gruza" class="form-control" type="text" required>
                     <label for="input-name-gruza">Наименование груза</label>
                   </div>
                 </div>
@@ -966,18 +957,18 @@
                 </div>
                 <div class="col">
                   <div class="form-group" data-unit=",кг">
-                    <input id="input-kolvo-vagonov" class="form-control" type="text">
+                    <input id="input-kolvo-vagonov" min="1" max="100" class="form-control" type="number" required>
                     <label for="input-kolvo-vagonov">Общая масса</label>
                   </div>
                 </div>
                 <div class="col">
                   <div class="form-group" data-unit=",шт">
-                    <input id="input-kolvo-vagonov" class="form-control" type="text">
+                    <input id="input-kolvo-vagonov" min="1" max="100" class="form-control" type="number" required>
                     <label for="input-kolvo-vagonov">Количество вагонов</label>
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="form-row">
                 <div class="col-lg-6">
                   <p><b>Перечень услуг на станции отправления:</b></p>
                   <ul class="form-check-list">
@@ -1025,7 +1016,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="row">
+              <div class="form-row">
                 <div class="col">
                   <button type="submit" class="btn btn--accent">Оставить заявку</button>
                   <p class="text-small pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl euismod volutpat ipsum enim ultricies vulputate ac dui. Quis semper ipsum viverra duis amet sed etiam lectus enim. Dictum sed morbi dui feugiat sociis. Nisl, nec risus pellentesque sagittis. Habitant cras tincidunt et, sit nulla amet, ac. Id ultricies in tempus, lectus nulla. Id maecenas pellentesque a ac est ut.</p>
@@ -1034,40 +1025,24 @@
             </form>
           </div>
           <div class="tab-pane fade" id="form-2" role="tabpanel" aria-labelledby="form-2-tab">
-            <form class="form" action="" data-aos="fade-left">
-              <div class="form-fields row row-cols-1 row-cols-md-2 row-cols-lg-4 pt-5">
+             <form class="form needs-validation" novalidate data-aos="fade-left">
+              <div class="form-row row-cols-1 row-cols-md-2 row-cols-lg-4 pt-5">
                 <div class="col">
                   <div class="form-group">
-                    <input id="input-date" class="form-control no-empty" type="date">
+                    <input id="input-date" class="form-control no-empty" type="date" required>
                     <label for="input-date">Планируемая дата отгрузки</label>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="dropdown form-group">
-                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <span>Станция отправления</span>
-                    </button>
-                    <label>Станция отправления</label>
-                    <ul class="dropdown-menu">
-                      <li class="dropdown-item">Станция №1</li>
-                      <li class="dropdown-item">Станция №2</li>
-                      <li class="dropdown-item">Станция №3</li>
-                      <li class="dropdown-item">Станция №4</li>
-                    </ul>
+                  <div class="form-group">
+                    <input id="input-station-from" class="form-control" type="text" required>
+                    <label for="input-station-from">Станция отправления</label>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="dropdown form-group">
-                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <span>Станция назначения</span>
-                    </button>
-                    <label>Станция назначения</label>
-                    <ul class="dropdown-menu">
-                      <li class="dropdown-item">Станция №1</li>
-                      <li class="dropdown-item">Станция №2</li>
-                      <li class="dropdown-item">Станция №3</li>
-                      <li class="dropdown-item">Станция №4</li>
-                    </ul>
+                  <div class="form-group">
+                    <input id="input-station-to" class="form-control" type="text" required>
+                    <label for="input-station-to">Станция назначения</label>
                   </div>
                 </div>
                 <div class="col">
@@ -1087,7 +1062,7 @@
                 </div>
                 <div class="col">
                   <div class="form-group">
-                    <input id="input-name-gruza" class="form-control" type="text">
+                    <input id="input-name-gruza" class="form-control" type="text" required>
                     <label for="input-name-gruza">Наименование груза</label>
                   </div>
                 </div>
@@ -1099,18 +1074,18 @@
                 </div>
                 <div class="col">
                   <div class="form-group" data-unit=",кг">
-                    <input id="input-kolvo-vagonov" class="form-control" type="text">
+                    <input id="input-kolvo-vagonov" min="1" max="100" class="form-control" type="number" required>
                     <label for="input-kolvo-vagonov">Общая масса</label>
                   </div>
                 </div>
                 <div class="col">
                   <div class="form-group" data-unit=",шт">
-                    <input id="input-kolvo-vagonov" class="form-control" type="text">
+                    <input id="input-kolvo-vagonov" min="1" max="100" class="form-control" type="number" required>
                     <label for="input-kolvo-vagonov">Количество вагонов</label>
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="form-row">
                 <div class="col-lg-6">
                   <p><b>Перечень услуг на станции отправления:</b></p>
                   <ul class="form-check-list">
@@ -1158,7 +1133,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="row">
+              <div class="form-row">
                 <div class="col">
                   <button type="submit" class="btn btn--accent">Оставить заявку</button>
                   <p class="text-small pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl euismod volutpat ipsum enim ultricies vulputate ac dui. Quis semper ipsum viverra duis amet sed etiam lectus enim. Dictum sed morbi dui feugiat sociis. Nisl, nec risus pellentesque sagittis. Habitant cras tincidunt et, sit nulla amet, ac. Id ultricies in tempus, lectus nulla. Id maecenas pellentesque a ac est ut.</p>

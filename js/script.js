@@ -115,15 +115,4 @@ $(document).ready(function(){
     });
   });
 
-  const fileSelector = $(".feedback__input--file");
-  const fileLabel = $(".feedback__input-text");
-  fileSelector.on('change', function(event) {
-    const fileList = event.target.files;
-    for (const file of fileList) {
-      // Not supported in Safari for iOS.
-      const name = file.name ? file.name : 'NOT SUPPORTED';
-      fileLabel.text(name);
-    }
-  });
-
 });
