@@ -101,10 +101,10 @@
         <h5 class="modal-title">Войти</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
       </div>
-      <form>
+      <form class="form needs-validation" novalidate>
         <div class="modal-body">
           <div class="form-group">
-            <input id="input-email" class="form-control" type="email" placeholder="E-mail">
+            <input id="input-email" class="form-control" type="email" placeholder="E-mail" required>
             <label for="input-email">E-mail</label>
           </div>
 <!--           <div class="form-group">
@@ -112,7 +112,7 @@
             <input id="input-tel" class="form-control" type="tel" placeholder="8 (___) ___ - ____">
           </div> -->
           <div class="form-group">
-            <input id="input-password" class="form-control" type="password" placeholder="Пароль">
+            <input id="input-password" class="form-control" type="password" placeholder="Пароль" required>
             <label for="input-password">Пароль</label>
           </div>
         </div>
@@ -133,32 +133,32 @@
         <h5 class="modal-title">Зарегистрироваться</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
       </div>
-      <form>
+      <form class="form needs-validation" novalidate>
         <div class="modal-body">
           <div class="form-group">
-            <input id="input-surname" class="form-control" type="text" placeholder="Фамилия">
+            <input id="input-surname" class="form-control" type="text" placeholder="Фамилия" required>
             <label for="input-surname">Фамилия</label>
           </div>
           <div class="form-group">
-            <input id="input-name" class="form-control" type="text" placeholder="Имя">
+            <input id="input-name" class="form-control" type="text" placeholder="Имя" required>
             <label for="input-name">Имя</label>
           </div>
           <div class="form-group">
-            <input id="input-email" class="form-control" type="email" placeholder="E-mail">
+            <input id="input-email" class="form-control" type="email" placeholder="E-mail" required>
             <label for="input-email">E-mail</label>
           </div>
           <div class="form-group">
-            <input id="input-tel" class="form-control" type="tel" placeholder="8 (___) ___ - ____">
+            <input id="input-tel" class="form-control" type="tel" placeholder="8 (___) ___ - ____" required>
             <label for="input-tel">Телефон</label>
           </div>
           <div class="form-group">
-            <input id="input-password" class="form-control" type="password" placeholder="Пароль">
-            <label for="input-password">Пароль</label>
+            <input id="input-password" class="form-control" type="password" placeholder="Пароль" required>
+            <label for="input-password" required>Пароль</label>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn--accent">Зарегистрироваться</button>
-          <button class="btn btn--border" data-toggle="modal" data-target="#modal--login">Войти</button>
+          <button type="submit" class="btn btn--accent">Зарегистрироваться</button>
+          <button type="button" class="btn btn--border" data-toggle="modal" data-target="#modal--login">Войти</button>
         </div>
       </form>
     </div>
@@ -908,7 +908,7 @@
         </div>
         <div class="tab-content">
           <div class="tab-pane fade show active" id="form-1" role="tabpanel" aria-labelledby="form-1-tab">
-            <form class="form needs-validation" novalidate data-aos="fade-left">
+            <form class="form form-shipping needs-validation" novalidate data-aos="fade-left">
               <div class="form-row row-cols-1 row-cols-md-2 row-cols-lg-4 pt-5">
                 <div class="col">
                   <div class="form-group">
@@ -1025,7 +1025,7 @@
             </form>
           </div>
           <div class="tab-pane fade" id="form-2" role="tabpanel" aria-labelledby="form-2-tab">
-             <form class="form needs-validation" novalidate data-aos="fade-left">
+            <form class="form form-shipping needs-validation" novalidate data-aos="fade-left">
               <div class="form-row row-cols-1 row-cols-md-2 row-cols-lg-4 pt-5">
                 <div class="col">
                   <div class="form-group">
