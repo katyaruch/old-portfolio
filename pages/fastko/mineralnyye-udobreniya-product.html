@@ -21,7 +21,7 @@
       <nav class="navbar navbar-expand-lg w-100">
         <a href="/" class="navbar-brand">
           <picture>
-            <source srcset="images/logo-mobile.png" media="(max-width: 576px)">
+            <!-- <source srcset="images/logo-mobile.png" media="(max-width: 576px)"> -->
             <img src="images/logo_black.png" alt="Logo" class="logo--black">
             <img src="images/logo_white.png" alt="Logo" class="logo--white">
           </picture>
@@ -47,6 +47,10 @@
           </ul>
         </div>
 
+
+        <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#modal--menu" aria-controls="navMenu" aria-expanded="false" aria-label="Кнопка меню">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="navbar-user">
           <div class="navbar-user__item hvr-buzz-out">
             <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,10 +89,6 @@
 
           </a>
         </div>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Кнопка меню">
-          <span class="navbar-toggler-icon"></span>
-        </button>
       </nav>
     </div>
   </div>
@@ -100,7 +100,9 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Войти</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
       <form class="form needs-validation" novalidate>
         <div class="modal-body">
@@ -108,10 +110,6 @@
             <input id="input-email" class="form-control" type="email" placeholder="E-mail" required>
             <label for="input-email">E-mail</label>
           </div>
-<!--           <div class="form-group">
-            <label for="input-tel">Телефон</label>
-            <input id="input-tel" class="form-control" type="tel" placeholder="8 (___) ___ - ____">
-          </div> -->
           <div class="form-group">
             <input id="input-password" class="form-control" type="password" placeholder="Пароль" required>
             <label for="input-password">Пароль</label>
@@ -132,7 +130,9 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Зарегистрироваться</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
       <form class="form needs-validation" novalidate>
         <div class="modal-body">
@@ -172,7 +172,7 @@
       <div class="container">
         <div class="modal-body big-menu">
           <ul class="row big-menu__list">
-            <li class="col-lg-4">
+            <li class="col-6 col-md-4">
               <a href="#">Контейнерные перевозки</a>
               <ul>
                 <li><a href="#">Железнодорожные контейнерные перевозки</a></li>
@@ -180,7 +180,7 @@
                 <li><a href="#">Автомобильные контейнерные перевозки</a></li>
               </ul>
             </li>
-            <li class="col-lg-4">
+            <li class="col-6 col-md-4">
               <a href="#">Терминально-складские услуги</a>
               <ul>
                 <li><a href="#">Услуги погрузки груза в ЖД вагоны</a></li>
@@ -190,7 +190,7 @@
                 <li><a href="#">Разгрузка хопперов и минераловозов</a></li>
               </ul>
             </li>
-            <li class="col-lg-4">
+            <li class="col-6 col-md-4">
               <a href="/zheleznodorozhnyye-perevozki.html">Железнодорожные перевозки</a>
               <ul>
                 <li><a href="/zheleznodorozhnyye-perevozki-v-krytyh-vagonah.html">Перевозка в крытых вагонах</a></li>
@@ -200,7 +200,7 @@
                 <li><a href="#">Перевозка в рефрежераторных вагонах</a></li>
               </ul>
             </li>
-            <li class="col-lg-4">
+            <li class="col-6 col-md-4">
               <a href="#">Комплексные логистические услуги</a>
               <ul>
                 <li><a href="#">Перевозка генеральных грузов</a></li>
@@ -211,7 +211,7 @@
                 <li><a href="#">Мультимодальные перевозки</a></li>
               </ul>
             </li>
-            <li class="col-lg-4">
+            <li class="col-6 col-md-4">
               <a href="#">Фасовка продукции</a>
               <ul>
                 <li><a href="#">Фасовка в БИГ-БЭГи (500-2000 кг)</a></li>
@@ -220,7 +220,7 @@
                 <li><a href="#">Перетарка продукции</a></li>
               </ul>
             </li>
-            <li class="col-lg-4">
+            <li class="col-6 col-md-4">
               <a href="#">Аутсорсинг ВЭД</a>
               <ul>
                 <li><a href="#">Экспорт продукции</a></li>
@@ -228,14 +228,14 @@
                 <li><a href="#">Таможенное оформление</a></li>
               </ul>
             </li>
-            <li class="col-lg-4">
+            <li class="col-6 col-md-4">
               <a href="#">Отраслевые решения</a>
               <ul>
                 <li><a href="#">Перевозка сельскохозяйственной продукции</a></li>
                 <li><a href="#">Перевозка минеральных удобрений</a></li>
               </ul>
             </li>
-            <li class="col-lg-4">
+            <li class="col-6 col-md-4">
               <a href="#">Автомобильные перевозки</a>
             </li>
           </ul>
@@ -837,7 +837,7 @@
         <nav class="navbar navbar-expand-lg w-100">
           <a href="/" class="navbar-brand">
             <picture>
-              <source srcset="images/logo-mobile.png" media="(max-width: 576px)">
+              <!-- <source srcset="images/logo-mobile.png" media="(max-width: 576px)"> -->
               <img src="images/logo_white.png" alt="Logo" class="logo--white">
             </picture>
           </a>
@@ -897,16 +897,16 @@
             </div>
           </div>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Кнопка меню">
+          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Кнопка меню">
             <span class="navbar-toggler-icon"></span>
-          </button>
+          </button> -->
         </nav>
       </div>
       <div class="row">
         <div class="col-lg-7 pr-5">
           <p class="footer__title h2 mr-5">Услуги</p>
           <div class="modal-body big-menu">
-            <ul class="row row-cols-1 row-cols-md-2 big-menu__list">
+            <ul class="row row-cols-2 big-menu__list">
               <li class="col">
                 <a href="#">Контейнерные перевозки</a>
                 <ul>

@@ -21,7 +21,7 @@
       <nav class="navbar navbar-expand-lg w-100">
         <a href="/" class="navbar-brand">
           <picture>
-            <source srcset="images/logo-mobile.png" media="(max-width: 576px)">
+            <!-- <source srcset="images/logo-mobile.png" media="(max-width: 576px)"> -->
             <img src="images/logo_black.png" alt="Logo" class="logo--black">
             <img src="images/logo_white.png" alt="Logo" class="logo--white">
           </picture>
@@ -47,6 +47,10 @@
           </ul>
         </div>
 
+
+        <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#modal--menu" aria-controls="navMenu" aria-expanded="false" aria-label="Кнопка меню">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="navbar-user">
           <div class="navbar-user__item hvr-buzz-out">
             <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,10 +89,6 @@
 
           </a>
         </div>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Кнопка меню">
-          <span class="navbar-toggler-icon"></span>
-        </button>
       </nav>
     </div>
   </div>
@@ -100,7 +100,9 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Войти</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
       <form class="form needs-validation" novalidate>
         <div class="modal-body">
@@ -108,10 +110,6 @@
             <input id="input-email" class="form-control" type="email" placeholder="E-mail" required>
             <label for="input-email">E-mail</label>
           </div>
-<!--           <div class="form-group">
-            <label for="input-tel">Телефон</label>
-            <input id="input-tel" class="form-control" type="tel" placeholder="8 (___) ___ - ____">
-          </div> -->
           <div class="form-group">
             <input id="input-password" class="form-control" type="password" placeholder="Пароль" required>
             <label for="input-password">Пароль</label>
@@ -132,7 +130,9 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Зарегистрироваться</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
       <form class="form needs-validation" novalidate>
         <div class="modal-body">
@@ -172,7 +172,7 @@
       <div class="container">
         <div class="modal-body big-menu">
           <ul class="row big-menu__list">
-            <li class="col-lg-4">
+            <li class="col-6 col-md-4">
               <a href="#">Контейнерные перевозки</a>
               <ul>
                 <li><a href="#">Железнодорожные контейнерные перевозки</a></li>
@@ -180,7 +180,7 @@
                 <li><a href="#">Автомобильные контейнерные перевозки</a></li>
               </ul>
             </li>
-            <li class="col-lg-4">
+            <li class="col-6 col-md-4">
               <a href="#">Терминально-складские услуги</a>
               <ul>
                 <li><a href="#">Услуги погрузки груза в ЖД вагоны</a></li>
@@ -190,7 +190,7 @@
                 <li><a href="#">Разгрузка хопперов и минераловозов</a></li>
               </ul>
             </li>
-            <li class="col-lg-4">
+            <li class="col-6 col-md-4">
               <a href="/zheleznodorozhnyye-perevozki.html">Железнодорожные перевозки</a>
               <ul>
                 <li><a href="/zheleznodorozhnyye-perevozki-v-krytyh-vagonah.html">Перевозка в крытых вагонах</a></li>
@@ -200,7 +200,7 @@
                 <li><a href="#">Перевозка в рефрежераторных вагонах</a></li>
               </ul>
             </li>
-            <li class="col-lg-4">
+            <li class="col-6 col-md-4">
               <a href="#">Комплексные логистические услуги</a>
               <ul>
                 <li><a href="#">Перевозка генеральных грузов</a></li>
@@ -211,7 +211,7 @@
                 <li><a href="#">Мультимодальные перевозки</a></li>
               </ul>
             </li>
-            <li class="col-lg-4">
+            <li class="col-6 col-md-4">
               <a href="#">Фасовка продукции</a>
               <ul>
                 <li><a href="#">Фасовка в БИГ-БЭГи (500-2000 кг)</a></li>
@@ -220,7 +220,7 @@
                 <li><a href="#">Перетарка продукции</a></li>
               </ul>
             </li>
-            <li class="col-lg-4">
+            <li class="col-6 col-md-4">
               <a href="#">Аутсорсинг ВЭД</a>
               <ul>
                 <li><a href="#">Экспорт продукции</a></li>
@@ -228,14 +228,14 @@
                 <li><a href="#">Таможенное оформление</a></li>
               </ul>
             </li>
-            <li class="col-lg-4">
+            <li class="col-6 col-md-4">
               <a href="#">Отраслевые решения</a>
               <ul>
                 <li><a href="#">Перевозка сельскохозяйственной продукции</a></li>
                 <li><a href="#">Перевозка минеральных удобрений</a></li>
               </ul>
             </li>
-            <li class="col-lg-4">
+            <li class="col-6 col-md-4">
               <a href="#">Автомобильные перевозки</a>
             </li>
           </ul>
@@ -253,7 +253,7 @@
           <div class="section-bg bg-dark zoom-bg" style="background-image: url('images/bg-railway.jpg');"></div>
           <div class="container">
             <div class="row">
-              <div class="col-lg-6 fade-left">
+              <div class="col-lg-6" data-aos="fade-right">
                 <h1 class="h3 mb-3">Компания <b class="color-accent">F</b>ASTKO</h1>
                 <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia repellendus magnam, aperiam doloribus voluptas, laboriosam distinctio perspiciatis quas delectus a quasi. A dolorem distinctio quae nulla commodi asperiores unde nemo. Ut, at nostrum sint repudiandae illo aliquid totam rem obcaecati voluptatem eaque, quam qui possimus deserunt consequatur aliquam recusandae, voluptates!</p>
                 <a href="#" class="btn btn--white">Подробнее</a>
@@ -267,7 +267,7 @@
           <div class="section-bg bg-dark zoom-bg" style="background-image: url('images/bg-selhoz.jpg');"></div>
           <div class="container">
             <div class="row">
-              <div class="col-lg-6 fade-left">
+              <div class="col-lg-6" data-aos="fade-right">
                 <h2 class="h3 mb-3">Компания <b class="color-accent">F</b>ASTKO</h2>
                 <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia repellendus magnam, aperiam doloribus voluptas, laboriosam distinctio perspiciatis quas delectus a quasi. A dolorem distinctio quae nulla commodi asperiores unde nemo. Ut, at nostrum sint repudiandae illo aliquid totam rem obcaecati voluptatem eaque, quam qui possimus deserunt consequatur aliquam recusandae, voluptates!</p>
                 <a href="#" class="btn btn--white">Подробнее</a>
@@ -281,7 +281,7 @@
           <div class="section-bg bg-dark zoom-bg" style="background-image: url('images/min-udobr-ammofos.jpg');"></div>
           <div class="container">
             <div class="row">
-              <div class="col-lg-6 fade-left">
+              <div class="col-lg-6" data-aos="fade-right">
                 <h2 class="h3 mb-3">Компания <b class="color-accent">F</b>ASTKO</h2>
                 <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia repellendus magnam, aperiam doloribus voluptas, laboriosam distinctio perspiciatis quas delectus a quasi. A dolorem distinctio quae nulla commodi asperiores unde nemo. Ut, at nostrum sint repudiandae illo aliquid totam rem obcaecati voluptatem eaque, quam qui possimus deserunt consequatur aliquam recusandae, voluptates!</p>
                 <a href="#" class="btn btn--white">Подробнее</a>
@@ -356,7 +356,7 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="d-flex align-items-center h-100">
+          <div class="carousel-item__inner">
             <div class="section-bg section-bg--right zoom-bg" style="background-image: url('images/pogruzka-vagonov.jpg');"></div>
             <div class="container">
               <div class="row">
@@ -370,7 +370,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <div class="d-flex align-items-center h-100">
+          <div class="carousel-item__inner">
             <div class="section-bg section-bg--right zoom-bg" style="background-image: url('images/pogruzka-vagonov.jpg');"></div>
             <div class="container">
               <div class="row">
@@ -384,7 +384,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <div class="d-flex align-items-center h-100">
+          <div class="carousel-item__inner">
             <div class="section-bg section-bg--right zoom-bg" style="background-image: url('images/pogruzka-vagonov.jpg');"></div>
             <div class="container">
               <div class="row">
@@ -398,7 +398,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <div class="d-flex align-items-center h-100">
+          <div class="carousel-item__inner">
             <div class="section-bg section-bg--right zoom-bg" style="background-image: url('images/pogruzka-vagonov.jpg');"></div>
             <div class="container">
               <div class="row">
@@ -412,7 +412,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <div class="d-flex align-items-center h-100">
+          <div class="carousel-item__inner">
             <div class="section-bg section-bg--right zoom-bg" style="background-image: url('images/pogruzka-vagonov.jpg');"></div>
             <div class="container">
               <div class="row">
@@ -495,8 +495,8 @@
                 </ul>
               </div>
             </form>
-            <div>
-              <div class="mb-3" data-aos="fade-right" data-aos-delay="600">
+            <div class="d-flex flex-lg-column">
+              <div class="mr-4" data-aos="fade-right" data-aos-anchor-placement=".section--map" data-aos-delay="600">
                 <p class="h5 color-accent">Услуги терминала</p>
                 <ul class="list-simple">
                   <li>
@@ -516,7 +516,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="mb-3" data-aos="fade-right" data-aos-delay="800">
+              <div class="mr-4" data-aos="fade-right" data-aos-anchor-placement=".section--map" data-aos-delay="800">
                 <p class="h5 color-accent">Структура терминала</p>
                 <ul class="list-simple">
                   <li>
@@ -533,7 +533,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="mb-3" data-aos="fade-right" data-aos-delay="1000">
+              <div class="" data-aos="fade-right" data-aos-anchor-placement=".section--map" data-aos-delay="1000">
                 <p class="h5 color-accent">типы грузов</p>
                 <ul class="list-simple">
                   <li>
@@ -617,7 +617,7 @@
           <div class="section-bg section-bg--left bg-dark zoom-bg" style="background-image: url('images/min-udobr-ammofos.jpg');"></div>
           <div class="container h-100">
             <div class="row h-100">
-              <div class="col-lg-6 text-white section__col pr-5">
+              <div class="col-lg-6 text-white section__col">
                 <ul class="list-info">
                   <li class="list-info__item">
                     <p>Минимальная партия</p>
@@ -632,7 +632,7 @@
                     <p class="h5">от 16 990 ₽</p>
                   </li>
                 </ul>
-                <div class="fade-left">
+                <div data-aos="fade-right">
                   <p class="h1">NH<sub>4</sub>H<sub>2</sub>PO<sub>4</sub></p>
                   <p class="h3 mb-3">Аммофос Высший сорт</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae lectus dolor cras faucibus porta vestibulum amet est risus. Enim, metus, amet, vestibulum eu in facilisis eleifend semper. Morbi amet aliquet varius at pellentesque posuere leo. Tellus ac tincidunt commodo faucibus. Orci, interdum sed duis ut aenean. Mollis feugiat volutpat lectus nunc sed dui nulla risus, in. Urna purus tellus risus tristique phasellus.</p>
@@ -676,8 +676,8 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-lg-6 section__col pt-0">
-                <div class="h4 mb-0 color-gray-3 pl-5 py-3 border-bottom">
+              <div class="col-lg-6 section__col">
+                <div class="h4 mb-0 color-gray-3 pl-lg-5 py-3 border-bottom">
                   <div data-aos="fade-right">
                     Купить
                     <div class="dropdown d-inline">
@@ -691,7 +691,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="list-min-udobr pl-5">
+                <div class="list-min-udobr">
                   <a href="#" class="list-min-udobr__item" data-aos="fade-right">
                     <div class="list-min-udobr__head">
                       <img src="images/products/ammofos.png" alt="Аммофос">
@@ -714,7 +714,7 @@
                       <p class="list-min-udobr__price">17 500 ₽</p>
                     </div>
                   </a>
-                  <a href="#" class="list-min-udobr__item">
+                  <a href="#" class="list-min-udobr__item" data-aos="fade-right" data-aos-delay="400">
                     <div class="list-min-udobr__head">
                       <img src="images/products/ammofos.png" alt="Аммофос">
                       <span class="list-min-udobr__weight weight-500" title="Вес упаковки, кг"></span>
@@ -725,7 +725,7 @@
                       <p class="list-min-udobr__price">17 500 ₽</p>
                     </div>
                   </a>
-                  <a href="#" class="list-min-udobr__item">
+                  <a href="#" class="list-min-udobr__item" data-aos="fade-right" data-aos-delay="600">
                     <div class="list-min-udobr__head">
                       <img src="images/products/ammofos.png" alt="Аммофос">
                       <span class="list-min-udobr__weight weight-500" title="Вес упаковки, кг"></span>
@@ -748,7 +748,7 @@
           <div class="section-bg section-bg--left bg-dark zoom-bg" style="background-image: url('images/bg-selhoz.jpg');"></div>
           <div class="container h-100">
             <div class="row h-100">
-              <div class="col-lg-6 text-white section__col pr-5">
+              <div class="col-lg-6 text-white section__col">
                 <ul class="list-info">
                   <li class="list-info__item">
                     <p>Минимальная партия</p>
@@ -763,7 +763,7 @@
                     <p class="h5">от 16 990 ₽</p>
                   </li>
                 </ul>
-                <div class="fade-left">
+                <div data-aos="fade-right">
                   <p class="h1">NH<sub>4</sub>H<sub>2</sub>PO<sub>4</sub></p>
                   <p class="h3 mb-3">Другое удобрение</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae lectus dolor cras faucibus porta vestibulum amet est risus. Enim, metus, amet, vestibulum eu in facilisis eleifend semper. Morbi amet aliquet varius at pellentesque posuere leo. Tellus ac tincidunt commodo faucibus. Orci, interdum sed duis ut aenean. Mollis feugiat volutpat lectus nunc sed dui nulla risus, in. Urna purus tellus risus tristique phasellus.</p>
@@ -807,8 +807,8 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-lg-6 section__col pt-0">
-                <div class="h4 mb-0 color-gray-3 pl-5 py-3 border-bottom">
+              <div class="col-lg-6 section__col">
+                <div class="h4 mb-0 color-gray-3 pl-lg-5 py-3 border-bottom">
                   <div data-aos="fade-right">
                     Купить
                     <div class="dropdown d-inline mb-2">
@@ -822,7 +822,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="list-min-udobr pl-5">
+                <div class="list-min-udobr">
                   <a href="#" class="list-min-udobr__item" data-aos="fade-right">
                     <div class="list-min-udobr__head">
                       <img src="images/products/ammofos.png" alt="Аммофос">
@@ -845,7 +845,7 @@
                       <p class="list-min-udobr__price">17 500 ₽</p>
                     </div>
                   </a>
-                  <a href="#" class="list-min-udobr__item">
+                  <a href="#" class="list-min-udobr__item" data-aos="fade-right" data-aos-delay="400">
                     <div class="list-min-udobr__head">
                       <img src="images/products/ammofos.png" alt="Аммофос">
                       <span class="list-min-udobr__weight weight-500" title="Вес упаковки, кг"></span>
@@ -856,7 +856,7 @@
                       <p class="list-min-udobr__price">17 500 ₽</p>
                     </div>
                   </a>
-                  <a href="#" class="list-min-udobr__item">
+                  <a href="#" class="list-min-udobr__item" data-aos="fade-right" data-aos-delay="600">
                     <div class="list-min-udobr__head">
                       <img src="images/products/ammofos.png" alt="Аммофос">
                       <span class="list-min-udobr__weight weight-500" title="Вес упаковки, кг"></span>
@@ -914,7 +914,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <ul class="list-outsourcing flex-wrap">
+              <ul class="list-outsourcing">
                 <li class="hvr-buzz-out">
                   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M44.8738 22.7796C44.8107 22.2174 44.1549 21.7945 43.5878 21.7945C41.7552 21.7945 40.1288 20.7188 39.4467 19.054C38.7505 17.3493 39.1997 15.3615 40.5651 14.1089C40.9951 13.7157 41.0476 13.0573 40.687 12.6003C39.7488 11.4091 38.6828 10.3329 37.5186 9.40038C37.0632 9.03504 36.3939 9.08589 35.9986 9.52338C34.8066 10.8436 32.6652 11.3342 31.0104 10.6438C29.289 9.91951 28.2025 8.17461 28.3092 6.30169C28.3443 5.71302 27.9139 5.2015 27.3274 5.13317C25.8333 4.96018 24.326 4.95517 22.8276 5.12141C22.2485 5.18541 21.8184 5.68482 21.8376 6.26605C21.9025 8.12063 20.8037 9.83475 19.0989 10.5331C17.464 11.201 15.3375 10.714 14.1479 9.4054C13.7547 8.97432 13.0972 8.92139 12.6386 9.27895C11.4402 10.2195 10.3502 11.2963 9.40325 12.4778C9.03427 12.9371 9.08877 13.6027 9.52244 13.9973C10.9148 15.2582 11.3637 17.2631 10.6408 18.9878C9.95058 20.632 8.24338 21.6912 6.28916 21.6912C5.655 21.6708 5.20368 22.0968 5.13362 22.6736C4.95786 24.1756 4.95596 25.7069 5.12514 27.2212C5.18828 27.7858 5.86344 28.2052 6.43672 28.2052C8.17869 28.1609 9.85008 29.2386 10.5522 30.9454C11.2509 32.6502 10.8012 34.6371 9.43353 35.8914C9.00573 36.2846 8.95107 36.9415 9.31226 37.398C10.241 38.5817 11.308 39.6585 12.4757 40.5991C12.9341 40.9682 13.6008 40.9165 13.9981 40.4785C15.1948 39.1552 17.3359 38.6654 18.9839 39.3572C20.7103 40.0796 21.7963 41.8243 21.6903 43.6978C21.6555 44.2864 22.0869 44.7995 22.6714 44.8663C23.436 44.9557 24.2046 45 24.9756 45C25.7073 45 26.4392 44.96 27.1711 44.8786C27.751 44.8146 28.1803 44.3146 28.1608 43.7332C28.0939 41.8795 29.1951 40.1652 30.8978 39.4683C32.5436 38.796 34.6606 39.288 35.8509 40.5947C36.2462 41.025 36.8997 41.0772 37.3602 40.721C38.5566 39.7829 39.6445 38.7066 40.5955 37.522C40.9649 37.0636 40.9124 36.3971 40.4763 36.0018C39.0843 34.7418 38.633 32.736 39.3559 31.0131C40.0354 29.391 41.6791 28.3019 43.447 28.3019L43.6944 28.3084C44.2684 28.355 44.7958 27.913 44.8652 27.3274C45.0418 25.824 45.0437 24.2945 44.8738 22.7796ZM24.9997 36.5303C18.6315 36.5303 13.4695 31.3682 13.4695 25.0002C13.4695 18.6323 18.6317 13.4702 24.9997 13.4702C31.3676 13.4702 36.5299 18.6323 36.5299 25.0002C36.5299 27.1617 35.9339 29.1834 34.8989 30.9122L29.8502 25.8633C30.2157 25.0015 30.4087 24.0672 30.4086 23.1029C30.4086 21.2148 29.6732 19.4398 28.3379 18.1049C27.003 16.7699 25.228 16.0347 23.3402 16.0347C22.7102 16.0347 22.0831 16.1185 21.4765 16.2837C21.2107 16.3561 20.9935 16.5751 20.9227 16.8414C20.8504 17.1136 20.9319 17.3927 21.1447 17.6056C21.1447 17.6056 23.6372 20.1174 24.4712 20.9512C24.5585 21.0385 24.5584 21.247 24.5461 21.322L24.5383 21.3769C24.4542 22.2937 24.2921 23.3942 24.1584 23.8172C24.1404 23.835 24.1235 23.8501 24.1051 23.8684C24.0859 23.8876 24.0683 23.9061 24.0498 23.9251C23.6213 24.0627 22.5038 24.2267 21.5725 24.31L21.5726 24.305L21.5308 24.3156C21.5233 24.3164 21.5095 24.3175 21.4912 24.3175C21.3905 24.3175 21.2424 24.2893 21.1078 24.1549C20.2398 23.2868 17.845 20.9091 17.845 20.9091C17.6301 20.695 17.4097 20.65 17.2629 20.65C16.9205 20.65 16.614 20.8974 16.5175 21.2522C15.8582 23.6918 16.5571 26.316 18.3418 28.1008C19.6771 29.4359 21.4522 30.1711 23.3404 30.1711C24.3046 30.1711 25.2389 29.9783 26.1005 29.6127L31.2041 34.7163C29.4123 35.8629 27.2846 36.5303 24.9997 36.5303Z" fill="#828282"/>
@@ -939,7 +939,7 @@
 <path d="M10.3926 38.5814C10.3926 38.8481 10.5366 39.8206 11.2945 40.3739C11.2531 39.3125 11.4523 38.2173 11.912 37.3027L12.1262 36.8736C12.6047 35.9153 13.4653 34.1934 14.4887 32.2781C14.4887 29.5132 14.4887 26.8838 14.4887 26.8838H10.3926C10.3926 26.8838 10.3926 38.2046 10.3926 38.5814Z" fill="#828282"/>
 </svg>
 
-                  <span class="">Промышленное сырье <br>и химия</span>
+                  <span class="">Промышленное сырье и химия</span>
                 </li>
                 <li class="hvr-buzz-out">
                   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1071,29 +1071,21 @@
           </div>
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 mb-5">
-          <div class="col">
-            <div class="quotes">
-              <p class="h5">Легкая регистрация</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A dui ac elementum amet, congue scelerisque.</p>
-            </div>
+          <div class="col quotes mb-4">
+            <p class="h6">Легкая регистрация</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A dui ac elementum amet, congue scelerisque.</p>
           </div>
-          <div class="col">
-            <div class="quotes">
-              <p class="h5">Бесплатное размещение</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A dui ac elementum amet, congue scelerisque.</p>
-            </div>
+          <div class="col quotes mb-4">
+            <p class="h6">Бесплатное размещение</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A dui ac elementum amet, congue scelerisque.</p>
           </div>
-          <div class="col">
-            <div class="quotes">
-              <p class="h5">Система оповещений</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A dui ac elementum amet, congue scelerisque.</p>
-            </div>
+          <div class="col quotes mb-4">
+            <p class="h6">Система оповещений</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A dui ac elementum amet, congue scelerisque.</p>
           </div>
-          <div class="col">
-            <div class="quotes">
-              <p class="h5">Консультации 24/7</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A dui ac elementum amet, congue scelerisque.</p>
-            </div>
+          <div class="col quotes mb-4">
+            <p class="h6">Консультации 24/7</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A dui ac elementum amet, congue scelerisque.</p>
           </div>
         </div>
         <div class="row">
@@ -1118,7 +1110,7 @@
         <nav class="navbar navbar-expand-lg w-100">
           <a href="/" class="navbar-brand">
             <picture>
-              <source srcset="images/logo-mobile.png" media="(max-width: 576px)">
+              <!-- <source srcset="images/logo-mobile.png" media="(max-width: 576px)"> -->
               <img src="images/logo_white.png" alt="Logo" class="logo--white">
             </picture>
           </a>
@@ -1178,16 +1170,16 @@
             </div>
           </div>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Кнопка меню">
+          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Кнопка меню">
             <span class="navbar-toggler-icon"></span>
-          </button>
+          </button> -->
         </nav>
       </div>
       <div class="row">
         <div class="col-lg-7 pr-5">
           <p class="footer__title h2 mr-5">Услуги</p>
           <div class="modal-body big-menu">
-            <ul class="row row-cols-1 row-cols-md-2 big-menu__list">
+            <ul class="row row-cols-2 big-menu__list">
               <li class="col">
                 <a href="#">Контейнерные перевозки</a>
                 <ul>
