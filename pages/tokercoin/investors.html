@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/libs.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <title>Tokercoin</title>
+</head>
+
+<body>
+  <header class="header">
+  <div class="container">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg w-100">
+          <a href="/" class="navbar-brand">
+            <picture>
+              <source srcset="images/logo-mobile.png" media="(max-width: 576px)">
+              <img src="images/logo.png" alt="Logo">
+            </picture>
+          </a>
+
+          <div class="collapse navbar-collapse order-2 order-lg-0" id="navMenu">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="/" class="nav-link">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a href="/investors.html" class="nav-link">Инвесторам</a>
+              </li>
+              <li class="nav-item">
+                <a href="/instructions.html" class="nav-link">Инструкция</a>
+              </li>
+              <li class="nav-item">
+                <a href="/conditions.html" class="nav-link">Условия</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="catalog" data-toggle="dropdown">Язык: Русский</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu">
+                    <a class="nav-link" href="#">Русский</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">English</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navbar-user d-flex">
+            <a href="/account.html" class="user-link user-profile" title="Профиль" data-toggle="modal" data-target="#modal--login">Войти</a>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Кнопка меню">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      </nav>
+    </div>
+  </div>
+</header>
+<section class="info-site text-center my-md-2">
+  <div class="container">
+    <div class="row row-cols-2 row-cols-lg-4">
+      <div class="col info-group">
+        <p class="h5 info-group__title">Открыто аккаунтов</p>
+        <p class="h2 info-group__value">1223</p>
+      </div>
+      <div class="col info-group">
+        <p class="h5 info-group__title">Продано Tokercoin (ICO)</p>
+        <p class="h2 info-group__value">4 234 556</p>
+      </div>
+      <div class="col info-group">
+        <p class="h5 info-group__title">Начисленно Tokercoin</p>
+        <p class="h2 info-group__value">2 234 556</p>
+      </div>
+      <div class="col info-group">
+        <p class="h5 info-group__title">Цена Tokercoin , $</p>
+        <p class="h2 info-group__value">0,99</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal Login -->
+<div class="modal fade" id="modal--login" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Вход</h5>
+        <button type="button" class="btn underline" data-toggle="modal" data-target="#modal--reg">Зарегистрироваться</button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form>
+        <div class="modal-body">
+          <div class="form-group">
+            <input id="user-email" class="form-control" type="email" placeholder="E-mail" required>
+            <label for="user-email">E-mail</label>
+          </div>
+          <div class="form-group">
+            <input id="user-password" class="form-control form-control--password" type="password" placeholder="Пароль" required>
+            <label for="user-password">Пароль</label>
+            <button type="button" class="toggle-password" title="Показать пароль"></button>
+          </div>
+          <div class="d-flex justify-content-between mb-4">
+            <p>Забыли пароль?</p>
+            <button type="button" class="btn underline" data-toggle="modal" data-target="#modal--password-recovery">Восстановить</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-google">Войти с помощью Google</button>
+          <!-- <button type="submit" class="btn btn-primary">Войти</button> -->
+          <a href="/account--influencer.html" class="btn btn-primary">Войти</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Modal Register -->
+<div class="modal fade" id="modal--reg" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Зарегистрироваться</h5>
+        <p>Уже есть аккаунт? <button class="btn underline" data-toggle="modal" data-target="#modal--login">Войти</button></p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form>
+        <div class="modal-body">
+          <div class="form-group">
+            <input id="newuser-email" class="form-control" type="email" placeholder="E-mail" required>
+            <label for="newuser-email">E-mail</label>
+          </div>
+          <div class="form-group">
+            <input id="newuser-password" class="form-control form-control--password" type="password" placeholder="Пароль" required>
+            <label for="newuser-password">Пароль</label>
+            <button type="button" class="toggle-password" title="Показать пароль"></button>
+          </div>
+          <div class="">
+              Я ознакомился с <a href="#" class="underline">Пользовательским соглашением</a> и <a href="#" class="underline">Политикой Конфиденциальности</a>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input sr-only" type="checkbox" id="user-agree" value="yes" required>
+              <label class="form-check-label" for="user-agree"></label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-google">Зарегистрироваться через Google</button>
+          <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Modal Login -->
+<div class="modal fade" id="modal--password-recovery" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Восстановление пароля</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form>
+        <div class="modal-body">
+          <p>Введите адрес электронной почты:</p>
+          <div class="form-group">
+            <input id="user-email" class="form-control" type="email" placeholder="E-mail" required>
+            <label for="user-email">E-mail</label>
+          </div>
+          <div class="form-row">
+            <div class="col form-group">
+              <button type="button" class="btn btn-outline-primary">Отправить код</button>
+            </div>
+            <div class="col form-group">
+              <input id="code" class="form-control form-control--code" type="text" maxlength="4" required>
+              <label for="code">Введите код:</label>
+            </div>
+          </div>
+          <p>Введите новый пароль:</p>
+          <div class="form-group">
+            <input id="user-password" class="form-control form-control--password" type="password" placeholder="Пароль" required>
+            <label for="user-password">Пароль</label>
+            <button type="button" class="toggle-password" title="Показать пароль"></button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Войти</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col mx-auto">
+          <div class="mb-5">
+            <h1 class="h1 mb-3">Tokercoin предлагает отличные условия для&nbsp;инвестирования</h1>
+            <p class="h4 mb-3">На период проведения  ICO действуют следующие условия:</p>
+            <div class="">
+              <ul class="list-unordered">
+                <li>Тарифный план  «Инвестор» - 2% в день, при условии, что в кошельке находится не менее 100 Tokercoin</li>
+                <li>Тарифный план «Инфлуенсер» - от 0,4% до 25% в день (процент зависит от количества просмотров видеороликов с размещенными в них гифками  Tokercoin )</li>
+              </ul>
+              <p>*Купить/продать Tokercoin можно на бирже <a href="https://waves.exchange/" target="blanc">Waves Exchange</a></p>
+            </div>
+          </div>
+          <div class="mb-5">
+            <p class="h4 mb-3">После окончания ICO инвесторы смогут продать свои Tokercoin пользователям сервиса Toker Services или продолжить получать пассивный доход на следующих условиях:</p>
+            <p>10-30% в год в зависимости от доходности сервиса Toker Services. 30% дохода будет оставаться у администрации сервиса, а 70% будет распределяться между всеми держателями Tokercoin. Все нераспроданные в ходе  ICO  монеты будут выведены из оборота.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="bg-white text-dark py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <h3 class="h2 text-center">Что такое Tokercoin?</h3>
+          <div class="d-flex align-items-center">
+            <img src="images/tokercoin.webp" alt="Tokercoin">
+            <p class="lead">Tokercoin – это криптовалюта для блогеров и  инфлуенсеров, с помощью которой можно  монетизировать любой видео контент в социальных сетях.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <h3 class="h2 mb-3 text-center">Цель ICO</h3>
+          <ul class="list-unordered">
+            <li class="mb-3">Мы хотим создать Toker Services – полностью автоматизированный сервис с помощью которого можно будет монетизировать любой видеоролик в сети интернет.</li>
+
+            <li class="mb-3">В Toker Services будет  своя внутренняя валюта - Tokercoin, за которую рекламодатели будут покупать услуги у инфлуенсеров и  создателей видео контента.</li>
+
+            <li class="mb-3">Любой желающий сможет разместить свою рекламу в виде котика или любой другой гифки, которая будет отображаться в видеороликах  и собирать сотни, тысячи и миллионы просмотров. При этом рекламодатель будет  платить строго за количество просмотров/показов его гифки.</li>
+
+            <li class="mb-3">Мы будем использовать самые современные цифровые  технологии, в том числе искусственый интеллект и блокчейн,  чтобы сделать процесс создания и  размещения гифок в видеороликах максимально  простым и удобным и для рекламодетелй  и для создателей видео контента.</li>
+
+            <li class="mb-3">Мы планируем создать свой собственный блокчейн для Tokercoin на принципах DeFi  и перенесем туда  все выпущенные в ходе ICO токены Tokercoin. Это позволит нам развивать Tokercoin дальше, создавая все новые и новые сервисы и возможности для блогеров и инфлуенсеров  внутри экосистемы Toker Services.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+    <section class="bg-white text-dark text-center py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <h3 class="h2">Регистрируйся и зарабатывай Tokercoin</h3>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#modal--reg">Регистрация</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <a href="/" class="navbar-brand">
+          <picture>
+            <source srcset="images/logo-mobile.png" media="(max-width: 576px)">
+            <img src="images/logo.png" alt="Logo">
+          </picture>
+        </a>
+        <div class="mb-3">
+          <address>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.9791 5.81738C12.3683 5.81738 10.244 7.94164 10.244 10.5525C10.244 13.1636 12.3683 15.2878 14.9791 15.2878C17.5902 15.2878 19.7145 13.1636 19.7145 10.5525C19.7145 7.94164 17.5902 5.81738 14.9791 5.81738Z" fill="white"/>
+<path d="M14.9792 0C8.91655 0 3.98438 4.93217 3.98438 10.9948C3.98438 13.7798 5.73921 17.7148 9.20036 22.6904C11.7302 26.3276 14.2184 29.1422 14.3232 29.2603L14.9792 30L15.6354 29.2603C15.74 29.1422 18.2282 26.3276 20.7582 22.6904C24.2191 17.7148 25.9742 13.7798 25.9742 10.9948C25.9742 4.93217 21.0418 0 14.9792 0ZM14.9792 17.0419C11.4011 17.0419 8.49014 14.1307 8.49014 10.5526C8.49014 6.97449 11.4011 4.06357 14.9792 4.06357C18.5575 4.06357 21.4684 6.97449 21.4684 10.5526C21.4684 14.1307 18.5575 17.0419 14.9792 17.0419Z" fill="white"/>
+</svg>
+
+                  Sociomics s.r.o.
+                  82105 Hranichna str. 22, Bratislava, Slovak Republic
+                </a>
+              </li>
+              <li>
+                <a href="mailto:info@catservices.com">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M29.7357 5.96094L20.6373 15.0007L29.7357 24.0405C29.9002 23.6967 30 23.3167 30 22.9109V7.09057C30 6.68469 29.9002 6.30471 29.7357 5.96094Z" fill="white"/>
+<path d="M27.3633 4.45312H2.63671C2.23083 4.45312 1.85085 4.55291 1.50708 4.71738L13.1358 16.2875C14.164 17.3157 15.836 17.3157 16.8642 16.2875L28.4929 4.71738C28.1491 4.55291 27.7691 4.45312 27.3633 4.45312Z" fill="white"/>
+<path d="M0.264258 5.96094C0.0997852 6.30471 0 6.68469 0 7.09057V22.9109C0 23.3168 0.0997852 23.6968 0.264258 24.0405L9.36264 15.0007L0.264258 5.96094Z" fill="white"/>
+<path d="M19.3945 16.2432L18.107 17.5306C16.3938 19.2439 13.6061 19.2439 11.8929 17.5306L10.6055 16.2432L1.50708 25.2829C1.85085 25.4474 2.23083 25.5472 2.63671 25.5472H27.3633C27.7691 25.5472 28.1491 25.4474 28.4929 25.2829L19.3945 16.2432Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="30" height="30" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+                  info@catservices.com
+                </a>
+              </li>
+            </ul>
+          </address>
+          <ul class="list-unstyled mb-4">
+            <li>
+              <a href="#">Пользовательское соглашение</a>
+            </li>
+            <li>
+              <a href="#">Политика конфиденциальности</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="list-social">
+          <li class="list-social-item">
+            <a href="#" title="Linkedin">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M30 0C13.434 0 0 13.434 0 30C0 46.566 13.434 60 30 60C46.566 60 60 46.566 60 30C60 13.434 46.566 0 30 0ZM21.2823 45.3516H13.976V23.3702H21.2823V45.3516ZM17.6294 20.3687H17.5818C15.13 20.3687 13.5443 18.6809 13.5443 16.5715C13.5443 14.4145 15.1785 12.7734 17.6779 12.7734C20.1773 12.7734 21.7154 14.4145 21.763 16.5715C21.763 18.6809 20.1773 20.3687 17.6294 20.3687ZM47.6276 45.3516H40.3221V33.5921C40.3221 30.6367 39.2642 28.6212 36.6206 28.6212C34.6024 28.6212 33.4003 29.9808 32.872 31.2932C32.6788 31.7628 32.6317 32.4193 32.6317 33.0762V45.3516H25.3258C25.3258 45.3516 25.4214 25.4324 25.3258 23.3702H32.6317V26.4825C33.6026 24.9847 35.3398 22.8543 39.2162 22.8543C44.0231 22.8543 47.6276 25.9959 47.6276 32.7475V45.3516Z" fill="white"/>
+</svg>
+
+            </a>
+          </li>
+          <li class="list-social-item">
+            <a href="#" title="Instagram">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M35.7422 30C35.7422 33.1714 33.1714 35.7422 30 35.7422C26.8286 35.7422 24.2578 33.1714 24.2578 30C24.2578 26.8286 26.8286 24.2578 30 24.2578C33.1714 24.2578 35.7422 26.8286 35.7422 30Z" fill="white"/>
+<path d="M43.429 19.8408C43.1529 19.0928 42.7126 18.4158 42.1404 17.86C41.5846 17.2878 40.9081 16.8475 40.1596 16.5714C39.5526 16.3357 38.6407 16.0551 36.9612 15.9786C35.1443 15.8958 34.5996 15.8779 30 15.8779C25.3999 15.8779 24.8552 15.8953 23.0388 15.9782C21.3593 16.0551 20.4469 16.3357 19.8404 16.5714C19.0919 16.8475 18.4149 17.2878 17.8596 17.86C17.2874 18.4158 16.8471 19.0923 16.5706 19.8408C16.3348 20.4478 16.0542 21.3601 15.9778 23.0396C15.8949 24.856 15.8771 25.4008 15.8771 30.0009C15.8771 34.6005 15.8949 35.1452 15.9778 36.9621C16.0542 38.6416 16.3348 39.5535 16.5706 40.1605C16.8471 40.9089 17.287 41.5855 17.8592 42.1412C18.4149 42.7134 19.0915 43.1538 19.8399 43.4298C20.4469 43.666 21.3593 43.9466 23.0388 44.0231C24.8552 44.1059 25.3995 44.1233 29.9995 44.1233C34.6001 44.1233 35.1448 44.1059 36.9608 44.0231C38.6403 43.9466 39.5526 43.666 40.1596 43.4298C41.662 42.8503 42.8494 41.6628 43.429 40.1605C43.6647 39.5535 43.9453 38.6416 44.0222 36.9621C44.1051 35.1452 44.1225 34.6005 44.1225 30.0009C44.1225 25.4008 44.1051 24.856 44.0222 23.0396C43.9458 21.3601 43.6652 20.4478 43.429 19.8408ZM30 38.8462C25.1143 38.8462 21.1537 34.8861 21.1537 30.0004C21.1537 25.1147 25.1143 21.1546 30 21.1546C34.8853 21.1546 38.8458 25.1147 38.8458 30.0004C38.8458 34.8861 34.8853 38.8462 30 38.8462ZM39.1956 22.8721C38.0539 22.8721 37.1283 21.9465 37.1283 20.8048C37.1283 19.6632 38.0539 18.7376 39.1956 18.7376C40.3372 18.7376 41.2628 19.6632 41.2628 20.8048C41.2624 21.9465 40.3372 22.8721 39.1956 22.8721Z" fill="white"/>
+<path d="M30 0C13.434 0 0 13.434 0 30C0 46.566 13.434 60 30 60C46.566 60 60 46.566 60 30C60 13.434 46.566 0 30 0ZM47.1227 37.1022C47.0393 38.936 46.7477 40.188 46.322 41.2839C45.4271 43.5979 43.5979 45.4271 41.2839 46.322C40.1884 46.7477 38.936 47.0389 37.1027 47.1227C35.2657 47.2064 34.6788 47.2266 30.0005 47.2266C25.3217 47.2266 24.7353 47.2064 22.8978 47.1227C21.0645 47.0389 19.812 46.7477 18.7166 46.322C17.5667 45.8894 16.5257 45.2115 15.6651 44.3349C14.789 43.4747 14.111 42.4333 13.6784 41.2839C13.2527 40.1884 12.9611 38.936 12.8778 37.1027C12.7931 35.2652 12.7734 34.6783 12.7734 30C12.7734 25.3217 12.7931 24.7348 12.8773 22.8978C12.9607 21.064 13.2518 19.812 13.6775 18.7161C14.1101 17.5667 14.7885 16.5253 15.6651 15.6651C16.5253 14.7885 17.5667 14.1106 18.7161 13.678C19.812 13.2523 21.064 12.9611 22.8978 12.8773C24.7348 12.7936 25.3217 12.7734 30 12.7734C34.6783 12.7734 35.2652 12.7936 37.1022 12.8778C38.936 12.9611 40.188 13.2523 41.2839 13.6775C42.4333 14.1101 43.4747 14.7885 44.3353 15.6651C45.2115 16.5257 45.8899 17.5667 46.322 18.7161C46.7482 19.812 47.0393 21.064 47.1231 22.8978C47.2069 24.7348 47.2266 25.3217 47.2266 30C47.2266 34.6783 47.2069 35.2652 47.1227 37.1022Z" fill="white"/>
+</svg>
+
+            </a>
+          </li>
+          <li class="list-social-item">
+            <a href="#" title="Facebook.svg">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M30 0C13.4314 0 0 13.4314 0 30C0 46.5686 13.4314 60 30 60C46.5686 60 60 46.5686 60 30C60 13.4314 46.5686 0 30 0ZM41.4451 15.2777L37.2958 15.2796C34.0419 15.2796 33.4128 16.8258 33.4128 19.0944V24.097H41.172L41.1683 31.9323H33.4134V52.0395H25.3203V31.9323H18.5549V24.097H25.3203V18.3186C25.3203 11.6127 29.4175 7.96051 35.3991 7.96051L41.4457 7.96972V15.2777H41.4451Z" fill="white"/>
+</svg>
+
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <form class="form needs-validation" novalidate>
+          <p class="h2">Остались вопросы?</p>
+
+          <div class="form-group">
+            <input id="input-name" class="form-control text-white" type="text" placeholder="Имя" required>
+            <label for="input-name">Имя</label>
+          </div>
+          <div class="form-group">
+            <input id="input-email" class="form-control text-white" type="email" placeholder="E-mail" required>
+            <label for="input-email">E-mail</label>
+          </div>
+          <div class="form-group">
+            <textarea  id="input-message" class="form-control text-white" type="email" placeholder="Сообщение" required></textarea>
+            <label for="input-message">Сообщение</label>
+          </div>
+          <a href="#" class="btn btn-light" data-toggle="modal" data-target="#modal--recall">Отправить</a>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
