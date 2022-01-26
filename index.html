@@ -3,10 +3,14 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/libs.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.min.css">
-		<link rel="stylesheet" type="text/css" href="fonts/latofonts.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css" integrity="sha512-q54FvbV+gGBn+NvgaD4gpJ7w4wrO00DgW7Rx503PIhrf0CuMwLOwbS+bXgOBFSob+6GVy1HDPfaRLJ8w2jiS4g==" crossorigin="anonymous">
-		<title>Портфолио HTML-верстальщика</title>
+		<title>Web-design 👻</title>
 	</head>
 	<body>
 		<header class="header">
@@ -29,110 +33,80 @@
 		<div class="navigation">
 			<div class="container">
 				<nav class="navigation__list">
-					<button class="navigation__close">Закрыть</button><a class="navigation__link" href="#portfolio">Работы</a><a class="navigation__link" href="#skills">Навыки</a><a class="navigation__link" href="#verstka">Критерии качества</a>
+					<button class="navigation__close">Закрыть</button><a class="navigation__link" href="#skills">Навыки</a><a class="navigation__link" href="#verstka">Критерии качества</a><a class="navigation__link" href="#feedback">Связаться</a>
 				</nav>
 			</div>
 		</div>
 		<div id="fullpage">
 			<section class="section main" data-anchor="main">
-				<video class="main__bg lozad" src="" autoplay muted loop data-autoplay></video>
-				<div class="container">
-					<p class="main__sign">&lt;/&gt;</p>
-					<h1 class="main__title">Portfolio</h1>
-					<ul class="main-list">
-						<li class="main-list__item">HTML</li>
-						<li class="main-list__item">CSS</li>
-						<li class="main-list__item">JS</li>
-					</ul>
-					<div class="social"><a class="social__link social__link_tg" href="https://teleg.run/katya_ruch" target="_blanc">
-							Telegram<svg viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"><path d="M9.417 15.181l-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931L23.93 3.821l.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693L18.953 5.78c.595-.394 1.136-.176.691.218z"/></svg></a><a class="social__link social__link_e-mail" href="mailto:katya.ruch@gmail.com" target="_blanc">
-							E-mail<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#ffffff"><path d="M339.392 258.624L512 367.744V144.896zM0 144.896v222.848l172.608-109.12zM480 80H32C16.032 80 3.36 91.904.96 107.232L256 275.264l255.04-168.032C508.64 91.904 495.968 80 480 80zM310.08 277.952l-45.28 29.824a15.983 15.983 0 01-8.8 2.624c-3.072 0-6.112-.864-8.8-2.624l-45.28-29.856L1.024 404.992C3.488 420.192 16.096 432 32 432h448c15.904 0 28.512-11.808 30.976-27.008L310.08 277.952z"/></svg></a></div>
-				</div>
-			</section>
-			<section class="section portfolio" data-anchor="portfolio">
-				<div class="container">
-					<h2 class="title">Мои работы</h2>
-					<div class="swiper-container">
-						<ul class="portfolio__list swiper-wrapper">
-							<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="https://taxoparkin.ru/" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/taxoparkin.png" width="270" alt="Таксопаркин">
-									<div class="swiper-lazy-preloader"></div></a>
-								<p class="portfolio__name">Таксопаркин</p>
-								<p class="portfolio__info">Вёрстка лендинга по аренде машин</p>
-							</li>
-							<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="http://e911827x.beget.tech/" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/advanced-tech.png" width="270" alt="Advanced Technology">
-									<div class="swiper-lazy-preloader"></div></a>
-								<p class="portfolio__name">Advanced Technology</p>
-								<p class="portfolio__info">Вёрстка для интернет-магазина электроники</p>
-							</li>
-							<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="http://ursamotors.ru/" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/ursa.png" width="270" alt="Урса Моторс">
-									<div class="swiper-lazy-preloader"></div></a>
-								<p class="portfolio__name">Урса Моторс</p>
-								<p class="portfolio__info">Вёрстка лендинга по продаже вездеходов</p>
-							</li>
-							<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/sravni-bilety/" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/sravni-bilety.webp" width="270" alt="Сравни билеты">
-									<div class="swiper-lazy-preloader"></div></a>
-								<p class="portfolio__name">Сравни билеты</p>
-								<p class="portfolio__info">Вёрстка сайта для сервиса по поиску выгодных билетов на автобус. Календарь в форме поиска</p>
-							</li>
-							<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="https://hf.live" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/hfp.webp" width="270" alt="Happy Fitness Premium">
-									<div class="swiper-lazy-preloader"></div></a>
-								<p class="portfolio__name">Happy Fitness Premium</p>
-								<p class="portfolio__info">Вёрстка сайта для фитнесс клуба. Подключение CMS Wordpress</p>
-							</li>
-							<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="http://gazdieva.com" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/gd.webp" width="270" alt="Gazdieva Design">
-									<div class="swiper-lazy-preloader"></div></a>
-								<p class="portfolio__name">Gazdieva Design</p>
-								<p class="portfolio__info">Вёрстка для интернет-магазина</p>
-							</li>
-							<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/device" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/iMac-device.webp" width="270" alt="Device">
-									<div class="swiper-lazy-preloader"></div></a>
-								<div>
-									<p class="portfolio__name">Device</p>
-									<p class="portfolio__info">Вёрстка основных страниц интернет магазина электронных гаджетов</p>
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col">
+							<div class="portfolio">
+								<h2 class="title">Это необновленный архив, скоро загружу что-нибудь интересное</h2>
+								<div class="swiper-container">
+									<ul class="portfolio__list swiper-wrapper">
+										<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="https://taxoparkin.ru/" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/taxoparkin.jpg" width="270" alt="Таксопаркин">
+												<div class="swiper-lazy-preloader"></div></a>
+											<p class="portfolio__name">Таксопаркин</p>
+											<p class="portfolio__info">Лендинг по аренде машин</p>
+										</li>
+										<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="http://e911827x.beget.tech/" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/advanced-tech.jpg" width="270" alt="Advanced Technology">
+												<div class="swiper-lazy-preloader"></div></a>
+											<p class="portfolio__name">Advanced Technology</p>
+											<p class="portfolio__info">Вёрстка для интернет-магазина электроники</p>
+										</li>
+										<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="http://ursamotors.ru/" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/ursa.jpg" width="270" alt="Урса Моторс">
+												<div class="swiper-lazy-preloader"></div></a>
+											<p class="portfolio__name">Урса Моторс</p>
+											<p class="portfolio__info">Лендинг по продаже вездеходов</p>
+										</li>
+										<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/sravni-bilety/" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/sravni-bilety.jpg" width="270" alt="Сравни билеты">
+												<div class="swiper-lazy-preloader"></div></a>
+											<p class="portfolio__name">Сравни билеты</p>
+											<p class="portfolio__info">Вёрстка для сервиса по поиску билетов</p>
+										</li>
+										<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/device" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/iMac-device.jpg" width="270" alt="Device">
+												<div class="swiper-lazy-preloader"></div></a>
+											<div>
+												<p class="portfolio__name">Device</p>
+												<p class="portfolio__info">Вёрстка для интернет-магазина электронных гаджетов</p>
+											</div>
+										</li>
+									</ul>
 								</div>
-							</li>
-							<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="/pages/Absolute" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/Absolute adaptive.webp" width="270" alt="Absolute">
-									<div class="swiper-lazy-preloader"></div></a>
-								<p class="portfolio__name">Absolute</p>
-								<p class="portfolio__info">Вёрстка сайта по оформлению кредита. JS-калькулятор рассчета платежа.</p>
-							</li>
-							<li class="portfolio__item swiper-slide"><a class="portfolio__link" href="https://mmbusiness.ru/" target="_blank"><img class="portfolio__img swiper-lazy" data-src="img/mmbusiness.webp" width="270" alt="Flatland">
-									<div class="swiper-lazy-preloader"></div></a>
-								<p class="portfolio__name">mmbusiness</p>
-								<p class="portfolio__info">Вёрстка сайта для рекрутинговой компании. Подключение CMS Wordpress, настройка блога</p>
-							</li>
-						</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
 			<section class="section skills" data-anchor="skills">
 				<div class="container">
-					<h2 class="title">Мои навыки</h2>
+					<h2 class="title">Навыки</h2>
 					<ul class="skills__list">
 						<li class="skills__item skills__item_html">HTML
 							<ul class="skills__sublist">
 								<li>Логичная семантическая разметка</li>
-								<li>Доступность</li>
-								<li>Шаблонизатор PUG</li>
+								<li>Компонентный подход</li>
+								<li>BEM методология</li>
+								<li>Доступность интерфейса</li>
 							</ul>
 						</li>
 						<li class="skills__item skills__item_css">CSS
 							<ul class="skills__sublist">
-								<li>BEM методология</li>
 								<li>Адаптивность</li>
-								<li>Bootstrap</li>
 								<li>Анимация</li>
+								<li>Модульная сетка</li>
 							</ul>
 						</li>
 						<li class="skills__item skills__item_js">JS
 							<ul class="skills__sublist">
+								<li>JavaScript</li>
 								<li>jQuery</li>
 								<li>Ajax</li>
 							</ul>
 						</li>
 					</ul>
-					<p class="mark">100% совпадения моей вёрстки и вашего макета благодаря <b>Pixel Perfect</b></p>
-					<p class="text">Google PageSpeed <b>80-100</b></p>
 					<div class="skills-use">использую</div>
 					<ul class="skills-use__list">
 						<li class="skills-use__item">npm<img src="img/use/npm.svg" alt="npm" title="npm"></li>
@@ -198,7 +172,7 @@
 			</div>
 		</div>
 		<script src="js/libs.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js" integrity="sha512-bxzECOBohzcTcWocMAlNDE2kYs0QgwGs4eD8TlAN2vfovq13kfDfp95sJSZrNpt0VMkpP93ZxLC/+WN/7Trw2g==" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
 		<script src="js/script.js" async></script>
 	</body>
 </html>

@@ -2,16 +2,9 @@ $(document).ready(function(){
 
   $('#fullpage').fullpage({
     //options here
-    anchors:['main', 'portfolio', 'skills', 'verstka','feedback'],
     autoScrolling:true,
     scrollHorizontally: true
   });
-
-  //////////// video > mobile-width
-
-  if($(window).width() > 576) {
-    setTimeout($('.main__bg').attr('src', 'img/video.mp4'), 1000);
-  }
 
   //////////// gamburger-menu
 
@@ -40,19 +33,10 @@ $(document).ready(function(){
     }
   });
 
-  //////////// animate scroll
-
-  // $('a[href*="#"]').click(function (evt) {
-  //   evt.preventDefault();
-  //   var id  = $(this).attr('href'),
-  //     top = $(id).offset().top - 80;
-  //   $('html').animate({scrollTop: top}, 1500);
-  // });
-
-  //////////// Swiper
+  //////////// Swiper https://swiperjs.com/swiper-api#parameters
 
   var mySwiper = new Swiper ('.swiper-container', {
-    // spaceBetween: 40,
+    // spaceBetween: 30,
     // direction: 'vertical',
     speed: 1500,
     loop: true,
@@ -64,7 +48,7 @@ $(document).ready(function(){
       loadPrevNextAmount: 3,
     },
     autoplay: {
-      delay: 3000,
+      delay: 4000,
       disableOnInteraction: false,
     },
     pagination: {
