@@ -1,0 +1,35 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background: #37B2C3;
+}
+
+.piano {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.white-keys {
+ fill: white;
+}
+
+.white-keys:hover {
+  fill: #ffd200;
+}
+
+.black-keys {
+  fill: black;
+}
+
+.black-keys:hover {
+  fill: #f40082;  
+}
+
+@media (orientation: portrait) {
+  .piano {
+    transform: rotate(-90deg);
+  }
+}
