@@ -36,8 +36,6 @@ $(document).ready(function(){
   //////////// Swiper https://swiperjs.com/swiper-api#parameters
 
   var mySwiper = new Swiper ('.swiper-container', {
-    // spaceBetween: 30,
-    // direction: 'vertical',
     speed: 1500,
     loop: true,
     centeredSlides: true,
@@ -51,15 +49,29 @@ $(document).ready(function(){
       delay: 4000,
       disableOnInteraction: false,
     },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
   });
+
+  if ( window.innerWidth <= 768) {
+    var skillsSwiper = new Swiper ('.skills-use__swiper', {
+      speed: 3500,
+      loop: true,
+      centeredSlides: true,
+      mousewheel: true,
+      slidesPerView: 'auto',
+      slideClass: 'skills-use__item',
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        769: {
+          enabled: false,
+          init: false,
+        }
+      }
+    });
+      
+  }
 
   /////////////
 
