@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pages/graphql-spacex-api/static/css/main.020bbca1.css",
+    "main.js": "/pages/graphql-spacex-api/static/js/main.2e6b59e3.js",
+    "static/media/bg.jpg": "/pages/graphql-spacex-api/static/media/bg.c85a30cfb40f5e3b4bf1.jpg",
+    "index.html": "/pages/graphql-spacex-api/index.html",
+    "static/media/logo.svg": "/pages/graphql-spacex-api/static/media/logo.f94464e141337a27a2438fcf14ffdd3e.svg",
+    "main.020bbca1.css.map": "/pages/graphql-spacex-api/static/css/main.020bbca1.css.map",
+    "main.2e6b59e3.js.map": "/pages/graphql-spacex-api/static/js/main.2e6b59e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.020bbca1.css",
+    "static/js/main.2e6b59e3.js"
+  ]
+}
